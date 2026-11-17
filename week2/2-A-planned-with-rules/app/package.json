@@ -1,0 +1,17 @@
+{
+  "name": "egov-eservice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "e-Service กลางของเทศบาลนครตัวอย่าง (เว็บจำลองสำหรับ Week 2)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "express": "^4.22.3",
+    "multer": "^2.5.0"
+  }
+}

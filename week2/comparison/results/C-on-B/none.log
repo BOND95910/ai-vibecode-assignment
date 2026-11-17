@@ -1,0 +1,1173 @@
+
+Running 51 tests using 1 worker
+
+  ✘   1 tests\auth.spec.js:3:1 › TC-AUTH-01 เลขบัตร 13 หลัก + checksum (5.7s)
+  ✓   2 tests\auth.spec.js:28:1 › TC-AUTH-02 OTP ผิด 3 ครั้งล็อก 15 นาที (998ms)
+  ✘   3 tests\auth.spec.js:84:1 › TC-AUTH-03 ลงทะเบียนครั้งแรก (1.3s)
+  ✓   4 tests\auth.spec.js:127:1 › TC-AUTH-04 เจ้าหน้าที่ SSO จำลองและหน้าตั้งต้นตามบทบาท (2.4s)
+  ✘   5 tests\dash-audit.spec.js:16:1 › TC-DASH-01 Dashboard ตัวเลขเริ่มต้น (275ms)
+  ✘   6 tests\dash-audit.spec.js:34:1 › TC-DASH-02 Dashboard ย้อนหลัง พ.ย. ต.ค. รายปี (508ms)
+  ✘   7 tests\dash-audit.spec.js:51:1 › TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ และไม่มีข้อมูลส่วนบุคคล (290ms)
+  ✓   8 tests\dash-audit.spec.js:93:1 › TC-DASH-04 ค่าขอบ "ทันกำหนด" 16:29:59 / 16:30:00 / 16:30:01 (865ms)
+  ✘   9 tests\dash-audit.spec.js:118:1 › TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit (1.3s)
+  ✓  10 tests\dash-audit.spec.js:184:1 › TC-AUDIT-02 Audit แก้/ลบไม่ได้ (405) (411ms)
+  ✘  11 tests\dash-audit.spec.js:207:1 › TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย (3.0m)
+  ✓  12 tests\nfr.spec.js:12:1 › TC-NFR-01 Responsive 375 / 768 / 1280 (2.7s)
+  ✓  13 tests\nfr.spec.js:50:1 › TC-NFR-02 WCAG: axe + คีย์บอร์ด + label + สถานะไม่ใช้สีอย่างเดียว (6.2s)
+  ✓  14 tests\nfr.spec.js:126:1 › TC-NFR-03 Health เวลาโหลด และผลซ้ำได้ (1.4s)
+  ✘  15 tests\nfr.spec.js:177:1 › TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection) (88ms)
+  ✓  16 tests\queue-sla-noti.spec.js:6:1 › TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก (1.0s)
+  ✘  17 tests\queue-sla-noti.spec.js:48:1 › TC-QUEUE-02 รับเรื่องซ้อน (พร้อมกันและต่อกัน) (786ms)
+  ✘  18 tests\queue-sla-noti.spec.js:96:1 › TC-QUEUE-03 งานในมือสูงสุด 10 (6.4s)
+  ✓  19 tests\queue-sla-noti.spec.js:147:1 › TC-SLA-01 กำหนดเสร็จตามตารางวันที่ (3.5s)
+  ✓  20 tests\queue-sla-noti.spec.js:173:1 › TC-SLA-02 หยุดนับ SLA ระหว่างรอแก้ไข (1.8s)
+  ✓  21 tests\queue-sla-noti.spec.js:242:1 › TC-SLA-03 ระดับเตือน ปกติ / ใกล้ครบกำหนด / เกินกำหนด (1.7s)
+  ✓  22 tests\queue-sla-noti.spec.js:308:1 › TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ (818ms)
+  ✓  23 tests\queue-sla-noti.spec.js:310:1 › TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร (2.2s)
+  ✓  24 tests\rbac.spec.js:3:1 › TC-RBAC-01 ประชาชนเปิดคำขอคนอื่นไม่ได้ (IDOR) (327ms)
+  ✘  25 tests\rbac.spec.js:27:1 › TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API) (391ms)
+  ✓  26 tests\rbac.spec.js:58:1 › TC-RBAC-03 ตารางสิทธิ์หน้า/API ตามบทบาท (4.5s)
+  ✓  27 tests\rbac.spec.js:108:1 › TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก (1.5s)
+  ✓  28 tests\rbac.spec.js:177:1 › TC-RBAC-05 สิทธิ์เปิด/ดาวน์โหลดไฟล์แนบ (6.2s)
+  ✓  29 tests\rbac.spec.js:218:1 › TC-RBAC-06 ผู้ดูแลระบบ: ช่วงค่าที่ยอมรับ (1.2s)
+  ✘  30 tests\submit.spec.js:7:1 › TC-FEE-01 ค่าธรรมเนียม SV-01 / SV-02 / SV-03 (1.1m)
+  ✘  31 tests\submit.spec.js:49:1 › TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร (681ms)
+  ✓  32 tests\submit.spec.js:101:1 › TC-SUBMIT-02 เอกสารบังคับครบก่อนชำระ (1.4s)
+  ✘  33 tests\submit.spec.js:154:1 › TC-SUBMIT-03 ร่าง การลบร่าง และการยกเลิก (256ms)
+  ✘  34 tests\submit.spec.js:239:1 › TC-UPLOAD-01 ขนาดและจำนวนไฟล์ (7.8s)
+  ✓  35 tests\submit.spec.js:286:1 › TC-UPLOAD-02 ชนิดไฟล์จากเนื้อไฟล์ (1.5s)
+  ✓  36 tests\submit.spec.js:315:1 › TC-PAY-01 อายุ QR 15:00 (631ms)
+  ✘  37 tests\submit.spec.js:344:1 › TC-PAY-02 ยอดเงินและ callback ซ้ำ (185ms)
+  ✓  38 tests\submit.spec.js:366:1 › TC-PAY-03 ชำระพร้อมกัน เลขไม่ซ้ำ (571ms)
+  ✓  39 tests\submit.spec.js:384:1 › TC-PAY-04 เลขคำขอข้ามปี 2569 → 2570 (706ms)
+  ✘  40 tests\workflow-doc.spec.js:15:1 › TC-WORKFLOW-01 SV-01 อนุมัติ + ออกเอกสาร (793ms)
+  ✓  41 tests\workflow-doc.spec.js:52:1 › TC-WORKFLOW-02 SV-02 ผ่านหัวหน้า (1.5s)
+  ✓  42 tests\workflow-doc.spec.js:103:1 › TC-WORKFLOW-03 SV-03 สามขั้นตอน (1.2s)
+  ✓  43 tests\workflow-doc.spec.js:149:1 › TC-WORKFLOW-04 ตีกลับสูงสุด 2 ครั้ง และผลหลังครบ (2.0s)
+  ✓  44 tests\workflow-doc.spec.js:215:1 › TC-WORKFLOW-05 เหตุผล ≥ 10 ตัวอักษร (ตีกลับ / ไม่อนุมัติ) (1.3s)
+  ✓  45 tests\workflow-doc.spec.js:264:1 › TC-WORKFLOW-06 เวลาแก้ไข 168 ชั่วโมง (912ms)
+  ✘  46 tests\workflow-doc.spec.js:299:1 › TC-DOC-01 ออกเอกสารและข้อมูลในเอกสาร (251ms)
+  ✓  47 tests\workflow-doc.spec.js:331:1 › TC-DOC-02 ตรวจเอกสาร /verify (314ms)
+  ✓  48 tests\workflow-doc.spec.js:359:1 › TC-DOC-03 เอกสารหมดอายุและลายเซ็นไม่ตรง (2.3s)
+  ✓  49 tests\workflow-doc.spec.js:412:1 › TC-PDPA-01 ปิดบังเลขบัตรบนจอ (814ms)
+  ✓  50 tests\workflow-doc.spec.js:435:1 › TC-PDPA-02 API (JSON) ไม่ส่งเลขบัตรเต็ม (248ms)
+  ✓  51 tests\workflow-doc.spec.js:458:1 › TC-PDPA-03 แสดงเลขเต็มต้องมีเหตุผลและบันทึก Audit (909ms)
+
+
+  1) tests\auth.spec.js:3:1 › TC-AUTH-01 เลขบัตร 13 หลัก + checksum ────────────────────────────────
+
+    Error: 1101700123456
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('thaid-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - 1101700123456 getByTestId('thaid-error') with timeout 5000ms
+      - waiting for getByTestId('thaid-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      20 |     await page.getByTestId('thaid-submit').click();
+      21 |     await expect(page.getByTestId('otp-step'), v).toBeVisible();
+    > 22 |     await expect(page.getByTestId('thaid-error'), v).toHaveCount(0);
+         |                                                      ^
+      23 |     const r = await api.post('/api/auth/thaid/start', { data: { idNo: v } });
+      24 |     expect({ status: r.status(), body: await r.json() }, v).toEqual({ status: 200, body: { status: 'OTP_SENT' } });
+      25 |   }
+        at C:\src\compare\judge\suiteC\tests\auth.spec.js:22:54
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\auth-TC-AUTH-01-เลขบัตร-13-หลัก-checksum\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\auth-TC-AUTH-01-เลขบัตร-13-หลัก-checksum\error-context.md
+
+  2) tests\auth.spec.js:84:1 › TC-AUTH-03 ลงทะเบียนครั้งแรก ────────────────────────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 1
+
+      Object {
+    +   "landing": "/register",
+        "registered": false,
+      }
+
+      120 |   await c.post('/api/auth/thaid/start', { data: { idNo: ID.mana } });
+      121 |   const v = await c.post('/api/auth/thaid/verify', { data: { idNo: ID.mana, otp: '123456' } });
+    > 122 |   expect(await v.json()).toEqual({ registered: false });
+          |                          ^
+      123 |   await h.expectErr(await c.post('/api/auth/register', { data: { mobile: '081234567', email: '', consent: true } }), 400, 'INVALID_MOBILE');
+      124 |   await h.expectErr(await c.post('/api/auth/register', { data: { mobile: '0845678901', email: '', consent: false } }), 400, 'CONSENT_REQUIRED');
+      125 | });
+        at C:\src\compare\judge\suiteC\tests\auth.spec.js:122:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\auth-TC-AUTH-03-ลงทะเบียนครั้งแรก\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\auth-TC-AUTH-03-ลงทะเบียนครั้งแรก\error-context.md
+
+  3) tests\dash-audit.spec.js:16:1 › TC-DASH-01 Dashboard ตัวเลขเริ่มต้น ───────────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 6
+
+      Object {
+    +   "asOf": "2026-12-01T09:00:00+07:00",
+        "backlog": 21,
+        "closed": 0,
+        "onTime": 0,
+        "ontimePct": null,
+    +   "ontimeText": "–",
+        "overdue": 1,
+    +   "period": "2026-12",
+    +   "periodLabel": "ธ.ค. 2569",
+        "received": 3,
+    +   "service": "ALL",
+    +   "serviceLabel": "ทุกบริการ",
+        "workload": undefined,
+      }
+
+      24 |   expect(wl).toEqual([['off.reg1', '3'], ['off.reg2', '9'], ['off.works1', '0']]);
+      25 |   const api = await (await p.request.get('/api/dashboard?period=2026-12&service=ALL')).json();
+    > 26 |   expect({ ...api, workload: undefined }).toEqual({ received: 3, closed: 0, onTime: 0, ontimePct: null, backlog: 21, overdue: 1, workload: undefined });
+         |                                           ^
+      27 |   noPii(await p.locator('body').innerText(), '/dashboard text');
+      28 |   for (const [svc, rec, bl, od] of [['SV-01', 3, 11, 1], ['SV-02', 0, 7, 0], ['SV-03', 0, 3, 0]]) {
+      29 |     await pick(p, '2026-12', svc);
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:26:43
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dash-audit-TC-DASH-01-Dashboard-ตัวเลขเริ่มต้น\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dash-audit-TC-DASH-01-Dashboard-ตัวเลขเริ่มต้น\error-context.md
+
+  4) tests\dash-audit.spec.js:34:1 › TC-DASH-02 Dashboard ย้อนหลัง พ.ย. ต.ค. รายปี ─────────────────
+
+    Error: 2026-10 ALL
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 3
+    + Received  + 3
+
+      Object {
+        "backlog": "21",
+    -   "closed": "1",
+    -   "ontime-pct": "100.0%",
+    +   "closed": "0",
+    +   "ontime-pct": "–",
+        "overdue": "1",
+    -   "received": "1",
+    +   "received": "3",
+      }
+
+      42 |     await pick(p, period, svc);
+      43 |     const want = { received: String(rec), closed: String(closed), 'ontime-pct': pct(onTime, closed), backlog: String(NOW[svc][0]), overdue: String(NOW[svc][1]) };
+    > 44 |     expect.soft(await kpis(p), `${period} ${svc}`).toEqual(want);
+         |                                                    ^
+      45 |     const a = await (await p.request.get(`/api/dashboard?period=${period}&service=${svc}`)).json();
+      46 |     expect.soft({ received: a.received, closed: a.closed, onTime: a.onTime, ontimePct: a.ontimePct }, `API ${period} ${svc}`)
+      47 |       .toEqual({ received: rec, closed, onTime, ontimePct: Number(pct(onTime, closed).replace('%', '')) });
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:44:52
+
+    Error: 2026-11 ALL
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 3
+    + Received  + 3
+
+      Object {
+        "backlog": "21",
+    -   "closed": "7",
+    -   "ontime-pct": "85.7%",
+    +   "closed": "1",
+    +   "ontime-pct": "100.0%",
+        "overdue": "1",
+    -   "received": "26",
+    +   "received": "1",
+      }
+
+      42 |     await pick(p, period, svc);
+      43 |     const want = { received: String(rec), closed: String(closed), 'ontime-pct': pct(onTime, closed), backlog: String(NOW[svc][0]), overdue: String(NOW[svc][1]) };
+    > 44 |     expect.soft(await kpis(p), `${period} ${svc}`).toEqual(want);
+         |                                                    ^
+      45 |     const a = await (await p.request.get(`/api/dashboard?period=${period}&service=${svc}`)).json();
+      46 |     expect.soft({ received: a.received, closed: a.closed, onTime: a.onTime, ontimePct: a.ontimePct }, `API ${period} ${svc}`)
+      47 |       .toEqual({ received: rec, closed, onTime, ontimePct: Number(pct(onTime, closed).replace('%', '')) });
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:44:52
+
+    Error: 2026-11 SV-01
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+    -   "backlog": "11",
+    -   "closed": "3",
+    -   "ontime-pct": "100.0%",
+    +   "backlog": "21",
+    +   "closed": "7",
+    +   "ontime-pct": "85.7%",
+        "overdue": "1",
+    -   "received": "12",
+    +   "received": "26",
+      }
+
+      42 |     await pick(p, period, svc);
+      43 |     const want = { received: String(rec), closed: String(closed), 'ontime-pct': pct(onTime, closed), backlog: String(NOW[svc][0]), overdue: String(NOW[svc][1]) };
+    > 44 |     expect.soft(await kpis(p), `${period} ${svc}`).toEqual(want);
+         |                                                    ^
+      45 |     const a = await (await p.request.get(`/api/dashboard?period=${period}&service=${svc}`)).json();
+      46 |     expect.soft({ received: a.received, closed: a.closed, onTime: a.onTime, ontimePct: a.ontimePct }, `API ${period} ${svc}`)
+      47 |       .toEqual({ received: rec, closed, onTime, ontimePct: Number(pct(onTime, closed).replace('%', '')) });
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:44:52
+
+    Error: 2026-11 SV-02
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+    -   "backlog": "7",
+    +   "backlog": "11",
+        "closed": "3",
+    -   "ontime-pct": "66.7%",
+    -   "overdue": "0",
+    -   "received": "10",
+    +   "ontime-pct": "100.0%",
+    +   "overdue": "1",
+    +   "received": "12",
+      }
+
+      42 |     await pick(p, period, svc);
+      43 |     const want = { received: String(rec), closed: String(closed), 'ontime-pct': pct(onTime, closed), backlog: String(NOW[svc][0]), overdue: String(NOW[svc][1]) };
+    > 44 |     expect.soft(await kpis(p), `${period} ${svc}`).toEqual(want);
+         |                                                    ^
+      45 |     const a = await (await p.request.get(`/api/dashboard?period=${period}&service=${svc}`)).json();
+      46 |     expect.soft({ received: a.received, closed: a.closed, onTime: a.onTime, ontimePct: a.ontimePct }, `API ${period} ${svc}`)
+      47 |       .toEqual({ received: rec, closed, onTime, ontimePct: Number(pct(onTime, closed).replace('%', '')) });
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:44:52
+
+    Error: 2026-11 SV-03
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+    -   "backlog": "3",
+    -   "closed": "1",
+    -   "ontime-pct": "100.0%",
+    +   "backlog": "7",
+    +   "closed": "3",
+    +   "ontime-pct": "66.7%",
+        "overdue": "0",
+    -   "received": "4",
+    +   "received": "10",
+      }
+
+      42 |     await pick(p, period, svc);
+      43 |     const want = { received: String(rec), closed: String(closed), 'ontime-pct': pct(onTime, closed), backlog: String(NOW[svc][0]), overdue: String(NOW[svc][1]) };
+    > 44 |     expect.soft(await kpis(p), `${period} ${svc}`).toEqual(want);
+         |                                                    ^
+      45 |     const a = await (await p.request.get(`/api/dashboard?period=${period}&service=${svc}`)).json();
+      46 |     expect.soft({ received: a.received, closed: a.closed, onTime: a.onTime, ontimePct: a.ontimePct }, `API ${period} ${svc}`)
+      47 |       .toEqual({ received: rec, closed, onTime, ontimePct: Number(pct(onTime, closed).replace('%', '')) });
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:44:52
+
+    Error: 2026 ALL
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 5
+    + Received  + 5
+
+      Object {
+    -   "backlog": "21",
+    -   "closed": "8",
+    -   "ontime-pct": "87.5%",
+    -   "overdue": "1",
+    -   "received": "30",
+    +   "backlog": "3",
+    +   "closed": "1",
+    +   "ontime-pct": "100.0%",
+    +   "overdue": "0",
+    +   "received": "4",
+      }
+
+      42 |     await pick(p, period, svc);
+      43 |     const want = { received: String(rec), closed: String(closed), 'ontime-pct': pct(onTime, closed), backlog: String(NOW[svc][0]), overdue: String(NOW[svc][1]) };
+    > 44 |     expect.soft(await kpis(p), `${period} ${svc}`).toEqual(want);
+         |                                                    ^
+      45 |     const a = await (await p.request.get(`/api/dashboard?period=${period}&service=${svc}`)).json();
+      46 |     expect.soft({ received: a.received, closed: a.closed, onTime: a.onTime, ontimePct: a.ontimePct }, `API ${period} ${svc}`)
+      47 |       .toEqual({ received: rec, closed, onTime, ontimePct: Number(pct(onTime, closed).replace('%', '')) });
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:44:52
+
+    Error: 2026 SV-01
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+    -   "backlog": "11",
+    -   "closed": "4",
+    -   "ontime-pct": "100.0%",
+    +   "backlog": "21",
+    +   "closed": "8",
+    +   "ontime-pct": "87.5%",
+        "overdue": "1",
+    -   "received": "16",
+    +   "received": "30",
+      }
+
+      42 |     await pick(p, period, svc);
+      43 |     const want = { received: String(rec), closed: String(closed), 'ontime-pct': pct(onTime, closed), backlog: String(NOW[svc][0]), overdue: String(NOW[svc][1]) };
+    > 44 |     expect.soft(await kpis(p), `${period} ${svc}`).toEqual(want);
+         |                                                    ^
+      45 |     const a = await (await p.request.get(`/api/dashboard?period=${period}&service=${svc}`)).json();
+      46 |     expect.soft({ received: a.received, closed: a.closed, onTime: a.onTime, ontimePct: a.ontimePct }, `API ${period} ${svc}`)
+      47 |       .toEqual({ received: rec, closed, onTime, ontimePct: Number(pct(onTime, closed).replace('%', '')) });
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:44:52
+
+    Error: 2026 SV-02
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 5
+    + Received  + 5
+
+      Object {
+    -   "backlog": "7",
+    -   "closed": "3",
+    -   "ontime-pct": "66.7%",
+    -   "overdue": "0",
+    -   "received": "10",
+    +   "backlog": "11",
+    +   "closed": "4",
+    +   "ontime-pct": "100.0%",
+    +   "overdue": "1",
+    +   "received": "16",
+      }
+
+      42 |     await pick(p, period, svc);
+      43 |     const want = { received: String(rec), closed: String(closed), 'ontime-pct': pct(onTime, closed), backlog: String(NOW[svc][0]), overdue: String(NOW[svc][1]) };
+    > 44 |     expect.soft(await kpis(p), `${period} ${svc}`).toEqual(want);
+         |                                                    ^
+      45 |     const a = await (await p.request.get(`/api/dashboard?period=${period}&service=${svc}`)).json();
+      46 |     expect.soft({ received: a.received, closed: a.closed, onTime: a.onTime, ontimePct: a.ontimePct }, `API ${period} ${svc}`)
+      47 |       .toEqual({ received: rec, closed, onTime, ontimePct: Number(pct(onTime, closed).replace('%', '')) });
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:44:52
+
+    Error: 2026 SV-03
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+    -   "backlog": "3",
+    -   "closed": "1",
+    -   "ontime-pct": "100.0%",
+    +   "backlog": "7",
+    +   "closed": "3",
+    +   "ontime-pct": "66.7%",
+        "overdue": "0",
+    -   "received": "4",
+    +   "received": "10",
+      }
+
+      42 |     await pick(p, period, svc);
+      43 |     const want = { received: String(rec), closed: String(closed), 'ontime-pct': pct(onTime, closed), backlog: String(NOW[svc][0]), overdue: String(NOW[svc][1]) };
+    > 44 |     expect.soft(await kpis(p), `${period} ${svc}`).toEqual(want);
+         |                                                    ^
+      45 |     const a = await (await p.request.get(`/api/dashboard?period=${period}&service=${svc}`)).json();
+      46 |     expect.soft({ received: a.received, closed: a.closed, onTime: a.onTime, ontimePct: a.ontimePct }, `API ${period} ${svc}`)
+      47 |       .toEqual({ received: rec, closed, onTime, ontimePct: Number(pct(onTime, closed).replace('%', '')) });
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:44:52
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dash-audit-TC-DASH-02-Dashboard-ย้อนหลัง-พ-ย-ต-ค-รายปี\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dash-audit-TC-DASH-02-Dashboard-ย้อนหลัง-พ-ย-ต-ค-รายปี\error-context.md
+
+  5) tests\dash-audit.spec.js:51:1 › TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ และไม่มีข้อมูลส่วนบุคคล 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 3
+    + Received  + 3
+
+      Object {
+        "backlog": "21",
+    -   "closed": "7",
+    -   "ontime-pct": "85.7%",
+    +   "closed": "0",
+    +   "ontime-pct": "–",
+        "overdue": "1",
+    -   "received": "26",
+    +   "received": "3",
+      }
+
+      66 |   await pick(p, '2026-11', 'ALL');
+      67 |   const screen = await kpis(p);
+    > 68 |   expect(screen).toEqual({ received: '26', closed: '7', 'ontime-pct': pct(6, 7), backlog: '21', overdue: '1' });
+         |                  ^
+      69 |   const x1 = await download('export-xlsx-btn');
+      70 |   const s1 = await sheet(x1.buf);
+      71 |   expect(s1).toEqual([['ตัวชี้วัด', 'ค่า'], ...LABELS.map((l, i) => [l, Object.values(screen)[i]])]);
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:68:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dash-audit-TC-DASH-03-ส่งอ-8bb2e-าจอ-และไม่มีข้อมูลส่วนบุคคล\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dash-audit-TC-DASH-03-ส่งอ-8bb2e-าจอ-และไม่มีข้อมูลส่วนบุคคล\error-context.md
+
+  6) tests\dash-audit.spec.js:118:1 › TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit ────────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+        "actor": "exec1",
+    -   "caseNo": "–",
+    +   "caseNo": "",
+        "dec": true,
+        "role": "executive",
+        "tr": "–",
+        "xlsx": true,
+      }
+
+      157 |   expect.soft({ ...pickF(one('REJECT')[0]), d: one('REJECT')[0].detail }).toEqual({ actor: 'off.reg2', role: 'officer', caseNo: 'EG-2569-000026', tr: 'IN_REVIEW → REJECTED', d: 'xxxxxxxxxx' });
+      158 |   expect.soft(one('UNMASK').map(r => ({ ...pickF(r), d: r.detail }))).toEqual([{ actor: 'off.reg2', role: 'officer', caseNo: 'EG-2569-000025', tr: '–', d: 'ตรวจสอบตัวตนซ้ำ' }]);
+    > 159 |   expect.soft({ ...pickF(one('EXPORT')[0]), xlsx: one('EXPORT')[0].detail.includes('xlsx'), dec: one('EXPORT')[0].detail.includes('2026-12') }).toEqual({ actor: 'exec1', role: 'executive', caseNo: '–', tr: '–', xlsx: true, dec: true });
+          |                                                                                                                                                 ^
+      160 |   expect.soft({ ...pickF(one('ADMIN_CHANGE')[0]), d: one('ADMIN_CHANGE')[0].detail }).toEqual({ actor: 'admin1', role: 'admin', caseNo: '–', tr: '–', d: 'SV-01 fee 20 → 25' });
+      161 |   // filters
+      162 |   const filt = async (actor, event, n) => {
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:159:145
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+        "actor": "admin1",
+    -   "caseNo": "–",
+    +   "caseNo": "",
+        "d": "SV-01 fee 20 → 25",
+        "role": "admin",
+        "tr": "–",
+      }
+
+      158 |   expect.soft(one('UNMASK').map(r => ({ ...pickF(r), d: r.detail }))).toEqual([{ actor: 'off.reg2', role: 'officer', caseNo: 'EG-2569-000025', tr: '–', d: 'ตรวจสอบตัวตนซ้ำ' }]);
+      159 |   expect.soft({ ...pickF(one('EXPORT')[0]), xlsx: one('EXPORT')[0].detail.includes('xlsx'), dec: one('EXPORT')[0].detail.includes('2026-12') }).toEqual({ actor: 'exec1', role: 'executive', caseNo: '–', tr: '–', xlsx: true, dec: true });
+    > 160 |   expect.soft({ ...pickF(one('ADMIN_CHANGE')[0]), d: one('ADMIN_CHANGE')[0].detail }).toEqual({ actor: 'admin1', role: 'admin', caseNo: '–', tr: '–', d: 'SV-01 fee 20 → 25' });
+          |                                                                                       ^
+      161 |   // filters
+      162 |   const filt = async (actor, event, n) => {
+      163 |     await p.goto('/audit');
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:160:87
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dash-audit-TC-AUDIT-01-เหตุการณ์และฟิลด์ใน-Audit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dash-audit-TC-AUDIT-01-เหตุการณ์และฟิลด์ใน-Audit\error-context.md
+
+  7) tests\dash-audit.spec.js:207:1 › TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย ─────────────────────────
+
+    Test timeout of 180000ms exceeded.
+
+    Error: page.waitForURL: Target page, context or browser has been closed
+    =========================== logs ===========================
+    waiting for navigation until "load"
+    ============================================================
+
+      225 |     await p.getByTestId('audit-filter-actor').fill(actor);
+      226 |     await p.getByTestId('audit-apply-btn').click();
+    > 227 |     await p.waitForURL(/from=/);
+          |             ^
+      228 |     await expect.soft(p.getByTestId('audit-count'), `UI count ${label}`).toHaveText(String(want.split(' ').length));
+      229 |     const got = await p.getByTestId('audit-time').evaluateAll(ts => ts.map(t => t.dataset.iso));
+      230 |     expect.soft(got.map(x => iso[x] || x).sort().join(' '), `UI rows ${label}`).toBe(want);
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:227:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dash-audit-TC-AUDIT-03-กรองช่วงวันที่ตามเวลาไทย\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dash-audit-TC-AUDIT-03-กรองช่วงวันที่ตามเวลาไทย\error-context.md
+
+  8) tests\nfr.spec.js:177:1 › TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection) ───────────────
+
+    Error: DB_PATH C:/src/compare/judge/bdata/egov.db was not written during this test
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 1794838688541
+    Received:    1794838499776.8425
+
+      186 |   expect(fs.existsSync(dbPath), `DB_PATH ${dbPath}`).toBe(true);
+      187 |   // the file must be the live one: written by this server after the registration above, not a stale copy
+    > 188 |   expect(fs.statSync(dbPath).mtimeMs, `DB_PATH ${dbPath} was not written during this test`).toBeGreaterThanOrEqual(before);
+          |                                                                                             ^
+      189 |   const raw = fs.readFileSync(dbPath, 'utf8');
+      190 |   const secrets = ['1101700123456', '3100600987659', '1909900555015', '5500400111221', '0812345678', '0823456789', '0834567890', '0845678901',
+      191 |     '1-1017-00123-45-6', '3-1006-00987-65-9', '1-9099-00555-01-5', '5-5004-00111-22-1'];
+        at C:\src\compare\judge\suiteC\tests\nfr.spec.js:188:93
+
+    Error Context: test-results\nfr-TC-NFR-04-เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ-inspection-\error-context.md
+
+  9) tests\queue-sla-noti.spec.js:48:1 › TC-QUEUE-02 รับเรื่องซ้อน (พร้อมกันและต่อกัน) ─────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 2
+
+      Object {
+        "body": Object {
+    +     "caseNo": "EG-2569-000029",
+          "owner": "off.reg1",
+    +     "status": "IN_REVIEW",
+        },
+        "status": 200,
+      }
+
+      84 |   const s1 = await h.loginS('off.reg1'), s2 = await h.loginS('off.reg2');
+      85 |   const first = await s1.post('/api/officer/cases/EG-2569-000029/claim');
+    > 86 |   expect({ status: first.status(), body: await first.json() }).toEqual({ status: 200, body: { owner: 'off.reg1' } });
+         |                                                                ^
+      87 |   const second = await s2.post('/api/officer/cases/EG-2569-000029/claim');
+      88 |   const b2 = await h.expectErr(second, 409, 'ALREADY_CLAIMED', 'off.reg2 claims a claimed case');
+      89 |   expect(b2.message).toBe('มีเจ้าหน้าที่รับเรื่องนี้แล้ว');
+        at C:\src\compare\judge\suiteC\tests\queue-sla-noti.spec.js:86:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-QUEUE-02-รับเรื่องซ้อน-พร้อมกันและต่อกัน-\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-QUEUE-02-รับเรื่องซ้อน-พร้อมกันและต่อกัน-\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\queue-sla-noti-TC-QUEUE-02-รับเรื่องซ้อน-พร้อมกันและต่อกัน-\error-context.md
+
+  10) tests\queue-sla-noti.spec.js:96:1 › TC-QUEUE-03 งานในมือสูงสุด 10 ────────────────────────────
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('action-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" getByTestId('action-error') with timeout 5000ms
+      - waiting for getByTestId('action-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      134 |   await sy.goto('/citizen/cases/EG-2569-000025');
+      135 |   await sy.getByTestId('submit-fix-btn').click();
+    > 136 |   await expect(sy.getByTestId('action-error')).toHaveCount(0);
+          |                                                ^
+      137 |   await expect(sy.getByTestId('case-status')).toHaveText('กำลังตรวจสอบ');
+      138 |   expect((await h.caseOf(q.request, 'EG-2569-000025')).owner).toBe('off.reg2');
+      139 |   await q.reload();
+        at C:\src\compare\judge\suiteC\tests\queue-sla-noti.spec.js:136:48
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-QUEUE-03-งานในมือสูงสุด-10\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-QUEUE-03-งานในมือสูงสุด-10\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-QUEUE-03-งานในมือสูงสุด-10\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\queue-sla-noti-TC-QUEUE-03-งานในมือสูงสุด-10\error-context.md
+
+  11) tests\rbac.spec.js:27:1 › TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API) ───────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 1
+
+      Object {
+        "body": Object {
+    +     "caseNo": "EG-2569-000014",
+          "status": "APPROVED",
+        },
+        "status": 200,
+      }
+
+      42 |   await h.expectErr(await head.post('/api/cases/EG-2569-000025/approve'), 403, 'FORBIDDEN', 'head approves SV-01');
+      43 |   const ok = await head.post('/api/cases/EG-2569-000014/approve');
+    > 44 |   expect({ status: ok.status(), body: await ok.json() }).toEqual({ status: 200, body: { status: 'APPROVED' } });
+         |                                                          ^
+      45 |   const au = await h.pageS('audit1');
+      46 |   await au.goto('/audit?event=APPROVE');
+      47 |   await expect(au.getByTestId('audit-count')).toHaveText('1');
+        at C:\src\compare\judge\suiteC\tests\rbac.spec.js:44:58
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\rbac-TC-RBAC-02-เจ้าหน้าที่อนุมัติ-SV-02-ไม่ได้-ตรวจที่-API-\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\rbac-TC-RBAC-02-เจ้าหน้าที่อนุมัติ-SV-02-ไม่ได้-ตรวจที่-API-\error-context.md
+
+  12) tests\submit.spec.js:7:1 › TC-FEE-01 ค่าธรรมเนียม SV-01 / SV-02 / SV-03 ──────────────────────
+
+    Error: area 1
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - area 1 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      23 |     } else {
+      24 |       await expect.soft(page.getByTestId('fee-total'), `area ${a}`).toHaveText(baht(feeSv03(a)));
+    > 25 |       await expect.soft(page.getByTestId('fee-error'), `area ${a}`).toHaveCount(0);
+         |                                                                     ^
+      26 |       await expect.soft(page.getByTestId('to-upload-btn'), `area ${a}`).toBeEnabled();
+      27 |       const r = await api.post('/api/drafts', { data: { serviceId: 'SV-03', areaSqm: a } });
+      28 |       expect.soft({ status: r.status(), fee: (await r.json()).fee }, `API area ${a}`).toEqual({ status: 201, fee: feeSv03(a) });
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:25:69
+
+    Error: area 100
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - area 100 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      23 |     } else {
+      24 |       await expect.soft(page.getByTestId('fee-total'), `area ${a}`).toHaveText(baht(feeSv03(a)));
+    > 25 |       await expect.soft(page.getByTestId('fee-error'), `area ${a}`).toHaveCount(0);
+         |                                                                     ^
+      26 |       await expect.soft(page.getByTestId('to-upload-btn'), `area ${a}`).toBeEnabled();
+      27 |       const r = await api.post('/api/drafts', { data: { serviceId: 'SV-03', areaSqm: a } });
+      28 |       expect.soft({ status: r.status(), fee: (await r.json()).fee }, `API area ${a}`).toEqual({ status: 201, fee: feeSv03(a) });
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:25:69
+
+    Error: area 101
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - area 101 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      23 |     } else {
+      24 |       await expect.soft(page.getByTestId('fee-total'), `area ${a}`).toHaveText(baht(feeSv03(a)));
+    > 25 |       await expect.soft(page.getByTestId('fee-error'), `area ${a}`).toHaveCount(0);
+         |                                                                     ^
+      26 |       await expect.soft(page.getByTestId('to-upload-btn'), `area ${a}`).toBeEnabled();
+      27 |       const r = await api.post('/api/drafts', { data: { serviceId: 'SV-03', areaSqm: a } });
+      28 |       expect.soft({ status: r.status(), fee: (await r.json()).fee }, `API area ${a}`).toEqual({ status: 201, fee: feeSv03(a) });
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:25:69
+
+    Error: area 102
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - area 102 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      23 |     } else {
+      24 |       await expect.soft(page.getByTestId('fee-total'), `area ${a}`).toHaveText(baht(feeSv03(a)));
+    > 25 |       await expect.soft(page.getByTestId('fee-error'), `area ${a}`).toHaveCount(0);
+         |                                                                     ^
+      26 |       await expect.soft(page.getByTestId('to-upload-btn'), `area ${a}`).toBeEnabled();
+      27 |       const r = await api.post('/api/drafts', { data: { serviceId: 'SV-03', areaSqm: a } });
+      28 |       expect.soft({ status: r.status(), fee: (await r.json()).fee }, `API area ${a}`).toEqual({ status: 201, fee: feeSv03(a) });
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:25:69
+
+    Error: area 250
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - area 250 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      23 |     } else {
+      24 |       await expect.soft(page.getByTestId('fee-total'), `area ${a}`).toHaveText(baht(feeSv03(a)));
+    > 25 |       await expect.soft(page.getByTestId('fee-error'), `area ${a}`).toHaveCount(0);
+         |                                                                     ^
+      26 |       await expect.soft(page.getByTestId('to-upload-btn'), `area ${a}`).toBeEnabled();
+      27 |       const r = await api.post('/api/drafts', { data: { serviceId: 'SV-03', areaSqm: a } });
+      28 |       expect.soft({ status: r.status(), fee: (await r.json()).fee }, `API area ${a}`).toEqual({ status: 201, fee: feeSv03(a) });
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:25:69
+
+    Error: area 300
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - area 300 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      23 |     } else {
+      24 |       await expect.soft(page.getByTestId('fee-total'), `area ${a}`).toHaveText(baht(feeSv03(a)));
+    > 25 |       await expect.soft(page.getByTestId('fee-error'), `area ${a}`).toHaveCount(0);
+         |                                                                     ^
+      26 |       await expect.soft(page.getByTestId('to-upload-btn'), `area ${a}`).toBeEnabled();
+      27 |       const r = await api.post('/api/drafts', { data: { serviceId: 'SV-03', areaSqm: a } });
+      28 |       expect.soft({ status: r.status(), fee: (await r.json()).fee }, `API area ${a}`).toEqual({ status: 201, fee: feeSv03(a) });
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:25:69
+
+    Error: area 499
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - area 499 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      23 |     } else {
+      24 |       await expect.soft(page.getByTestId('fee-total'), `area ${a}`).toHaveText(baht(feeSv03(a)));
+    > 25 |       await expect.soft(page.getByTestId('fee-error'), `area ${a}`).toHaveCount(0);
+         |                                                                     ^
+      26 |       await expect.soft(page.getByTestId('to-upload-btn'), `area ${a}`).toBeEnabled();
+      27 |       const r = await api.post('/api/drafts', { data: { serviceId: 'SV-03', areaSqm: a } });
+      28 |       expect.soft({ status: r.status(), fee: (await r.json()).fee }, `API area ${a}`).toEqual({ status: 201, fee: feeSv03(a) });
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:25:69
+
+    Error: area 500
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - area 500 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      23 |     } else {
+      24 |       await expect.soft(page.getByTestId('fee-total'), `area ${a}`).toHaveText(baht(feeSv03(a)));
+    > 25 |       await expect.soft(page.getByTestId('fee-error'), `area ${a}`).toHaveCount(0);
+         |                                                                     ^
+      26 |       await expect.soft(page.getByTestId('to-upload-btn'), `area ${a}`).toBeEnabled();
+      27 |       const r = await api.post('/api/drafts', { data: { serviceId: 'SV-03', areaSqm: a } });
+      28 |       expect.soft({ status: r.status(), fee: (await r.json()).fee }, `API area ${a}`).toEqual({ status: 201, fee: feeSv03(a) });
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:25:69
+
+    Error: qty 1
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - qty 1 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      35 |     const ok = q >= 1 && q <= 5;
+      36 |     await expect.soft(page.getByTestId('fee-total'), `qty ${q}`).toHaveText(ok ? baht(20 * q) : '–');
+    > 37 |     if (ok) await expect.soft(page.getByTestId('fee-error'), `qty ${q}`).toHaveCount(0);
+         |                                                                          ^
+      38 |     else await expect.soft(page.getByTestId('fee-error'), `qty ${q}`).toHaveText('จำนวนฉบับต้อง 1–5 ฉบับ');
+      39 |     const r = await api.post('/api/drafts', { data: { serviceId: 'SV-01', qty: q } });
+      40 |     const b = await r.json();
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:37:74
+
+    Error: qty 2
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - qty 2 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      35 |     const ok = q >= 1 && q <= 5;
+      36 |     await expect.soft(page.getByTestId('fee-total'), `qty ${q}`).toHaveText(ok ? baht(20 * q) : '–');
+    > 37 |     if (ok) await expect.soft(page.getByTestId('fee-error'), `qty ${q}`).toHaveCount(0);
+         |                                                                          ^
+      38 |     else await expect.soft(page.getByTestId('fee-error'), `qty ${q}`).toHaveText('จำนวนฉบับต้อง 1–5 ฉบับ');
+      39 |     const r = await api.post('/api/drafts', { data: { serviceId: 'SV-01', qty: q } });
+      40 |     const b = await r.json();
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:37:74
+
+    Error: qty 3
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - qty 3 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      35 |     const ok = q >= 1 && q <= 5;
+      36 |     await expect.soft(page.getByTestId('fee-total'), `qty ${q}`).toHaveText(ok ? baht(20 * q) : '–');
+    > 37 |     if (ok) await expect.soft(page.getByTestId('fee-error'), `qty ${q}`).toHaveCount(0);
+         |                                                                          ^
+      38 |     else await expect.soft(page.getByTestId('fee-error'), `qty ${q}`).toHaveText('จำนวนฉบับต้อง 1–5 ฉบับ');
+      39 |     const r = await api.post('/api/drafts', { data: { serviceId: 'SV-01', qty: q } });
+      40 |     const b = await r.json();
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:37:74
+
+    Error: qty 4
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - qty 4 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      35 |     const ok = q >= 1 && q <= 5;
+      36 |     await expect.soft(page.getByTestId('fee-total'), `qty ${q}`).toHaveText(ok ? baht(20 * q) : '–');
+    > 37 |     if (ok) await expect.soft(page.getByTestId('fee-error'), `qty ${q}`).toHaveCount(0);
+         |                                                                          ^
+      38 |     else await expect.soft(page.getByTestId('fee-error'), `qty ${q}`).toHaveText('จำนวนฉบับต้อง 1–5 ฉบับ');
+      39 |     const r = await api.post('/api/drafts', { data: { serviceId: 'SV-01', qty: q } });
+      40 |     const b = await r.json();
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:37:74
+
+    Error: qty 5
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('fee-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - qty 5 getByTestId('fee-error') with timeout 5000ms
+      - waiting for getByTestId('fee-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      35 |     const ok = q >= 1 && q <= 5;
+      36 |     await expect.soft(page.getByTestId('fee-total'), `qty ${q}`).toHaveText(ok ? baht(20 * q) : '–');
+    > 37 |     if (ok) await expect.soft(page.getByTestId('fee-error'), `qty ${q}`).toHaveCount(0);
+         |                                                                          ^
+      38 |     else await expect.soft(page.getByTestId('fee-error'), `qty ${q}`).toHaveText('จำนวนฉบับต้อง 1–5 ฉบับ');
+      39 |     const r = await api.post('/api/drafts', { data: { serviceId: 'SV-01', qty: q } });
+      40 |     const b = await r.json();
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:37:74
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\submit-TC-FEE-01-ค่าธรรมเนียม-SV-01-SV-02-SV-03\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\submit-TC-FEE-01-ค่าธรรมเนียม-SV-01-SV-02-SV-03\error-context.md
+
+  13) tests\submit.spec.js:49:1 › TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร ──────────────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 2
+
+      Object {
+        "body": Object {
+    +     "amount": 40,
+          "caseNo": "EG-2569-000031",
+          "duplicate": false,
+    +     "paidAt": "2026-12-01T09:00:00+07:00",
+          "receiptNo": "RC-2569-000031",
+          "status": "PAID",
+        },
+        "status": 200,
+      }
+
+      72 |   await expect(page.getByTestId('payment-status')).toHaveText('รอชำระ');
+      73 |   const paid = await h.pay('PP-0002', 40);
+    > 74 |   expect({ status: paid.status(), body: await paid.json() }).toEqual({ status: 200, body: { status: 'PAID', caseNo: 'EG-2569-000031', receiptNo: 'RC-2569-000031', duplicate: false } });
+         |                                                              ^
+      75 |   await page.getByTestId('refresh-payment-btn').click();
+      76 |   await expect(page.getByTestId('payment-status')).toHaveText('ชำระแล้ว');
+      77 |   await expect(page.getByTestId('submitted-case-no')).toHaveText('EG-2569-000031');
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:74:62
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\submit-TC-SUBMIT-01-ยื่นคำขอ-SV-01-ครบวงจร\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\submit-TC-SUBMIT-01-ยื่นคำขอ-SV-01-ครบวงจร\error-context.md
+
+  14) tests\submit.spec.js:154:1 › TC-SUBMIT-03 ร่าง การลบร่าง และการยกเลิก ────────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+    -   "DR-0001:DRAFT",
+        "DR-0002:PENDING_PAYMENT",
+    +   "DR-0001:DRAFT",
+      ]
+
+      160 |   const drafts = page.getByTestId('my-draft-row');
+      161 |   await expect(drafts).toHaveCount(2);
+    > 162 |   expect(await drafts.evaluateAll(rs => rs.map(r => `${r.dataset.draftId}:${r.dataset.status}`))).toEqual(['DR-0001:DRAFT', 'DR-0002:PENDING_PAYMENT']);
+          |                                                                                                   ^
+      163 |   for (const t of await drafts.allInnerTexts()) expect(t).not.toContain('EG-');
+      164 |   await page.locator('[data-testid=my-draft-row][data-draft-id="DR-0001"]').getByTestId('open-draft-btn').click();
+      165 |   await expect(page.getByTestId('qty-input')).toHaveValue('2');
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:162:99
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\submit-TC-SUBMIT-03-ร่าง-การลบร่าง-และการยกเลิก\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\submit-TC-SUBMIT-03-ร่าง-การลบร่าง-และการยกเลิก\error-context.md
+
+  15) tests\submit.spec.js:239:1 › TC-UPLOAD-01 ขนาดและจำนวนไฟล์ ───────────────────────────────────
+
+    Error: size 5242879
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('upload-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - size 5242879 getByTestId('upload-error') with timeout 5000ms
+      - waiting for getByTestId('upload-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      251 |     if (size <= MAX) {
+      252 |       await expect(items, `size ${size} accepted`).toHaveCount(1);
+    > 253 |       await expect(page.getByTestId('upload-error'), `size ${size}`).toHaveCount(0);
+          |                                                                      ^
+      254 |       await items.getByTestId('file-remove-btn').click();
+      255 |       await expect(items).toHaveCount(0);
+      256 |     } else {
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:253:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\submit-TC-UPLOAD-01-ขนาดและจำนวนไฟล์\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\submit-TC-UPLOAD-01-ขนาดและจำนวนไฟล์\error-context.md
+
+  16) tests\submit.spec.js:344:1 › TC-PAY-02 ยอดเงินและ callback ซ้ำ ───────────────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 2
+
+      Object {
+    +   "amount": 20,
+        "caseNo": "EG-2569-000031",
+        "duplicate": false,
+    +   "paidAt": "2026-12-01T09:00:00+07:00",
+        "receiptNo": "RC-2569-000031",
+        "status": "PAID",
+      }
+
+      354 |   }
+      355 |   const ok = await h.pay('PP-0002', 20);
+    > 356 |   expect(await ok.json()).toEqual({ status: 'PAID', caseNo: 'EG-2569-000031', receiptNo: 'RC-2569-000031', duplicate: false });
+          |                           ^
+      357 |   expect(await count()).toBe(11);
+      358 |   const dup = await h.pay('PP-0002', 20);
+      359 |   expect({ status: dup.status(), body: await dup.json() }).toEqual({ status: 200, body: { status: 'PAID', caseNo: 'EG-2569-000031', receiptNo: 'RC-2569-000031', duplicate: true } });
+        at C:\src\compare\judge\suiteC\tests\submit.spec.js:356:27
+
+    Error Context: test-results\submit-TC-PAY-02-ยอดเงินและ-callback-ซ้ำ\error-context.md
+
+  17) tests\workflow-doc.spec.js:15:1 › TC-WORKFLOW-01 SV-01 อนุมัติ + ออกเอกสาร ───────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "docNo=DOC-2569-000002 caseNo=EG-2569-000025"
+    Received string:    ""
+
+      41 |   expect(dl.suggestedFilename()).toBe('DOC-2569-000002.pdf');
+      42 |   const bytes = require('node:fs').readFileSync(await dl.path());
+    > 43 |   expect(pdfText(bytes)).toContain('docNo=DOC-2569-000002 caseNo=EG-2569-000025');
+         |                          ^
+      44 |   const r = await sy.request.get('/api/documents/DOC-2569-000002/pdf');
+      45 |   expect(r.headers()['content-type']).toBe('application/pdf');
+      46 |   expect(r.headers()['content-disposition']).toContain('DOC-2569-000002.pdf');
+        at C:\src\compare\judge\suiteC\tests\workflow-doc.spec.js:43:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\workflow-doc-TC-WORKFLOW-01-SV-01-อนุมัติ-ออกเอกสาร\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\workflow-doc-TC-WORKFLOW-01-SV-01-อนุมัติ-ออกเอกสาร\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\workflow-doc-TC-WORKFLOW-01-SV-01-อนุมัติ-ออกเอกสาร\error-context.md
+
+  18) tests\workflow-doc.spec.js:299:1 › TC-DOC-01 ออกเอกสารและข้อมูลในเอกสาร ──────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected value: "docNo=DOC-2569-000002 caseNo=EG-2569-000025 verify=V0V2MAH7 validUntil=2027-02-28"
+    Received array: [""]
+
+      312 |   expect(pdf.headers()['content-type']).toBe('application/pdf');
+      313 |   expect(pdf.headers()['content-disposition']).toContain('DOC-2569-000002.pdf');
+    > 314 |   expect(pdfText(await pdf.body()).split('\n')).toContain(`docNo=DOC-2569-000002 caseNo=EG-2569-000025 verify=${code} validUntil=2027-02-28`);
+          |                                                 ^
+      315 |   const anon = await h.page();
+      316 |   await anon.goto(`/verify/${code}`);
+      317 |   const want = { 'verify-result': 'เอกสารถูกต้อง', 'verify-doc-no': 'DOC-2569-000002', 'verify-applicant': 'สมหญิง ร***', 'verify-service': 'SV-01 ขอหนังสือรับรอง', 'verify-signer': 'เจ้าหน้าที่ทะเบียน 2' };
+        at C:\src\compare\judge\suiteC\tests\workflow-doc.spec.js:314:49
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\workflow-doc-TC-DOC-01-ออกเอกสารและข้อมูลในเอกสาร\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\workflow-doc-TC-DOC-01-ออกเอกสารและข้อมูลในเอกสาร\error-context.md
+
+  18 failed
+    tests\auth.spec.js:3:1 › TC-AUTH-01 เลขบัตร 13 หลัก + checksum ─────────────────────────────────
+    tests\auth.spec.js:84:1 › TC-AUTH-03 ลงทะเบียนครั้งแรก ─────────────────────────────────────────
+    tests\dash-audit.spec.js:16:1 › TC-DASH-01 Dashboard ตัวเลขเริ่มต้น ────────────────────────────
+    tests\dash-audit.spec.js:34:1 › TC-DASH-02 Dashboard ย้อนหลัง พ.ย. ต.ค. รายปี ──────────────────
+    tests\dash-audit.spec.js:51:1 › TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ และไม่มีข้อมูลส่วนบุคคล ─
+    tests\dash-audit.spec.js:118:1 › TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit ─────────────────────────
+    tests\dash-audit.spec.js:207:1 › TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย ──────────────────────────
+    tests\nfr.spec.js:177:1 › TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection) ────────────────
+    tests\queue-sla-noti.spec.js:48:1 › TC-QUEUE-02 รับเรื่องซ้อน (พร้อมกันและต่อกัน) ──────────────
+    tests\queue-sla-noti.spec.js:96:1 › TC-QUEUE-03 งานในมือสูงสุด 10 ──────────────────────────────
+    tests\rbac.spec.js:27:1 › TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API) ─────────────
+    tests\submit.spec.js:7:1 › TC-FEE-01 ค่าธรรมเนียม SV-01 / SV-02 / SV-03 ────────────────────────
+    tests\submit.spec.js:49:1 › TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร ────────────────────────────────
+    tests\submit.spec.js:154:1 › TC-SUBMIT-03 ร่าง การลบร่าง และการยกเลิก ──────────────────────────
+    tests\submit.spec.js:239:1 › TC-UPLOAD-01 ขนาดและจำนวนไฟล์ ─────────────────────────────────────
+    tests\submit.spec.js:344:1 › TC-PAY-02 ยอดเงินและ callback ซ้ำ ─────────────────────────────────
+    tests\workflow-doc.spec.js:15:1 › TC-WORKFLOW-01 SV-01 อนุมัติ + ออกเอกสาร ─────────────────────
+    tests\workflow-doc.spec.js:299:1 › TC-DOC-01 ออกเอกสารและข้อมูลในเอกสาร ────────────────────────
+  33 passed (5.7m)

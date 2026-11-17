@@ -1,0 +1,2112 @@
+{
+  "config": {
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\src\\compare\\judge\\suiteA\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--reporter=json,list"
+    ],
+    "configFile": "C:\\src\\compare\\judge\\suiteA\\playwright.config.js",
+    "rootDir": "C:/src/compare/judge/suiteA/specs",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/src/compare/judge/suiteA/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/src/compare/judge/suiteA/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\src\\compare\\judge\\suiteA\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\src\\compare\\judge\\suiteA\\specs",
+        "snapshotDir": "C:\\src\\compare\\judge\\suiteA\\specs",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://localhost:4302",
+          "locale": "th-TH",
+          "timezoneId": "Asia/Bangkok",
+          "actionTimeout": 10000,
+          "navigationTimeout": 15000,
+          "trace": "retain-on-failure",
+          "browserName": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ],
+      [
+        "list"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "audit.spec.js",
+      "file": "audit.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1484,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:19.833Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb3620ddbaaaeb17db70-5ca45b4551fd6d2a31d9",
+          "file": "audit.spec.js",
+          "line": 61,
+          "column": 1
+        },
+        {
+          "title": "TC-AUDIT-02 Audit แก้/ลบไม่ได้ (405)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 318,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:21.401Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb3620ddbaaaeb17db70-9d2443aff2ba18528ee0",
+          "file": "audit.spec.js",
+          "line": 144,
+          "column": 1
+        },
+        {
+          "title": "TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1200,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:21.724Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb3620ddbaaaeb17db70-5a295066346eb3b5f0f7",
+          "file": "audit.spec.js",
+          "line": 186,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "auth.spec.js",
+      "file": "auth.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-AUTH-01 เลขบัตร 13 หลัก + checksum",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1352,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:22.936Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5ed79a6b333c2ba7209-c51f1d826b3f55c31e6a",
+          "file": "auth.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "TC-AUTH-02 OTP ผิด 3 ครั้งล็อก 15 นาที",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:24.293Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5ed79a6b333c2ba7209-5ed77de38e7d2cb10470",
+          "file": "auth.spec.js",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "TC-AUTH-03 ลงทะเบียนครั้งแรก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1453,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:25.258Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5ed79a6b333c2ba7209-5a62ff114843882de2ae",
+          "file": "auth.spec.js",
+          "line": 148,
+          "column": 1
+        },
+        {
+          "title": "TC-AUTH-04 เจ้าหน้าที่ SSO จำลองและหน้าตั้งต้นตามบทบาท",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2899,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:26.716Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5ed79a6b333c2ba7209-754c0aea190613078441",
+          "file": "auth.spec.js",
+          "line": 209,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "dash.spec.js",
+      "file": "dash.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-DASH-01 Dashboard ตัวเลขเริ่มต้น",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 435,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:29.629Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "42e85790ace86756432d-70523238de9cf36149c3",
+          "file": "dash.spec.js",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "TC-DASH-02 Dashboard ย้อนหลัง พ.ย. ต.ค. รายปี",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1017,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:30.071Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "42e85790ace86756432d-056778dfaef67aad222f",
+          "file": "dash.spec.js",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ และไม่มีข้อมูลส่วนบุคคล",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9051,
+                  "error": {
+                    "message": "UnknownErrorException: Command token too long: 128",
+                    "stack": "UnknownErrorException: Command token too long: 128\n    at UnknownErrorExceptionClosure (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\src\\shared\\util.js:400:37)\n    at Object.<anonymous> (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\src\\shared\\util.js:393:30)\n    at __w_pdfjs_require__ (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\webpack\\bootstrap c9be985464785b4e5413:19:1)\n    at Object.<anonymous> (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\src\\pdf.js:24:23)\n    at __w_pdfjs_require__ (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\webpack\\bootstrap c9be985464785b4e5413:19:1)\n    at C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\webpack\\bootstrap c9be985464785b4e5413:62:1\n    at C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\pdf.js:91:10\n    at webpackUniversalModuleDefinition (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\webpack\\universalModuleDefinition:3:1)\n    at Object.<anonymous> (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\webpack\\universalModuleDefinition:10:2)\n    at pdfParse (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf-parse.js:63:29)\n    at C:\\src\\compare\\judge\\suiteA\\specs\\dash.spec.js:144:26",
+                    "location": {
+                      "file": "C:\\src\\compare\\judge\\suiteA\\specs\\dash.spec.js",
+                      "column": 26,
+                      "line": 144
+                    },
+                    "snippet": " \u001b[90m 142 |\u001b[39m   \u001b[36mconst\u001b[39m pdfBuf \u001b[33m=\u001b[39m fs\u001b[33m.\u001b[39mreadFileSync(\u001b[36mawait\u001b[39m dp\u001b[33m.\u001b[39mpath())\u001b[33m;\u001b[39m\n \u001b[90m 143 |\u001b[39m   eq(pdfBuf\u001b[33m.\u001b[39msubarray(\u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m4\u001b[39m)\u001b[33m.\u001b[39mtoString(\u001b[32m'latin1'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m'%PDF'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'pdf พ.ย. ขึ้นต้นด้วย %PDF'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 144 |\u001b[39m   \u001b[36mconst\u001b[39m pdfText \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m pdfParse(pdfBuf))\u001b[33m.\u001b[39mtext\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 145 |\u001b[39m   allText\u001b[33m.\u001b[39mpush(pdfText)\u001b[33m;\u001b[39m\n \u001b[90m 146 |\u001b[39m   contains(pdfText\u001b[33m,\u001b[39m \u001b[32m'kpi received=26 closed=7 ontime=85.7% backlog=21 overdue=1'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'pdf พ.ย. บรรทัด ASCII'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 147 |\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\judge\\suiteA\\specs\\dash.spec.js",
+                        "column": 26,
+                        "line": 144
+                      },
+                      "message": "UnknownErrorException: Command token too long: 128\n\n  142 |   const pdfBuf = fs.readFileSync(await dp.path());\n  143 |   eq(pdfBuf.subarray(0, 4).toString('latin1'), '%PDF', 'pdf พ.ย. ขึ้นต้นด้วย %PDF');\n> 144 |   const pdfText = (await pdfParse(pdfBuf)).text;\n      |                          ^\n  145 |   allText.push(pdfText);\n  146 |   contains(pdfText, 'kpi received=26 closed=7 ontime=85.7% backlog=21 overdue=1', 'pdf พ.ย. บรรทัด ASCII');\n  147 |\n    at UnknownErrorExceptionClosure (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\src\\shared\\util.js:400:37)\n    at Object.<anonymous> (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\src\\shared\\util.js:393:30)\n    at __w_pdfjs_require__ (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\webpack\\bootstrap c9be985464785b4e5413:19:1)\n    at Object.<anonymous> (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\src\\pdf.js:24:23)\n    at __w_pdfjs_require__ (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\webpack\\bootstrap c9be985464785b4e5413:19:1)\n    at C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\webpack\\bootstrap c9be985464785b4e5413:62:1\n    at C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\pdf.js:91:10\n    at webpackUniversalModuleDefinition (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\webpack\\universalModuleDefinition:3:1)\n    at Object.<anonymous> (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf.js\\v1.10.100\\build\\webpack:\\webpack\\universalModuleDefinition:10:2)\n    at pdfParse (C:\\src\\ai-vibecode-assignment\\week2\\egov-eservice\\app\\tests\\node_modules\\pdf-parse\\lib\\pdf-parse.js:63:29)\n    at C:\\src\\compare\\judge\\suiteA\\specs\\dash.spec.js:144:26"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:31.095Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\src\\compare\\judge\\suiteA\\test-results\\dash-TC-DASH-03-ส่งออก-Exc-4c440-าจอ-และไม่มีข้อมูลส่วนบุคคล-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\src\\compare\\judge\\suiteA\\test-results\\dash-TC-DASH-03-ส่งออก-Exc-4c440-าจอ-และไม่มีข้อมูลส่วนบุคคล-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\src\\compare\\judge\\suiteA\\specs\\dash.spec.js",
+                    "column": 26,
+                    "line": 144
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "42e85790ace86756432d-e45598ec000bcc22cadd",
+          "file": "dash.spec.js",
+          "line": 107,
+          "column": 1
+        },
+        {
+          "title": "TC-DASH-04 ค่าขอบ \"ทันกำหนด\" 16:29:59 / 16:30:00 / 16:30:01",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 809,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:40.610Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "42e85790ace86756432d-1716b7588317d650932d",
+          "file": "dash.spec.js",
+          "line": 176,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "doc.spec.js",
+      "file": "doc.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-DOC-01 ออกเอกสารและข้อมูลใน PDF",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 417,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:41.520Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dac7eaccd64d0b2b0f9a-702bc26759b9aa88acfb",
+          "file": "doc.spec.js",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "TC-DOC-02 ตรวจเอกสาร /verify",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 205,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:41.943Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dac7eaccd64d0b2b0f9a-35296fce8f4b2df25860",
+          "file": "doc.spec.js",
+          "line": 83,
+          "column": 1
+        },
+        {
+          "title": "TC-DOC-03 เอกสารหมดอายุและลายเซ็นไม่ตรง",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1379,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:42.154Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dac7eaccd64d0b2b0f9a-e474b6a51f79f15fb486",
+          "file": "doc.spec.js",
+          "line": 115,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "fee.spec.js",
+      "file": "fee.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-FEE-01 ค่าธรรมเนียม SV-01/SV-02/SV-03",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 753,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:43.545Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8b68d5d425644c48f48-2b22a64bb3c6c67a3030",
+          "file": "fee.spec.js",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "nfr.spec.js",
+      "file": "nfr.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-NFR-01 Responsive 375/768/1280",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2863,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:44.348Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11d18ec26be42a4192da-40942a43931968ef5aa8",
+          "file": "nfr.spec.js",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "TC-NFR-02 WCAG: axe + คีย์บอร์ด + label + สถานะไม่ใช้สีอย่างเดียว",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6134,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:47.219Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11d18ec26be42a4192da-ca2ece762afdd1b3229a",
+          "file": "nfr.spec.js",
+          "line": 113,
+          "column": 1
+        },
+        {
+          "title": "TC-NFR-03 Health เวลาโหลด และผลซ้ำได้",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "skipped-part",
+                  "description": "ปิด hook: ไม่ได้ตั้ง NO_TEST_MODE_URL (เว็บที่รันโดยไม่ตั้ง TEST_MODE) จึงไม่ได้ตรวจส่วนนี้"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1187,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:53.361Z",
+                  "annotations": [
+                    {
+                      "type": "skipped-part",
+                      "description": "ปิด hook: ไม่ได้ตั้ง NO_TEST_MODE_URL (เว็บที่รันโดยไม่ตั้ง TEST_MODE) จึงไม่ได้ตรวจส่วนนี้"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11d18ec26be42a4192da-45d077d5968008883410",
+          "file": "nfr.spec.js",
+          "line": 206,
+          "column": 1
+        },
+        {
+          "title": "TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 85,
+                  "error": {
+                    "message": "Error: file is not a database",
+                    "stack": "Error: file is not a database\n    at dumpAll (C:\\src\\compare\\judge\\suiteA\\helpers\\db.js:9:23)\n    at C:\\src\\compare\\judge\\suiteA\\specs\\nfr.spec.js:284:16",
+                    "location": {
+                      "file": "C:\\src\\compare\\judge\\suiteA\\helpers\\db.js",
+                      "column": 23,
+                      "line": 9
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\db.js:9\n\n \u001b[90m  7 |\u001b[39m   \u001b[36mconst\u001b[39m db \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mDatabaseSync\u001b[39m(dbPath\u001b[33m,\u001b[39m { readOnly\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mtry\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m tables \u001b[33m=\u001b[39m db\u001b[33m.\u001b[39mprepare(\u001b[32m\"SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'\"\u001b[39m)\u001b[33m.\u001b[39mall()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mconst\u001b[39m parts \u001b[33m=\u001b[39m []\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m { name } \u001b[36mof\u001b[39m tables) {\n \u001b[90m 12 |\u001b[39m       parts\u001b[33m.\u001b[39mpush(\u001b[32m'## '\u001b[39m \u001b[33m+\u001b[39m name)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\judge\\suiteA\\helpers\\db.js",
+                        "column": 23,
+                        "line": 9
+                      },
+                      "message": "Error: file is not a database\n\n   at ..\\helpers\\db.js:9\n\n   7 |   const db = new DatabaseSync(dbPath, { readOnly: true });\n   8 |   try {\n>  9 |     const tables = db.prepare(\"SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'\").all();\n     |                       ^\n  10 |     const parts = [];\n  11 |     for (const { name } of tables) {\n  12 |       parts.push('## ' + name);\n    at dumpAll (C:\\src\\compare\\judge\\suiteA\\helpers\\db.js:9:23)\n    at C:\\src\\compare\\judge\\suiteA\\specs\\nfr.spec.js:284:16"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "text": "(node:13260) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:54.557Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\src\\compare\\judge\\suiteA\\test-results\\nfr-TC-NFR-04-เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ-inspection--chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\src\\compare\\judge\\suiteA\\test-results\\nfr-TC-NFR-04-เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ-inspection--chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\src\\compare\\judge\\suiteA\\helpers\\db.js",
+                    "column": 23,
+                    "line": 9
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "11d18ec26be42a4192da-87e434aa27d3b95fe0c3",
+          "file": "nfr.spec.js",
+          "line": 269,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "noti.spec.js",
+      "file": "noti.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1507,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:55.082Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "23f3ed8427fce3b44515-c4390c8d471c115e6587",
+          "file": "noti.spec.js",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1954,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:56.676Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "23f3ed8427fce3b44515-7e9e72780a9e4d4f1957",
+          "file": "noti.spec.js",
+          "line": 59,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "pay.spec.js",
+      "file": "pay.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-PAY-01 อายุ QR 15:00",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 367,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:58.650Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1811a31321b8acde710-e0106902bc331ab27b4c",
+          "file": "pay.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "TC-PAY-02 ยอดเงินและ callback ซ้ำ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 162,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:59.023Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1811a31321b8acde710-469bc6e5add42d40d964",
+          "file": "pay.spec.js",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "TC-PAY-03 ชำระพร้อมกัน เลขไม่ซ้ำ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 319,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:59.191Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1811a31321b8acde710-0076e702827dae5bdbb9",
+          "file": "pay.spec.js",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "TC-PAY-04 เลขคำขอข้ามปี 2569 → 2570",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 680,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:49:59.518Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1811a31321b8acde710-012db6e68d099c7a9ab5",
+          "file": "pay.spec.js",
+          "line": 118,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "pdpa.spec.js",
+      "file": "pdpa.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-PDPA-01 ปิดบังเลขบัตรบนจอ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 675,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:00.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a12d0c961939a37d6e8a-c5870cc37ae5f2238df2",
+          "file": "pdpa.spec.js",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "TC-PDPA-02 API (JSON) ไม่ส่งเลขบัตรเต็ม",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 179,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:00.891Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a12d0c961939a37d6e8a-a6c654c37c5c55893fb7",
+          "file": "pdpa.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "TC-PDPA-03 แสดงเลขเต็มต้องมีเหตุผลและ Audit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 870,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:01.077Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a12d0c961939a37d6e8a-80c9a7f16bdcdb4cff54",
+          "file": "pdpa.spec.js",
+          "line": 83,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "queue.spec.js",
+      "file": "queue.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 894,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:01.958Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "59a8ffa2e90ba0adcf0d-769680ab3eb2ab1d785c",
+          "file": "queue.spec.js",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "TC-QUEUE-02 รับเรื่องซ้อน (พร้อมกันและต่อกัน)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1159,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:02.857Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "59a8ffa2e90ba0adcf0d-3804f951e8417521aeea",
+          "file": "queue.spec.js",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "TC-QUEUE-03 งานในมือสูงสุด 10",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1578,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:04.025Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "59a8ffa2e90ba0adcf0d-598b10749803b4039680",
+          "file": "queue.spec.js",
+          "line": 142,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "rbac.spec.js",
+      "file": "rbac.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-RBAC-01 ประชาชนเปิดคำขอคนอื่นไม่ได้ (IDOR)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 204,
+                  "error": {
+                    "message": "Error: UI HTTP ของ /citizen/cases/…000005 (ของสมชาย): expected 404 but received 200\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                    "stack": "Error: UI HTTP ของ /citizen/cases/…000005 (ของสมชาย): expected 404 but received 200\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at eq (C:\\src\\compare\\judge\\suiteA\\helpers\\check.js:9:85)\n    at C:\\src\\compare\\judge\\suiteA\\specs\\rbac.spec.js:16:3",
+                    "location": {
+                      "file": "C:\\src\\compare\\judge\\suiteA\\helpers\\check.js",
+                      "column": 85,
+                      "line": 9
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\check.js:9\n\n \u001b[90m  7 |\u001b[39m \u001b[90m// เทียบค่าลึก: eq(actual, expected, 'ป้าย')\u001b[39m\n \u001b[90m  8 |\u001b[39m \u001b[36mfunction\u001b[39m eq(actual\u001b[33m,\u001b[39m expected\u001b[33m,\u001b[39m label) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   expect(actual\u001b[33m,\u001b[39m \u001b[32m`${label}: expected ${fmt(expected)} but received ${fmt(actual)}`\u001b[39m)\u001b[33m.\u001b[39mtoEqual(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m }\n \u001b[90m 11 |\u001b[39m \u001b[36mfunction\u001b[39m ok(cond\u001b[33m,\u001b[39m label\u001b[33m,\u001b[39m detail \u001b[33m=\u001b[39m \u001b[32m''\u001b[39m) {\n \u001b[90m 12 |\u001b[39m   expect(\u001b[33m!\u001b[39m\u001b[33m!\u001b[39mcond\u001b[33m,\u001b[39m \u001b[32m`${label}${detail ? ' · ' + detail : ''}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\judge\\suiteA\\helpers\\check.js",
+                        "column": 85,
+                        "line": 9
+                      },
+                      "message": "Error: UI HTTP ของ /citizen/cases/…000005 (ของสมชาย): expected 404 but received 200\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n   at ..\\helpers\\check.js:9\n\n   7 | // เทียบค่าลึก: eq(actual, expected, 'ป้าย')\n   8 | function eq(actual, expected, label) {\n>  9 |   expect(actual, `${label}: expected ${fmt(expected)} but received ${fmt(actual)}`).toEqual(expected);\n     |                                                                                     ^\n  10 | }\n  11 | function ok(cond, label, detail = '') {\n  12 |   expect(!!cond, `${label}${detail ? ' · ' + detail : ''}`).toBe(true);\n    at eq (C:\\src\\compare\\judge\\suiteA\\helpers\\check.js:9:85)\n    at C:\\src\\compare\\judge\\suiteA\\specs\\rbac.spec.js:16:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:05.618Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\src\\compare\\judge\\suiteA\\test-results\\rbac-TC-RBAC-01-ประชาชนเปิดคำขอคนอื่นไม่ได้-IDOR--chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\src\\compare\\judge\\suiteA\\test-results\\rbac-TC-RBAC-01-ประชาชนเปิดคำขอคนอื่นไม่ได้-IDOR--chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\src\\compare\\judge\\suiteA\\helpers\\check.js",
+                    "column": 85,
+                    "line": 9
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-c438f1cdf8ebb42dc302",
+          "file": "rbac.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (API)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 846,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:06.292Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-8054176526d237bc19d7",
+          "file": "rbac.spec.js",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-03 ตารางสิทธิ์หน้า/API ตามบทบาท",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4314,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:07.223Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-99c93a949d475e8af0b9",
+          "file": "rbac.spec.js",
+          "line": 116,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1301,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:11.550Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-18980c47d3a722bf28c7",
+          "file": "rbac.spec.js",
+          "line": 167,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-05 สิทธิ์เปิด/ดาวน์โหลดไฟล์แนบ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 986,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:12.857Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-61688dc8a4393c30561b",
+          "file": "rbac.spec.js",
+          "line": 265,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-06 ผู้ดูแลระบบ: ช่วงค่าที่ยอมรับ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1123,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:13.850Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-d207043a9a4b4d22a6d4",
+          "file": "rbac.spec.js",
+          "line": 324,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "sla.spec.js",
+      "file": "sla.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-SLA-01 กำหนดเสร็จตามตารางวันที่",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2112,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:14.983Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f38715b21f15be715343-0f5bfeff5998b3e55586",
+          "file": "sla.spec.js",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "TC-SLA-02 หยุดนับ SLA ระหว่างรอแก้ไข",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1653,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:17.105Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f38715b21f15be715343-8eda693498f23bae29e0",
+          "file": "sla.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "TC-SLA-03 ระดับเตือน ปกติ/ใกล้/เกิน",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1506,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:18.767Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f38715b21f15be715343-611f13390094ee638fcf",
+          "file": "sla.spec.js",
+          "line": 137,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "submit.spec.js",
+      "file": "submit.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 848,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:20.287Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-c2a46aad50ded5dc157f",
+          "file": "submit.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "TC-SUBMIT-02 เอกสารบังคับครบก่อนชำระ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1127,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:21.141Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-74f786902faf03a92a21",
+          "file": "submit.spec.js",
+          "line": 75,
+          "column": 1
+        },
+        {
+          "title": "TC-SUBMIT-03 ร่าง การลบร่าง และการยกเลิก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1993,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:22.275Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-33deaab881f7505f2498",
+          "file": "submit.spec.js",
+          "line": 134,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "upload.spec.js",
+      "file": "upload.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-UPLOAD-01 ขนาดและจำนวนไฟล์",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2512,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:24.284Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "795c7691ef25a13245f8-27ebaf38573cfb0987c4",
+          "file": "upload.spec.js",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "TC-UPLOAD-02 ชนิดไฟล์จากเนื้อไฟล์",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1427,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:26.803Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "795c7691ef25a13245f8-0e3ac6ff19b61bc4552e",
+          "file": "upload.spec.js",
+          "line": 73,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "workflow.spec.js",
+      "file": "workflow.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-WORKFLOW-01 SV-01 อนุมัติ + ออกเอกสาร",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 578,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:28.242Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "93da89c2ff21c8134e9c-b992ec241f36ea406ff0",
+          "file": "workflow.spec.js",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-02 SV-02 ผ่านหัวหน้า",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1526,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:28.825Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "93da89c2ff21c8134e9c-26a2f9c90065f55cf61a",
+          "file": "workflow.spec.js",
+          "line": 75,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-03 SV-03 สามขั้นตอน",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1240,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:30.359Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "93da89c2ff21c8134e9c-569b3d4d9fb99d81f460",
+          "file": "workflow.spec.js",
+          "line": 145,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-04 ตีกลับสูงสุด 2 ครั้ง และผลหลังครบ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1602,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:31.606Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "93da89c2ff21c8134e9c-d22b50cb8bf24a5af999",
+          "file": "workflow.spec.js",
+          "line": 210,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-05 เหตุผล ≥ 10 ตัวอักษร (ตีกลับ/ไม่อนุมัติ)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1820,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:33.216Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "93da89c2ff21c8134e9c-6fb3b9652d79621ce6d5",
+          "file": "workflow.spec.js",
+          "line": 294,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-06 เวลาแก้ไข 168 ชั่วโมง",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 466,
+                  "error": {
+                    "message": "Error: response.json: Protocol error (Network.getResponseBody): No resource with given identifier found\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.",
+                    "stack": "Error: response.json: Protocol error (Network.getResponseBody): No resource with given identifier found\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.\n    at C:\\src\\compare\\judge\\suiteA\\specs\\workflow.spec.js:385:17",
+                    "location": {
+                      "file": "C:\\src\\compare\\judge\\suiteA\\specs\\workflow.spec.js",
+                      "column": 17,
+                      "line": 385
+                    },
+                    "snippet": " \u001b[90m 383 |\u001b[39m   ])\u001b[33m;\u001b[39m\n \u001b[90m 384 |\u001b[39m   eq(res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[35m200\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'รอบ A resubmit HTTP'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 385 |\u001b[39m   eq((\u001b[36mawait\u001b[39m res\u001b[33m.\u001b[39mjson())\u001b[33m.\u001b[39mstatus\u001b[33m,\u001b[39m \u001b[32m'IN_REVIEW'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'รอบ A resubmit status'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 386 |\u001b[39m   \u001b[36mawait\u001b[39m text(s\u001b[33m.\u001b[39mpage\u001b[33m,\u001b[39m \u001b[32m'case-status'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'กำลังตรวจสอบ'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'รอบ A case-status'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 387 |\u001b[39m\n \u001b[90m 388 |\u001b[39m   \u001b[90m// รอบ B 168:00\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\judge\\suiteA\\specs\\workflow.spec.js",
+                        "column": 17,
+                        "line": 385
+                      },
+                      "message": "Error: response.json: Protocol error (Network.getResponseBody): No resource with given identifier found\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.\n\n  383 |   ]);\n  384 |   eq(res.status(), 200, 'รอบ A resubmit HTTP');\n> 385 |   eq((await res.json()).status, 'IN_REVIEW', 'รอบ A resubmit status');\n      |                 ^\n  386 |   await text(s.page, 'case-status', 'กำลังตรวจสอบ', 'รอบ A case-status');\n  387 |\n  388 |   // รอบ B 168:00\n    at C:\\src\\compare\\judge\\suiteA\\specs\\workflow.spec.js:385:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:50:35.048Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\src\\compare\\judge\\suiteA\\test-results\\workflow-TC-WORKFLOW-06-เวลาแก้ไข-168-ชั่วโมง-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\src\\compare\\judge\\suiteA\\test-results\\workflow-TC-WORKFLOW-06-เวลาแก้ไข-168-ชั่วโมง-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\src\\compare\\judge\\suiteA\\specs\\workflow.spec.js",
+                    "column": 17,
+                    "line": 385
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "93da89c2ff21c8134e9c-0243c6880025505b623c",
+          "file": "workflow.spec.js",
+          "line": 362,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-16T11:49:19.450Z",
+    "duration": 76350.804,
+    "expected": 47,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

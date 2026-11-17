@@ -1,0 +1,313 @@
+ Container c-usual-web-1 Creating 
+ Container c-usual-web-1 Created 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== normal-1 (BUG_MODE=-)
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Creating 
+ Container c-usual-web-nohook-1 Created 
+ Container c-usual-web-nohook-1 Starting 
+ Container c-usual-web-nohook-1 Started 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-tests-run-b3c833ab9159 Creating 
+ Container c-usual-tests-run-b3c833ab9159 Created 
+   51/51 passed · failed: - · OK
+== normal-2 (BUG_MODE=-, same server)
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-1 Running 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-tests-run-3211f3185510 Creating 
+ Container c-usual-tests-run-3211f3185510 Created 
+   51/51 passed · failed: - · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B01 (BUG_MODE=B01)
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-tests-run-18005dd63fb6 Creating 
+ Container c-usual-tests-run-18005dd63fb6 Created 
+
+   50/51 passed · failed: TC-FEE-01 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B02 (BUG_MODE=B02)
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-tests-run-5d7902bb044a Creating 
+ Container c-usual-tests-run-5d7902bb044a Created 
+
+   50/51 passed · failed: TC-UPLOAD-01 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B03 (BUG_MODE=B03)
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-tests-run-7bff47bc7f2c Creating 
+ Container c-usual-tests-run-7bff47bc7f2c Created 
+
+   48/51 passed · failed: TC-RBAC-04 TC-SLA-01 TC-SLA-02 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B04 (BUG_MODE=B04)
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-tests-run-6fb6c2882d66 Creating 
+ Container c-usual-tests-run-6fb6c2882d66 Created 
+
+   50/51 passed · failed: TC-SLA-02 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B05 (BUG_MODE=B05)
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-tests-run-0faf054cb4ee Creating 
+ Container c-usual-tests-run-0faf054cb4ee Created 
+
+   50/51 passed · failed: TC-PAY-01 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B06 (BUG_MODE=B06)
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-tests-run-9733624534b9 Creating 
+ Container c-usual-tests-run-9733624534b9 Created 
+
+   50/51 passed · failed: TC-RBAC-01 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B07 (BUG_MODE=B07)
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-tests-run-d3c140e197fe Creating 
+ Container c-usual-tests-run-d3c140e197fe Created 
+
+   50/51 passed · failed: TC-RBAC-02 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B08 (BUG_MODE=B08)
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-tests-run-b9b055aea99f Creating 
+ Container c-usual-tests-run-b9b055aea99f Created 
+
+   50/51 passed · failed: TC-QUEUE-02 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B09 (BUG_MODE=B09)
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-tests-run-4213a86e3ecd Creating 
+ Container c-usual-tests-run-4213a86e3ecd Created 
+
+   50/51 passed · failed: TC-PDPA-02 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B10 (BUG_MODE=B10)
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-tests-run-6579efab7022 Creating 
+ Container c-usual-tests-run-6579efab7022 Created 
+
+   48/51 passed · failed: TC-DASH-01 TC-DASH-02 TC-DASH-03 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B11 (BUG_MODE=B11)
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-tests-run-dcfcda6f7200 Creating 
+ Container c-usual-tests-run-dcfcda6f7200 Created 
+
+   49/51 passed · failed: TC-AUDIT-01 TC-PDPA-03 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B12 (BUG_MODE=B12)
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-1 Running 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-tests-run-5897cfecd5be Creating 
+ Container c-usual-tests-run-5897cfecd5be Created 
+
+   50/51 passed · failed: TC-WORKFLOW-04 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B03,B07 (BUG_MODE=B03,B07)
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-tests-run-c2bd3ab0a24f Creating 
+ Container c-usual-tests-run-c2bd3ab0a24f Created 
+
+   47/51 passed · failed: TC-RBAC-02 TC-RBAC-04 TC-SLA-01 TC-SLA-02 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== B01,B05,B09 (BUG_MODE=B01,B05,B09)
+ Container c-usual-web-1 Running 
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-tests-run-f0d5f06fa2b5 Creating 
+ Container c-usual-tests-run-f0d5f06fa2b5 Created 
+
+   48/51 passed · failed: TC-FEE-01 TC-PAY-01 TC-PDPA-02 · OK
+ Container c-usual-web-1 Recreate 
+ Container c-usual-web-1 Recreated 
+ Container c-usual-web-1 Starting 
+ Container c-usual-web-1 Started 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-1 Healthy 
+== normal-final (BUG_MODE=-)
+ Container c-usual-web-nohook-1 Running 
+ Container c-usual-web-1 Running 
+ Container c-usual-web-1 Waiting 
+ Container c-usual-web-nohook-1 Waiting 
+ Container c-usual-web-nohook-1 Healthy 
+ Container c-usual-web-1 Healthy 
+ Container c-usual-tests-run-d2db08f35d4f Creating 
+ Container c-usual-tests-run-d2db08f35d4f Created 
+   51/51 passed · failed: - · OK
+ Container c-usual-web-nohook-1 Stopping 
+ Container c-usual-web-nohook-1 Stopped 
+ Container c-usual-web-nohook-1 Removing 
+ Container c-usual-web-nohook-1 Removed 
+ Container c-usual-web-1 Stopping 
+ Container c-usual-web-1 Stopped 
+ Container c-usual-web-1 Removing 
+ Container c-usual-web-1 Removed 
+ Network c-usual_default Removing 
+ Network c-usual_default Removed 
+| รอบ | BUG_MODE | TC ที่คาดว่าล้ม (BUGS.md ตาราง 2) | TC ที่ล้มจริง | TC ล้มเกินที่คาด | TC ที่ควรล้มแต่ผ่าน | ผล |
+|---|---|---|---|---|---|---|
+| normal-1 | (ไม่ตั้ง) | – | – | – | – | 51/51 passed ✅ |
+| normal-2 | (ไม่ตั้ง) | – | – | – | – | 51/51 passed ✅ |
+| B01 | B01 | TC-FEE-01 | TC-FEE-01 | – | – | 50/51 passed ✅ |
+| B02 | B02 | TC-UPLOAD-01 | TC-UPLOAD-01 | – | – | 50/51 passed ✅ |
+| B03 | B03 | TC-SLA-01 · TC-SLA-02 (อาจล้มด้วย TC-RBAC-04 · TC-SLA-03) | TC-RBAC-04 · TC-SLA-01 · TC-SLA-02 | – | – | 48/51 passed ✅ |
+| B04 | B04 | TC-SLA-02 | TC-SLA-02 | – | – | 50/51 passed ✅ |
+| B05 | B05 | TC-PAY-01 | TC-PAY-01 | – | – | 50/51 passed ✅ |
+| B06 | B06 | TC-RBAC-01 | TC-RBAC-01 | – | – | 50/51 passed ✅ |
+| B07 | B07 | TC-RBAC-02 (อาจล้มด้วย TC-WORKFLOW-01) | TC-RBAC-02 | – | – | 50/51 passed ✅ |
+| B08 | B08 | TC-QUEUE-02 | TC-QUEUE-02 | – | – | 50/51 passed ✅ |
+| B09 | B09 | TC-PDPA-02 | TC-PDPA-02 | – | – | 50/51 passed ✅ |
+| B10 | B10 | TC-DASH-02 (อาจล้มด้วย TC-DASH-01 · TC-DASH-03) | TC-DASH-01 · TC-DASH-02 · TC-DASH-03 | – | – | 48/51 passed ✅ |
+| B11 | B11 | TC-AUDIT-01 · TC-PDPA-03 | TC-AUDIT-01 · TC-PDPA-03 | – | – | 49/51 passed ✅ |
+| B12 | B12 | TC-WORKFLOW-04 | TC-WORKFLOW-04 | – | – | 50/51 passed ✅ |
+| B03,B07 | B03,B07 | TC-RBAC-02 · TC-SLA-01 · TC-SLA-02 (อาจล้มด้วย TC-RBAC-04 · TC-SLA-03 · TC-WORKFLOW-01) | TC-RBAC-02 · TC-RBAC-04 · TC-SLA-01 · TC-SLA-02 | – | – | 47/51 passed ✅ |
+| B01,B05,B09 | B01,B05,B09 | TC-FEE-01 · TC-PAY-01 · TC-PDPA-02 | TC-FEE-01 · TC-PAY-01 · TC-PDPA-02 | – | – | 48/51 passed ✅ |
+| normal-final | (ไม่ตั้ง) | – | – | – | – | 51/51 passed ✅ |
+DOCKER EXIT 0

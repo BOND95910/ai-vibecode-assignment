@@ -1,0 +1,2119 @@
+{
+  "config": {
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\src\\compare\\C-usual\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\src\\compare\\C-usual\\playwright.config.js",
+    "rootDir": "C:/src/compare/C-usual/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "C:\\src\\compare\\C-usual\\tests\\global-setup.js",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/src/compare/C-usual/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/src/compare/C-usual/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\src\\compare\\C-usual\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\src\\compare\\C-usual\\tests",
+        "snapshotDir": "C:\\src\\compare\\C-usual\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 180000,
+        "use": {
+          "baseURL": "http://localhost:3200",
+          "locale": "th-TH",
+          "timezoneId": "Asia/Bangkok",
+          "acceptDownloads": true,
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\src\\compare\\C-usual\\reports\\raw\\local\\bug-B01+B05+B09.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.spec.js",
+      "file": "auth.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-AUTH-01 เลขบัตร 13 หลัก + checksum",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 710,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:24.536Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5ed79a6b333c2ba7209-2624f6bd3c6b1c3d118c",
+          "file": "auth.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "TC-AUTH-02 OTP ผิด 3 ครั้งล็อก 15 นาที",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 774,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:25.340Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5ed79a6b333c2ba7209-e3f699e3dc0eac684a65",
+          "file": "auth.spec.js",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "TC-AUTH-03 ลงทะเบียนครั้งแรก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1132,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:26.118Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5ed79a6b333c2ba7209-9b4be2ab40be5e717528",
+          "file": "auth.spec.js",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "TC-AUTH-04 เจ้าหน้าที่ SSO จำลองและหน้าตั้งต้นตามบทบาท",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2111,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:27.254Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5ed79a6b333c2ba7209-c63f7d657109eff3c1ce",
+          "file": "auth.spec.js",
+          "line": 127,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "dash-audit.spec.js",
+      "file": "dash-audit.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-DASH-01 Dashboard ตัวเลขเริ่มต้น",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 323,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:29.844Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f3e0bfbc41dda4d07c-2028b06f85de4e915834",
+          "file": "dash-audit.spec.js",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "TC-DASH-02 Dashboard ย้อนหลัง พ.ย. ต.ค. รายปี",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 677,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:30.173Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f3e0bfbc41dda4d07c-0f6b62352ee381225df6",
+          "file": "dash-audit.spec.js",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ และไม่มีข้อมูลส่วนบุคคล",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:30.855Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f3e0bfbc41dda4d07c-3ed7b747df0a1119b131",
+          "file": "dash-audit.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "TC-DASH-04 ค่าขอบ \"ทันกำหนด\" 16:29:59 / 16:30:00 / 16:30:01",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 481,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:32.141Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f3e0bfbc41dda4d07c-513d8168958867188135",
+          "file": "dash-audit.spec.js",
+          "line": 93,
+          "column": 1
+        },
+        {
+          "title": "TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 847,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:32.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f3e0bfbc41dda4d07c-90971b25df93f7fa19c9",
+          "file": "dash-audit.spec.js",
+          "line": 118,
+          "column": 1
+        },
+        {
+          "title": "TC-AUDIT-02 Audit แก้/ลบไม่ได้ (405)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 286,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:33.479Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f3e0bfbc41dda4d07c-aa481edec76ce586503e",
+          "file": "dash-audit.spec.js",
+          "line": 184,
+          "column": 1
+        },
+        {
+          "title": "TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1088,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:33.773Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f3e0bfbc41dda4d07c-11aa4f8c2ac46cfcb579",
+          "file": "dash-audit.spec.js",
+          "line": 207,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "nfr.spec.js",
+      "file": "nfr.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-NFR-01 Responsive 375 / 768 / 1280",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1666,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:34.904Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11d18ec26be42a4192da-fc60c935b1fe5765cb83",
+          "file": "nfr.spec.js",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "TC-NFR-02 WCAG: axe + คีย์บอร์ด + label + สถานะไม่ใช้สีอย่างเดียว",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4909,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:36.576Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11d18ec26be42a4192da-8ff81d061db8456546e8",
+          "file": "nfr.spec.js",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "TC-NFR-03 Health เวลาโหลด และผลซ้ำได้",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [
+                {
+                  "type": "load-time-ms",
+                  "description": "{\"/login\":9,\"/citizen\":13,\"/officer/queue\":11,\"/dashboard\":12,\"/audit\":11}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 981,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:41.490Z",
+                  "annotations": [
+                    {
+                      "type": "load-time-ms",
+                      "description": "{\"/login\":9,\"/citizen\":13,\"/officer/queue\":11,\"/dashboard\":12,\"/audit\":11}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11d18ec26be42a4192da-f22282c3f232066532f2",
+          "file": "nfr.spec.js",
+          "line": 126,
+          "column": 1
+        },
+        {
+          "title": "TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [
+                {
+                  "type": "encryption",
+                  "description": "idNo / mobile / email stored as AES-256-GCM (random 96-bit IV + tag, base64); lookup by HMAC-SHA256 of idNo"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 42,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:42.478Z",
+                  "annotations": [
+                    {
+                      "type": "encryption",
+                      "description": "idNo / mobile / email stored as AES-256-GCM (random 96-bit IV + tag, base64); lookup by HMAC-SHA256 of idNo"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11d18ec26be42a4192da-4cd91a2ae43dc6928e48",
+          "file": "nfr.spec.js",
+          "line": 177,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "queue-sla-noti.spec.js",
+      "file": "queue-sla-noti.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 718,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:42.533Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3d8b803bf7fda154d71-e79c1627d79428dfceb0",
+          "file": "queue-sla-noti.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "TC-QUEUE-02 รับเรื่องซ้อน (พร้อมกันและต่อกัน)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 881,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:43.256Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3d8b803bf7fda154d71-5a370871ae5b1c195565",
+          "file": "queue-sla-noti.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "TC-QUEUE-03 งานในมือสูงสุด 10",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1418,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:44.145Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3d8b803bf7fda154d71-e6f14e6f54de2132e0c5",
+          "file": "queue-sla-noti.spec.js",
+          "line": 96,
+          "column": 1
+        },
+        {
+          "title": "TC-SLA-01 กำหนดเสร็จตามตารางวันที่",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1829,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:45.572Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3d8b803bf7fda154d71-f438f3ca84977d9eaf63",
+          "file": "queue-sla-noti.spec.js",
+          "line": 147,
+          "column": 1
+        },
+        {
+          "title": "TC-SLA-02 หยุดนับ SLA ระหว่างรอแก้ไข",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1032,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:47.409Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3d8b803bf7fda154d71-f3f81bd04e6461ec06e5",
+          "file": "queue-sla-noti.spec.js",
+          "line": 173,
+          "column": 1
+        },
+        {
+          "title": "TC-SLA-03 ระดับเตือน ปกติ / ใกล้ครบกำหนด / เกินกำหนด",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1024,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:48.448Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3d8b803bf7fda154d71-23c09cd2ea2fee8b1b6c",
+          "file": "queue-sla-noti.spec.js",
+          "line": 242,
+          "column": 1
+        },
+        {
+          "title": "TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 679,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:49.479Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3d8b803bf7fda154d71-bdcb66511fce0e50200f",
+          "file": "queue-sla-noti.spec.js",
+          "line": 308,
+          "column": 1
+        },
+        {
+          "title": "TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1604,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:50.164Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3d8b803bf7fda154d71-633a65b96d4ea74597c5",
+          "file": "queue-sla-noti.spec.js",
+          "line": 310,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "rbac.spec.js",
+      "file": "rbac.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-RBAC-01 ประชาชนเปิดคำขอคนอื่นไม่ได้ (IDOR)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 190,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:51.781Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-aabd6d1d92a2a88c4812",
+          "file": "rbac.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 477,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:51.978Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-2ebebf97fa5f8eb63c31",
+          "file": "rbac.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-03 ตารางสิทธิ์หน้า/API ตามบทบาท",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2877,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:52.461Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-1cfa838c280b8d6a73aa",
+          "file": "rbac.spec.js",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1140,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:55.343Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-d6a05b489639c1a60396",
+          "file": "rbac.spec.js",
+          "line": 108,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-05 สิทธิ์เปิด/ดาวน์โหลดไฟล์แนบ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 750,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:56.488Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-13f15965890bd8b9bf81",
+          "file": "rbac.spec.js",
+          "line": 177,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-06 ผู้ดูแลระบบ: ช่วงค่าที่ยอมรับ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 876,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:57.241Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3daf85f29322dc9acb0f-33870678caf221e8af99",
+          "file": "rbac.spec.js",
+          "line": 218,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "submit.spec.js",
+      "file": "submit.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-FEE-01 ค่าธรรมเนียม SV-01 / SV-02 / SV-03",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5514,
+                  "error": {
+                    "message": "Error: area 101\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('fee-total')\nExpected: \u001b[32m\"฿1,0\u001b[7m1\u001b[27m0\"\u001b[39m\nReceived: \u001b[31m\"฿1,0\u001b[7m0\u001b[27m0\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - area 101 getByTestId('fee-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('fee-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <output id=\"fee\" aria-live=\"polite\" data-testid=\"fee-total\">฿1,000</output>\u001b[22m\n\u001b[2m       - unexpected value \"฿1,000\"\u001b[22m\n",
+                    "stack": "Error: area 101\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('fee-total')\nExpected: \u001b[32m\"฿1,0\u001b[7m1\u001b[27m0\"\u001b[39m\nReceived: \u001b[31m\"฿1,0\u001b[7m0\u001b[27m0\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - area 101 getByTestId('fee-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('fee-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <output id=\"fee\" aria-live=\"polite\" data-testid=\"fee-total\">฿1,000</output>\u001b[22m\n\u001b[2m       - unexpected value \"฿1,000\"\u001b[22m\n\n    at C:\\src\\compare\\C-usual\\tests\\submit.spec.js:24:69",
+                    "location": {
+                      "file": "C:\\src\\compare\\C-usual\\tests\\submit.spec.js",
+                      "column": 69,
+                      "line": 24
+                    },
+                    "snippet": " \u001b[90m 22 |\u001b[39m       expect\u001b[33m.\u001b[39msoft({ status\u001b[33m:\u001b[39m r\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m code\u001b[33m:\u001b[39m (\u001b[36mawait\u001b[39m r\u001b[33m.\u001b[39mjson())\u001b[33m.\u001b[39mcode }\u001b[33m,\u001b[39m \u001b[32m`API area ${a}`\u001b[39m)\u001b[33m.\u001b[39mtoEqual({ status\u001b[33m:\u001b[39m \u001b[35m400\u001b[39m\u001b[33m,\u001b[39m code })\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m     } \u001b[36melse\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'fee-total'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`area ${a}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveText(baht(feeSv03(a)))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'fee-error'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`area ${a}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'to-upload-btn'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`area ${a}`\u001b[39m)\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m       \u001b[36mconst\u001b[39m r \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m api\u001b[33m.\u001b[39mpost(\u001b[32m'/api/drafts'\u001b[39m\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m { serviceId\u001b[33m:\u001b[39m \u001b[32m'SV-03'\u001b[39m\u001b[33m,\u001b[39m areaSqm\u001b[33m:\u001b[39m a } })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\submit.spec.js",
+                        "column": 69,
+                        "line": 24
+                      },
+                      "message": "Error: area 101\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('fee-total')\nExpected: \u001b[32m\"฿1,0\u001b[7m1\u001b[27m0\"\u001b[39m\nReceived: \u001b[31m\"฿1,0\u001b[7m0\u001b[27m0\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - area 101 getByTestId('fee-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('fee-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <output id=\"fee\" aria-live=\"polite\" data-testid=\"fee-total\">฿1,000</output>\u001b[22m\n\u001b[2m       - unexpected value \"฿1,000\"\u001b[22m\n\n\n  22 |       expect.soft({ status: r.status(), code: (await r.json()).code }, `API area ${a}`).toEqual({ status: 400, code });\n  23 |     } else {\n> 24 |       await expect.soft(page.getByTestId('fee-total'), `area ${a}`).toHaveText(baht(feeSv03(a)));\n     |                                                                     ^\n  25 |       await expect.soft(page.getByTestId('fee-error'), `area ${a}`).toHaveCount(0);\n  26 |       await expect.soft(page.getByTestId('to-upload-btn'), `area ${a}`).toBeEnabled();\n  27 |       const r = await api.post('/api/drafts', { data: { serviceId: 'SV-03', areaSqm: a } });\n    at C:\\src\\compare\\C-usual\\tests\\submit.spec.js:24:69"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\submit.spec.js",
+                        "column": 87,
+                        "line": 28
+                      },
+                      "message": "Error: API area 101\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"fee\": 1010,\u001b[39m\n\u001b[31m+   \"fee\": 1000,\u001b[39m\n\u001b[2m    \"status\": 201,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  26 |       await expect.soft(page.getByTestId('to-upload-btn'), `area ${a}`).toBeEnabled();\n  27 |       const r = await api.post('/api/drafts', { data: { serviceId: 'SV-03', areaSqm: a } });\n> 28 |       expect.soft({ status: r.status(), fee: (await r.json()).fee }, `API area ${a}`).toEqual({ status: 201, fee: feeSv03(a) });\n     |                                                                                       ^\n  29 |     }\n  30 |   }\n  31 |   await page.goto('/citizen/new/SV-01');\n    at C:\\src\\compare\\C-usual\\tests\\submit.spec.js:28:87"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:14:58.127Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\src\\compare\\C-usual\\test-results\\submit-TC-FEE-01-ค่าธรรมเนียม-SV-01-SV-02-SV-03\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\src\\compare\\C-usual\\test-results\\submit-TC-FEE-01-ค่าธรรมเนียม-SV-01-SV-02-SV-03\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\src\\compare\\C-usual\\tests\\submit.spec.js",
+                    "column": 69,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-266281eed83465c86808",
+          "file": "submit.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1832,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:04.143Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-3f7c6c8d9bcb91bea8a3",
+          "file": "submit.spec.js",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "TC-SUBMIT-02 เอกสารบังคับครบก่อนชำระ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1489,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:06.229Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-5b141281c0d27199d536",
+          "file": "submit.spec.js",
+          "line": 101,
+          "column": 1
+        },
+        {
+          "title": "TC-SUBMIT-03 ร่าง การลบร่าง และการยกเลิก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1443,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:07.731Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-f35d7a3baa975ec476f7",
+          "file": "submit.spec.js",
+          "line": 154,
+          "column": 1
+        },
+        {
+          "title": "TC-UPLOAD-01 ขนาดและจำนวนไฟล์",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 721,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:09.184Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-458054238a801b04175f",
+          "file": "submit.spec.js",
+          "line": 239,
+          "column": 1
+        },
+        {
+          "title": "TC-UPLOAD-02 ชนิดไฟล์จากเนื้อไฟล์",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 556,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:09.909Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-227c6de6c87d56e25461",
+          "file": "submit.spec.js",
+          "line": 286,
+          "column": 1
+        },
+        {
+          "title": "TC-PAY-01 อายุ QR 15:00",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5169,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"code\": \"QR_EXPIRED\",\u001b[39m\n\u001b[31m+   \"code\": undefined,\u001b[39m\n\u001b[2m    \"round\": 3,\u001b[22m\n\u001b[32m-   \"status\": 410,\u001b[39m\n\u001b[31m+   \"status\": 200,\u001b[39m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"code\": \"QR_EXPIRED\",\u001b[39m\n\u001b[31m+   \"code\": undefined,\u001b[39m\n\u001b[2m    \"round\": 3,\u001b[22m\n\u001b[32m-   \"status\": 410,\u001b[39m\n\u001b[31m+   \"status\": 200,\u001b[39m\n\u001b[2m  }\u001b[22m\n    at C:\\src\\compare\\C-usual\\tests\\submit.spec.js:325:64",
+                    "location": {
+                      "file": "C:\\src\\compare\\C-usual\\tests\\submit.spec.js",
+                      "column": 64,
+                      "line": 325
+                    },
+                    "snippet": " \u001b[90m 323 |\u001b[39m     \u001b[36mif\u001b[39m (ok) expect\u001b[33m.\u001b[39msoft({ round\u001b[33m,\u001b[39m status\u001b[33m:\u001b[39m r\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m caseNo\u001b[33m:\u001b[39m b\u001b[33m.\u001b[39mcaseNo })\u001b[33m.\u001b[39mtoEqual({ round\u001b[33m,\u001b[39m status\u001b[33m:\u001b[39m \u001b[35m200\u001b[39m\u001b[33m,\u001b[39m caseNo\u001b[33m:\u001b[39m \u001b[32m'EG-2569-000031'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 324 |\u001b[39m     \u001b[36melse\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 325 |\u001b[39m       expect\u001b[33m.\u001b[39msoft({ round\u001b[33m,\u001b[39m status\u001b[33m:\u001b[39m r\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m code\u001b[33m:\u001b[39m b\u001b[33m.\u001b[39mcode })\u001b[33m.\u001b[39mtoEqual({ round\u001b[33m,\u001b[39m status\u001b[33m:\u001b[39m \u001b[35m410\u001b[39m\u001b[33m,\u001b[39m code\u001b[33m:\u001b[39m \u001b[32m'QR_EXPIRED'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 326 |\u001b[39m       \u001b[36mif\u001b[39m (round \u001b[33m===\u001b[39m \u001b[35m3\u001b[39m) {\n \u001b[90m 327 |\u001b[39m         expect\u001b[33m.\u001b[39msoft((\u001b[36mawait\u001b[39m (\u001b[36mawait\u001b[39m sc\u001b[33m.\u001b[39mget(\u001b[32m'/api/payments/PP-0001'\u001b[39m))\u001b[33m.\u001b[39mjson())\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[32m'EXPIRED'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 328 |\u001b[39m         expect\u001b[33m.\u001b[39msoft((\u001b[36mawait\u001b[39m (\u001b[36mawait\u001b[39m sc\u001b[33m.\u001b[39mget(\u001b[32m'/api/cases'\u001b[39m))\u001b[33m.\u001b[39mjson())\u001b[33m.\u001b[39mitems\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\submit.spec.js",
+                        "column": 64,
+                        "line": 325
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"code\": \"QR_EXPIRED\",\u001b[39m\n\u001b[31m+   \"code\": undefined,\u001b[39m\n\u001b[2m    \"round\": 3,\u001b[22m\n\u001b[32m-   \"status\": 410,\u001b[39m\n\u001b[31m+   \"status\": 200,\u001b[39m\n\u001b[2m  }\u001b[22m\n\n  323 |     if (ok) expect.soft({ round, status: r.status(), caseNo: b.caseNo }).toEqual({ round, status: 200, caseNo: 'EG-2569-000031' });\n  324 |     else {\n> 325 |       expect.soft({ round, status: r.status(), code: b.code }).toEqual({ round, status: 410, code: 'QR_EXPIRED' });\n      |                                                                ^\n  326 |       if (round === 3) {\n  327 |         expect.soft((await (await sc.get('/api/payments/PP-0001')).json()).status).toBe('EXPIRED');\n  328 |         expect.soft((await (await sc.get('/api/cases')).json()).items.length).toBe(10);\n    at C:\\src\\compare\\C-usual\\tests\\submit.spec.js:325:64"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\submit.spec.js",
+                        "column": 84,
+                        "line": 327
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mEXPIRE\u001b[27mD\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mPAI\u001b[27mD\"\u001b[39m\n\n  325 |       expect.soft({ round, status: r.status(), code: b.code }).toEqual({ round, status: 410, code: 'QR_EXPIRED' });\n  326 |       if (round === 3) {\n> 327 |         expect.soft((await (await sc.get('/api/payments/PP-0001')).json()).status).toBe('EXPIRED');\n      |                                                                                    ^\n  328 |         expect.soft((await (await sc.get('/api/cases')).json()).items.length).toBe(10);\n  329 |         const page = await h.pageC('somchai');\n  330 |         await page.goto('/citizen/new/SV-02?draft=DR-0002');\n    at C:\\src\\compare\\C-usual\\tests\\submit.spec.js:327:84"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\submit.spec.js",
+                        "column": 79,
+                        "line": 328
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m10\u001b[39m\nReceived: \u001b[31m11\u001b[39m\n\n  326 |       if (round === 3) {\n  327 |         expect.soft((await (await sc.get('/api/payments/PP-0001')).json()).status).toBe('EXPIRED');\n> 328 |         expect.soft((await (await sc.get('/api/cases')).json()).items.length).toBe(10);\n      |                                                                               ^\n  329 |         const page = await h.pageC('somchai');\n  330 |         await page.goto('/citizen/new/SV-02?draft=DR-0002');\n  331 |         await expect(page.getByTestId('qr-expired-msg')).toHaveText('QR หมดอายุ กรุณาสร้าง QR ใหม่');\n    at C:\\src\\compare\\C-usual\\tests\\submit.spec.js:328:79"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\submit.spec.js",
+                        "column": 58,
+                        "line": 331
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('qr-expired-msg')\nExpected: \u001b[32m\"QR หมดอายุ กรุณาสร้าง QR ใหม่\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('qr-expired-msg') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('qr-expired-msg')\u001b[22m\n\n\n  329 |         const page = await h.pageC('somchai');\n  330 |         await page.goto('/citizen/new/SV-02?draft=DR-0002');\n> 331 |         await expect(page.getByTestId('qr-expired-msg')).toHaveText('QR หมดอายุ กรุณาสร้าง QR ใหม่');\n      |                                                          ^\n  332 |         await expect(page.getByTestId('payment-status')).toHaveText('QR หมดอายุ');\n  333 |         await expect(page.getByTestId('payment-status')).toHaveAttribute('data-status', 'EXPIRED');\n  334 |         await page.getByTestId('regenerate-qr-btn').click();\n    at C:\\src\\compare\\C-usual\\tests\\submit.spec.js:331:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:10.469Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\src\\compare\\C-usual\\test-results\\submit-TC-PAY-01-อายุ-QR-15-00\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\src\\compare\\C-usual\\test-results\\submit-TC-PAY-01-อายุ-QR-15-00\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\src\\compare\\C-usual\\tests\\submit.spec.js",
+                    "column": 64,
+                    "line": 325
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-4d37f9009390c00d2f59",
+          "file": "submit.spec.js",
+          "line": 315,
+          "column": 1
+        },
+        {
+          "title": "TC-PAY-02 ยอดเงินและ callback ซ้ำ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 108,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:15.998Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-d55ae44aa3c1077e00df",
+          "file": "submit.spec.js",
+          "line": 344,
+          "column": 1
+        },
+        {
+          "title": "TC-PAY-03 ชำระพร้อมกัน เลขไม่ซ้ำ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 166,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:16.196Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-1e63c07f7d6b6233a5ea",
+          "file": "submit.spec.js",
+          "line": 366,
+          "column": 1
+        },
+        {
+          "title": "TC-PAY-04 เลขคำขอข้ามปี 2569 → 2570",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 217,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:16.367Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb002000b3c306ab6212-7d17d73c52b5bbd4ef18",
+          "file": "submit.spec.js",
+          "line": 384,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "workflow-doc.spec.js",
+      "file": "workflow-doc.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-WORKFLOW-01 SV-01 อนุมัติ + ออกเอกสาร",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 665,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:16.594Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-930ae3e6316b95cb274c",
+          "file": "workflow-doc.spec.js",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-02 SV-02 ผ่านหัวหน้า",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1165,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:17.265Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-4cc210f41f1b94a24f97",
+          "file": "workflow-doc.spec.js",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-03 SV-03 สามขั้นตอน",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1079,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:18.436Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-2777402a4f094692f32f",
+          "file": "workflow-doc.spec.js",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-04 ตีกลับสูงสุด 2 ครั้ง และผลหลังครบ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1410,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:19.520Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-a1e34ec8e12b311f435d",
+          "file": "workflow-doc.spec.js",
+          "line": 149,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-05 เหตุผล ≥ 10 ตัวอักษร (ตีกลับ / ไม่อนุมัติ)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 974,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:20.934Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-56744222ea9c0a79119a",
+          "file": "workflow-doc.spec.js",
+          "line": 215,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-06 เวลาแก้ไข 168 ชั่วโมง",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 443,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:21.912Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-ad70dbd741fa34aea9a2",
+          "file": "workflow-doc.spec.js",
+          "line": 264,
+          "column": 1
+        },
+        {
+          "title": "TC-DOC-01 ออกเอกสารและข้อมูลในเอกสาร",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 308,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:22.362Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-6ebf14708c3243dfd626",
+          "file": "workflow-doc.spec.js",
+          "line": 299,
+          "column": 1
+        },
+        {
+          "title": "TC-DOC-02 ตรวจเอกสาร /verify",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 154,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:22.675Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-f17690d752a8f099ebdf",
+          "file": "workflow-doc.spec.js",
+          "line": 331,
+          "column": 1
+        },
+        {
+          "title": "TC-DOC-03 เอกสารหมดอายุและลายเซ็นไม่ตรง",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1546,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:22.833Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-88de30dcac823dd5069a",
+          "file": "workflow-doc.spec.js",
+          "line": 359,
+          "column": 1
+        },
+        {
+          "title": "TC-PDPA-01 ปิดบังเลขบัตรบนจอ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 522,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:24.383Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-926d09556a54d6ad5f7b",
+          "file": "workflow-doc.spec.js",
+          "line": 412,
+          "column": 1
+        },
+        {
+          "title": "TC-PDPA-02 API (JSON) ไม่ส่งเลขบัตรเต็ม",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 92,
+                  "error": {
+                    "message": "Error: off.reg1 GET /api/officer/queue?filter=all: 13-digit run\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m[\"1101700123456\", \"3100600987659\", \"1909900555015\", \"3100600987659\", \"3100600987659\", \"1101700123456\", \"1101700123456\", \"3100600987659\", \"1909900555015\", \"3100600987659\", …]\u001b[39m",
+                    "stack": "Error: off.reg1 GET /api/officer/queue?filter=all: 13-digit run\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m[\"1101700123456\", \"3100600987659\", \"1909900555015\", \"3100600987659\", \"3100600987659\", \"1101700123456\", \"1101700123456\", \"3100600987659\", \"1909900555015\", \"3100600987659\", …]\u001b[39m\n    at C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js:448:65",
+                    "location": {
+                      "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                      "column": 65,
+                      "line": 448
+                    },
+                    "snippet": " \u001b[90m 446 |\u001b[39m       \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m r\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 447 |\u001b[39m       \u001b[36mconst\u001b[39m s \u001b[33m=\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(body)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 448 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(s\u001b[33m.\u001b[39mmatch(\u001b[35m/\\d{13}/g\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`${label}: 13-digit run`\u001b[39m)\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 449 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(s\u001b[33m.\u001b[39mmatch(\u001b[35m/\\d-\\d{4}-\\d{5}-\\d{2}-\\d/g\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`${label}: formatted ID`\u001b[39m)\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m 450 |\u001b[39m       expect\u001b[33m.\u001b[39msoft(hasKey(body\u001b[33m,\u001b[39m \u001b[32m'idNo'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`${label}: has key idNo`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m       \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m id \u001b[36mof\u001b[39m [\u001b[32m'3100600987659'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'1101700123456'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'1909900555015'\u001b[39m]) expect\u001b[33m.\u001b[39msoft(s\u001b[33m.\u001b[39mincludes(id)\u001b[33m,\u001b[39m \u001b[32m`${label}: contains ${id}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                        "column": 65,
+                        "line": 448
+                      },
+                      "message": "Error: off.reg1 GET /api/officer/queue?filter=all: 13-digit run\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m[\"1101700123456\", \"3100600987659\", \"1909900555015\", \"3100600987659\", \"3100600987659\", \"1101700123456\", \"1101700123456\", \"3100600987659\", \"1909900555015\", \"3100600987659\", …]\u001b[39m\n\n  446 |       const body = await r.json();\n  447 |       const s = JSON.stringify(body);\n> 448 |       expect.soft(s.match(/\\d{13}/g), `${label}: 13-digit run`).toBeNull();\n      |                                                                 ^\n  449 |       expect.soft(s.match(/\\d-\\d{4}-\\d{5}-\\d{2}-\\d/g), `${label}: formatted ID`).toBeNull();\n  450 |       expect.soft(hasKey(body, 'idNo'), `${label}: has key idNo`).toBe(false);\n  451 |       for (const id of ['3100600987659', '1101700123456', '1909900555015']) expect.soft(s.includes(id), `${label}: contains ${id}`).toBe(false);\n    at C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js:448:65"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                        "column": 67,
+                        "line": 450
+                      },
+                      "message": "Error: off.reg1 GET /api/officer/queue?filter=all: has key idNo\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  448 |       expect.soft(s.match(/\\d{13}/g), `${label}: 13-digit run`).toBeNull();\n  449 |       expect.soft(s.match(/\\d-\\d{4}-\\d{5}-\\d{2}-\\d/g), `${label}: formatted ID`).toBeNull();\n> 450 |       expect.soft(hasKey(body, 'idNo'), `${label}: has key idNo`).toBe(false);\n      |                                                                   ^\n  451 |       for (const id of ['3100600987659', '1101700123456', '1909900555015']) expect.soft(s.includes(id), `${label}: contains ${id}`).toBe(false);\n  452 |       for (const m of (body.items || []).map(i => i.idMasked).filter(x => x !== undefined)) expect.soft(m, label).toMatch(MASK);\n  453 |       if (url.startsWith('/api/cases/EG') && !url.endsWith('files')) expect.soft(body.idMasked, label).toMatch(MASK);\n    at C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js:450:67"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                        "column": 133,
+                        "line": 451
+                      },
+                      "message": "Error: off.reg1 GET /api/officer/queue?filter=all: contains 3100600987659\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  449 |       expect.soft(s.match(/\\d-\\d{4}-\\d{5}-\\d{2}-\\d/g), `${label}: formatted ID`).toBeNull();\n  450 |       expect.soft(hasKey(body, 'idNo'), `${label}: has key idNo`).toBe(false);\n> 451 |       for (const id of ['3100600987659', '1101700123456', '1909900555015']) expect.soft(s.includes(id), `${label}: contains ${id}`).toBe(false);\n      |                                                                                                                                     ^\n  452 |       for (const m of (body.items || []).map(i => i.idMasked).filter(x => x !== undefined)) expect.soft(m, label).toMatch(MASK);\n  453 |       if (url.startsWith('/api/cases/EG') && !url.endsWith('files')) expect.soft(body.idMasked, label).toMatch(MASK);\n  454 |     }\n    at C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js:451:133"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                        "column": 133,
+                        "line": 451
+                      },
+                      "message": "Error: off.reg1 GET /api/officer/queue?filter=all: contains 1101700123456\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  449 |       expect.soft(s.match(/\\d-\\d{4}-\\d{5}-\\d{2}-\\d/g), `${label}: formatted ID`).toBeNull();\n  450 |       expect.soft(hasKey(body, 'idNo'), `${label}: has key idNo`).toBe(false);\n> 451 |       for (const id of ['3100600987659', '1101700123456', '1909900555015']) expect.soft(s.includes(id), `${label}: contains ${id}`).toBe(false);\n      |                                                                                                                                     ^\n  452 |       for (const m of (body.items || []).map(i => i.idMasked).filter(x => x !== undefined)) expect.soft(m, label).toMatch(MASK);\n  453 |       if (url.startsWith('/api/cases/EG') && !url.endsWith('files')) expect.soft(body.idMasked, label).toMatch(MASK);\n  454 |     }\n    at C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js:451:133"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                        "column": 133,
+                        "line": 451
+                      },
+                      "message": "Error: off.reg1 GET /api/officer/queue?filter=all: contains 1909900555015\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  449 |       expect.soft(s.match(/\\d-\\d{4}-\\d{5}-\\d{2}-\\d/g), `${label}: formatted ID`).toBeNull();\n  450 |       expect.soft(hasKey(body, 'idNo'), `${label}: has key idNo`).toBe(false);\n> 451 |       for (const id of ['3100600987659', '1101700123456', '1909900555015']) expect.soft(s.includes(id), `${label}: contains ${id}`).toBe(false);\n      |                                                                                                                                     ^\n  452 |       for (const m of (body.items || []).map(i => i.idMasked).filter(x => x !== undefined)) expect.soft(m, label).toMatch(MASK);\n  453 |       if (url.startsWith('/api/cases/EG') && !url.endsWith('files')) expect.soft(body.idMasked, label).toMatch(MASK);\n  454 |     }\n    at C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js:451:133"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                        "column": 65,
+                        "line": 448
+                      },
+                      "message": "Error: head1 GET /api/officer/queue?filter=all: 13-digit run\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m[\"1101700123456\", \"3100600987659\", \"1909900555015\", \"3100600987659\", \"3100600987659\", \"3100600987659\", \"1101700123456\", \"1101700123456\", \"3100600987659\", \"1909900555015\", …]\u001b[39m\n\n  446 |       const body = await r.json();\n  447 |       const s = JSON.stringify(body);\n> 448 |       expect.soft(s.match(/\\d{13}/g), `${label}: 13-digit run`).toBeNull();\n      |                                                                 ^\n  449 |       expect.soft(s.match(/\\d-\\d{4}-\\d{5}-\\d{2}-\\d/g), `${label}: formatted ID`).toBeNull();\n  450 |       expect.soft(hasKey(body, 'idNo'), `${label}: has key idNo`).toBe(false);\n  451 |       for (const id of ['3100600987659', '1101700123456', '1909900555015']) expect.soft(s.includes(id), `${label}: contains ${id}`).toBe(false);\n    at C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js:448:65"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                        "column": 67,
+                        "line": 450
+                      },
+                      "message": "Error: head1 GET /api/officer/queue?filter=all: has key idNo\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  448 |       expect.soft(s.match(/\\d{13}/g), `${label}: 13-digit run`).toBeNull();\n  449 |       expect.soft(s.match(/\\d-\\d{4}-\\d{5}-\\d{2}-\\d/g), `${label}: formatted ID`).toBeNull();\n> 450 |       expect.soft(hasKey(body, 'idNo'), `${label}: has key idNo`).toBe(false);\n      |                                                                   ^\n  451 |       for (const id of ['3100600987659', '1101700123456', '1909900555015']) expect.soft(s.includes(id), `${label}: contains ${id}`).toBe(false);\n  452 |       for (const m of (body.items || []).map(i => i.idMasked).filter(x => x !== undefined)) expect.soft(m, label).toMatch(MASK);\n  453 |       if (url.startsWith('/api/cases/EG') && !url.endsWith('files')) expect.soft(body.idMasked, label).toMatch(MASK);\n    at C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js:450:67"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                        "column": 133,
+                        "line": 451
+                      },
+                      "message": "Error: head1 GET /api/officer/queue?filter=all: contains 3100600987659\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  449 |       expect.soft(s.match(/\\d-\\d{4}-\\d{5}-\\d{2}-\\d/g), `${label}: formatted ID`).toBeNull();\n  450 |       expect.soft(hasKey(body, 'idNo'), `${label}: has key idNo`).toBe(false);\n> 451 |       for (const id of ['3100600987659', '1101700123456', '1909900555015']) expect.soft(s.includes(id), `${label}: contains ${id}`).toBe(false);\n      |                                                                                                                                     ^\n  452 |       for (const m of (body.items || []).map(i => i.idMasked).filter(x => x !== undefined)) expect.soft(m, label).toMatch(MASK);\n  453 |       if (url.startsWith('/api/cases/EG') && !url.endsWith('files')) expect.soft(body.idMasked, label).toMatch(MASK);\n  454 |     }\n    at C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js:451:133"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                        "column": 133,
+                        "line": 451
+                      },
+                      "message": "Error: head1 GET /api/officer/queue?filter=all: contains 1101700123456\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  449 |       expect.soft(s.match(/\\d-\\d{4}-\\d{5}-\\d{2}-\\d/g), `${label}: formatted ID`).toBeNull();\n  450 |       expect.soft(hasKey(body, 'idNo'), `${label}: has key idNo`).toBe(false);\n> 451 |       for (const id of ['3100600987659', '1101700123456', '1909900555015']) expect.soft(s.includes(id), `${label}: contains ${id}`).toBe(false);\n      |                                                                                                                                     ^\n  452 |       for (const m of (body.items || []).map(i => i.idMasked).filter(x => x !== undefined)) expect.soft(m, label).toMatch(MASK);\n  453 |       if (url.startsWith('/api/cases/EG') && !url.endsWith('files')) expect.soft(body.idMasked, label).toMatch(MASK);\n  454 |     }\n    at C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js:451:133"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                        "column": 133,
+                        "line": 451
+                      },
+                      "message": "Error: head1 GET /api/officer/queue?filter=all: contains 1909900555015\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  449 |       expect.soft(s.match(/\\d-\\d{4}-\\d{5}-\\d{2}-\\d/g), `${label}: formatted ID`).toBeNull();\n  450 |       expect.soft(hasKey(body, 'idNo'), `${label}: has key idNo`).toBe(false);\n> 451 |       for (const id of ['3100600987659', '1101700123456', '1909900555015']) expect.soft(s.includes(id), `${label}: contains ${id}`).toBe(false);\n      |                                                                                                                                     ^\n  452 |       for (const m of (body.items || []).map(i => i.idMasked).filter(x => x !== undefined)) expect.soft(m, label).toMatch(MASK);\n  453 |       if (url.startsWith('/api/cases/EG') && !url.endsWith('files')) expect.soft(body.idMasked, label).toMatch(MASK);\n  454 |     }\n    at C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js:451:133"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:24.910Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\src\\compare\\C-usual\\test-results\\workflow-doc-TC-PDPA-02-API-JSON-ไม่ส่งเลขบัตรเต็ม\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\src\\compare\\C-usual\\tests\\workflow-doc.spec.js",
+                    "column": 65,
+                    "line": 448
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-6dc6ee64f62926b58edd",
+          "file": "workflow-doc.spec.js",
+          "line": 435,
+          "column": 1
+        },
+        {
+          "title": "TC-PDPA-03 แสดงเลขเต็มต้องมีเหตุผลและบันทึก Audit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 833,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T11:15:25.385Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79590e886a2b2fcbc2ef-2eaf4b1ee4a3a0a03b1d",
+          "file": "workflow-doc.spec.js",
+          "line": 458,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-16T11:14:23.779Z",
+    "duration": 62597.941999999995,
+    "expected": 48,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

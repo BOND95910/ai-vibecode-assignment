@@ -1,0 +1,821 @@
+npm notice run egov-eservice-e2e@1.0.0 npx
+npm notice run 'playwright' test --reporter=list,json --output=runs/B03+B07/artifacts
+
+Running 51 tests using 1 worker
+
+  ✓   1 [chromium] › e2e/part1.spec.ts:167:1 › TC-AUTH-01 เลขบัตร 13 หลัก + checksum (1.5s)
+  ✓   2 [chromium] › e2e/part1.spec.ts:204:1 › TC-AUTH-02 OTP ผิด 3 ครั้งล็อก 15 นาที (1.7s)
+  ✓   3 [chromium] › e2e/part1.spec.ts:301:1 › TC-AUTH-03 ลงทะเบียนครั้งแรก (2.0s)
+  ✓   4 [chromium] › e2e/part1.spec.ts:378:1 › TC-AUTH-04 เจ้าหน้าที่ SSO จำลองและหน้าตั้งต้น (3.3s)
+  ✓   5 [chromium] › e2e/part1.spec.ts:433:1 › TC-FEE-01 ค่าธรรมเนียม SV-01 / SV-02 / SV-03 (1.0s)
+  ✓   6 [chromium] › e2e/part1.spec.ts:506:1 › TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร (966ms)
+  ✓   7 [chromium] › e2e/part1.spec.ts:582:1 › TC-SUBMIT-02 เอกสารบังคับครบก่อนชำระ (675ms)
+  ✓   8 [chromium] › e2e/part1.spec.ts:642:1 › TC-SUBMIT-03 ร่าง และการยกเลิก (1.7s)
+  ✓   9 [chromium] › e2e/part1.spec.ts:751:1 › TC-UPLOAD-01 ขนาดและจำนวนไฟล์ (2.4s)
+  ✓  10 [chromium] › e2e/part1.spec.ts:820:1 › TC-UPLOAD-02 ชนิดไฟล์จากเนื้อไฟล์ (753ms)
+  ✓  11 [chromium] › e2e/part1.spec.ts:871:1 › TC-PAY-01 อายุ QR 15:00 (479ms)
+  ✓  12 [chromium] › e2e/part1.spec.ts:915:1 › TC-PAY-02 ยอดเงินและ callback ซ้ำ (148ms)
+  ✓  13 [chromium] › e2e/part1.spec.ts:954:1 › TC-PAY-03 ชำระพร้อมกัน เลขไม่ซ้ำ (140ms)
+  ✓  14 [chromium] › e2e/part1.spec.ts:998:1 › TC-PAY-04 เลขคำขอข้ามปี (627ms)
+  ✓  15 [chromium] › e2e/part1.spec.ts:1046:1 › TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก (822ms)
+  ✓  16 [chromium] › e2e/part1.spec.ts:1112:1 › TC-QUEUE-02 รับเรื่องซ้อน (พร้อมกันและต่อกัน) (798ms)
+  ✓  17 [chromium] › e2e/part1.spec.ts:1185:1 › TC-QUEUE-03 งานในมือสูงสุด 10 (1.5s)
+  ✘  18 [chromium] › e2e/part1.spec.ts:1263:1 › TC-SLA-01 กำหนดเสร็จตามตารางวันที่ (2.0m)
+  ✘  19 [chromium] › e2e/part1.spec.ts:1290:1 › TC-SLA-02 หยุดนับ SLA ระหว่างรอแก้ไข (720ms)
+  ✘  20 [chromium] › e2e/part1.spec.ts:1389:1 › TC-SLA-03 ระดับเตือน ปกติ / ใกล้ครบกำหนด / เกินกำหนด (22.0s)
+  ✓  21 [chromium] › e2e/part1.spec.ts:1485:1 › TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ (969ms)
+  ✘  22 [chromium] › e2e/part1.spec.ts:1489:1 › TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร (1.8s)
+  ✓  23 [chromium] › e2e/part2.spec.ts:744:1 › TC-WORKFLOW-01 SV-01 อนุมัติ + ออกเอกสาร (766ms)
+  ✓  24 [chromium] › e2e/part2.spec.ts:797:1 › TC-WORKFLOW-02 SV-02 ผ่านหัวหน้า (1.5s)
+  ✓  25 [chromium] › e2e/part2.spec.ts:865:1 › TC-WORKFLOW-03 SV-03 สามขั้นตอน (1.3s)
+  ✓  26 [chromium] › e2e/part2.spec.ts:937:1 › TC-WORKFLOW-04 ตีกลับสูงสุด 2 ครั้ง และผลหลังครบ (1.9s)
+  ✓  27 [chromium] › e2e/part2.spec.ts:1015:1 › TC-WORKFLOW-05 เหตุผล ≥ 10 ตัวอักษร (ตีกลับ / ไม่อนุมัติ) (2.0s)
+  ✓  28 [chromium] › e2e/part2.spec.ts:1080:1 › TC-WORKFLOW-06 เวลาแก้ไข 168 ชั่วโมง (723ms)
+  ✓  29 [chromium] › e2e/part2.spec.ts:1134:1 › TC-DOC-01 ออกเอกสารและข้อมูลในเอกสาร (532ms)
+  ✓  30 [chromium] › e2e/part2.spec.ts:1189:1 › TC-DOC-02 ตรวจเอกสาร /verify (235ms)
+  ✓  31 [chromium] › e2e/part2.spec.ts:1226:1 › TC-DOC-03 เอกสารหมดอายุและลายเซ็นไม่ตรง (1.5s)
+  ✓  32 [chromium] › e2e/part2.spec.ts:1297:1 › TC-PDPA-01 ปิดบังเลขบัตรบนจอ (635ms)
+  ✓  33 [chromium] › e2e/part2.spec.ts:1334:1 › TC-PDPA-02 API (JSON) ไม่ส่งเลขบัตรเต็ม (113ms)
+  ✓  34 [chromium] › e2e/part2.spec.ts:1380:1 › TC-PDPA-03 แสดงเลขเต็มต้องมีเหตุผลและบันทึก Audit (816ms)
+  ✓  35 [chromium] › e2e/part2.spec.ts:1450:1 › TC-DASH-01 Dashboard ตัวเลขเริ่มต้น (414ms)
+  ✓  36 [chromium] › e2e/part2.spec.ts:1495:1 › TC-DASH-02 Dashboard ย้อนหลัง (678ms)
+  ✓  37 [chromium] › e2e/part2.spec.ts:1525:1 › TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ (1.2s)
+  ✓  38 [chromium] › e2e/part2.spec.ts:1608:1 › TC-DASH-04 ค่าขอบ "ทันกำหนด" 16:29:59 / 16:30:00 / 16:30:01 (669ms)
+  ✓  39 [chromium] › e2e/part2.spec.ts:1659:1 › TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit (1.0s)
+  ✓  40 [chromium] › e2e/part2.spec.ts:1796:1 › TC-AUDIT-02 Audit แก้/ลบไม่ได้ (405) (237ms)
+  ✓  41 [chromium] › e2e/part2.spec.ts:1842:1 › TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย (1.1s)
+  ✓  42 [chromium] › e2e/part2.spec.ts:1893:1 › TC-RBAC-01 ประชาชนเปิดคำขอคนอื่นไม่ได้ (IDOR) (308ms)
+  ✘  43 [chromium] › e2e/part2.spec.ts:1928:1 › TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API) (160ms)
+  ✓  44 [chromium] › e2e/part2.spec.ts:1973:1 › TC-RBAC-03 ตารางสิทธิ์หน้า/API ตามบทบาท (5.0s)
+  ✘  45 [chromium] › e2e/part2.spec.ts:2113:1 › TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก (1.8s)
+  ✓  46 [chromium] › e2e/part2.spec.ts:2240:1 › TC-RBAC-05 สิทธิ์เปิด/ดาวน์โหลดไฟล์แนบ (5.9s)
+  ✓  47 [chromium] › e2e/part2.spec.ts:2321:1 › TC-RBAC-06 ผู้ดูแลระบบ: ช่วงค่าที่ยอมรับ (1.6s)
+  ✓  48 [chromium] › e2e/part2.spec.ts:2426:1 › TC-NFR-01 Responsive 375 / 768 / 1280 (2.6s)
+  ✓  49 [chromium] › e2e/part2.spec.ts:2494:1 › TC-NFR-02 WCAG: axe + คีย์บอร์ด + label + สถานะไม่ใช้สีอย่างเดียว (13.5s)
+  ✓  50 [chromium] › e2e/part2.spec.ts:2666:1 › TC-NFR-03 Health เวลาโหลด และผลซ้ำได้ (1.1s)
+  ✓  51 [chromium] › e2e/part2.spec.ts:2744:1 › TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection) (146ms)
+
+
+  1) [chromium] › e2e/part1.spec.ts:1263:1 › TC-SLA-01 กำหนดเสร็จตามตารางวันที่ ────────────────────
+
+    Error: แถว c dueAt
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2026-12-08T16:30:00+07:00"
+    Received: "2026-12-07T16:30:00+07:00"
+
+      1278 |       const np = await NEW_PAID(ID.SOMCHAI, r.svc, r.at, { browser, areaSqm: r.areaSqm });
+      1279 |       expect(np.caseNo).toBe(EG(31));
+    > 1280 |       expect.soft((await getCase(np.actor.api, EG(31))).dueAt, `แถว ${r.k} dueAt`).toBe(r.due);
+           |                                                                                    ^
+      1281 |       const page = (np.actor as UiActor).page;
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1280:84
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว c sla-due data-iso
+
+    expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "2026-12-08T16:30:00+07:00"
+    Received: "2026-12-07T16:30:00+07:00"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว c sla-due data-iso getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2026-12-07T16:30:00+07:00" datetime="2026-12-07T16:30:00+07:00">7 ธ.ค. 2569 16:30</time>
+           - unexpected value "2026-12-07T16:30:00+07:00"
+
+
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+    > 1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+           |                                                             ^
+      1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+      1286 |     });
+      1287 |   }
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1284:61
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว c sla-due ข้อความ
+
+    expect(locator).toHaveText(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "8 ธ.ค. 2569 16:30"
+    Received: "7 ธ.ค. 2569 16:30"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว c sla-due ข้อความ getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2026-12-07T16:30:00+07:00" datetime="2026-12-07T16:30:00+07:00">7 ธ.ค. 2569 16:30</time>
+           - unexpected value "7 ธ.ค. 2569 16:30"
+
+
+      1283 |       const due = page.getByTestId('sla-due');
+      1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+    > 1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+           |                                                                        ^
+      1286 |     });
+      1287 |   }
+      1288 | });
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1285:72
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว d dueAt
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2026-12-11T16:30:00+07:00"
+    Received: "2026-12-09T16:30:00+07:00"
+
+      1278 |       const np = await NEW_PAID(ID.SOMCHAI, r.svc, r.at, { browser, areaSqm: r.areaSqm });
+      1279 |       expect(np.caseNo).toBe(EG(31));
+    > 1280 |       expect.soft((await getCase(np.actor.api, EG(31))).dueAt, `แถว ${r.k} dueAt`).toBe(r.due);
+           |                                                                                    ^
+      1281 |       const page = (np.actor as UiActor).page;
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1280:84
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว d sla-due data-iso
+
+    expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "2026-12-11T16:30:00+07:00"
+    Received: "2026-12-09T16:30:00+07:00"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว d sla-due data-iso getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2026-12-09T16:30:00+07:00" datetime="2026-12-09T16:30:00+07:00">9 ธ.ค. 2569 16:30</time>
+           - unexpected value "2026-12-09T16:30:00+07:00"
+
+
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+    > 1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+           |                                                             ^
+      1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+      1286 |     });
+      1287 |   }
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1284:61
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว d sla-due ข้อความ
+
+    expect(locator).toHaveText(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "11 ธ.ค. 2569 16:30"
+    Received: "9 ธ.ค. 2569 16:30"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว d sla-due ข้อความ getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2026-12-09T16:30:00+07:00" datetime="2026-12-09T16:30:00+07:00">9 ธ.ค. 2569 16:30</time>
+           - unexpected value "9 ธ.ค. 2569 16:30"
+
+
+      1283 |       const due = page.getByTestId('sla-due');
+      1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+    > 1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+           |                                                                        ^
+      1286 |     });
+      1287 |   }
+      1288 | });
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1285:72
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว e dueAt
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2026-12-14T16:30:00+07:00"
+    Received: "2026-12-10T16:30:00+07:00"
+
+      1278 |       const np = await NEW_PAID(ID.SOMCHAI, r.svc, r.at, { browser, areaSqm: r.areaSqm });
+      1279 |       expect(np.caseNo).toBe(EG(31));
+    > 1280 |       expect.soft((await getCase(np.actor.api, EG(31))).dueAt, `แถว ${r.k} dueAt`).toBe(r.due);
+           |                                                                                    ^
+      1281 |       const page = (np.actor as UiActor).page;
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1280:84
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว e sla-due data-iso
+
+    expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "2026-12-14T16:30:00+07:00"
+    Received: "2026-12-10T16:30:00+07:00"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว e sla-due data-iso getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2026-12-10T16:30:00+07:00" datetime="2026-12-10T16:30:00+07:00">10 ธ.ค. 2569 16:30</time>
+           - unexpected value "2026-12-10T16:30:00+07:00"
+
+
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+    > 1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+           |                                                             ^
+      1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+      1286 |     });
+      1287 |   }
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1284:61
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว e sla-due ข้อความ
+
+    expect(locator).toHaveText(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "14 ธ.ค. 2569 16:30"
+    Received: "10 ธ.ค. 2569 16:30"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว e sla-due ข้อความ getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2026-12-10T16:30:00+07:00" datetime="2026-12-10T16:30:00+07:00">10 ธ.ค. 2569 16:30</time>
+           - unexpected value "10 ธ.ค. 2569 16:30"
+
+
+      1283 |       const due = page.getByTestId('sla-due');
+      1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+    > 1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+           |                                                                        ^
+      1286 |     });
+      1287 |   }
+      1288 | });
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1285:72
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว f dueAt
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2026-12-17T16:30:00+07:00"
+    Received: "2026-12-15T16:30:00+07:00"
+
+      1278 |       const np = await NEW_PAID(ID.SOMCHAI, r.svc, r.at, { browser, areaSqm: r.areaSqm });
+      1279 |       expect(np.caseNo).toBe(EG(31));
+    > 1280 |       expect.soft((await getCase(np.actor.api, EG(31))).dueAt, `แถว ${r.k} dueAt`).toBe(r.due);
+           |                                                                                    ^
+      1281 |       const page = (np.actor as UiActor).page;
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1280:84
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว f sla-due data-iso
+
+    expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "2026-12-17T16:30:00+07:00"
+    Received: "2026-12-15T16:30:00+07:00"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว f sla-due data-iso getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2026-12-15T16:30:00+07:00" datetime="2026-12-15T16:30:00+07:00">15 ธ.ค. 2569 16:30</time>
+           - unexpected value "2026-12-15T16:30:00+07:00"
+
+
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+    > 1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+           |                                                             ^
+      1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+      1286 |     });
+      1287 |   }
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1284:61
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว g dueAt
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2026-12-24T16:30:00+07:00"
+    Received: "2026-12-22T16:30:00+07:00"
+
+      1278 |       const np = await NEW_PAID(ID.SOMCHAI, r.svc, r.at, { browser, areaSqm: r.areaSqm });
+      1279 |       expect(np.caseNo).toBe(EG(31));
+    > 1280 |       expect.soft((await getCase(np.actor.api, EG(31))).dueAt, `แถว ${r.k} dueAt`).toBe(r.due);
+           |                                                                                    ^
+      1281 |       const page = (np.actor as UiActor).page;
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1280:84
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว g sla-due data-iso
+
+    expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "2026-12-24T16:30:00+07:00"
+    Received: "2026-12-22T16:30:00+07:00"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว g sla-due data-iso getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2026-12-22T16:30:00+07:00" datetime="2026-12-22T16:30:00+07:00">22 ธ.ค. 2569 16:30</time>
+           - unexpected value "2026-12-22T16:30:00+07:00"
+
+
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+    > 1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+           |                                                             ^
+      1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+      1286 |     });
+      1287 |   }
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1284:61
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว h dueAt
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2027-01-05T16:30:00+07:00"
+    Received: "2027-01-01T16:30:00+07:00"
+
+      1278 |       const np = await NEW_PAID(ID.SOMCHAI, r.svc, r.at, { browser, areaSqm: r.areaSqm });
+      1279 |       expect(np.caseNo).toBe(EG(31));
+    > 1280 |       expect.soft((await getCase(np.actor.api, EG(31))).dueAt, `แถว ${r.k} dueAt`).toBe(r.due);
+           |                                                                                    ^
+      1281 |       const page = (np.actor as UiActor).page;
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1280:84
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว h sla-due data-iso
+
+    expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "2027-01-05T16:30:00+07:00"
+    Received: "2027-01-01T16:30:00+07:00"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว h sla-due data-iso getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2027-01-01T16:30:00+07:00" datetime="2027-01-01T16:30:00+07:00">1 ม.ค. 2570 16:30</time>
+           - unexpected value "2027-01-01T16:30:00+07:00"
+
+
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+    > 1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+           |                                                             ^
+      1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+      1286 |     });
+      1287 |   }
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1284:61
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว h sla-due ข้อความ
+
+    expect(locator).toHaveText(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "5 ม.ค. 2570 16:30"
+    Received: "1 ม.ค. 2570 16:30"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว h sla-due ข้อความ getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2027-01-01T16:30:00+07:00" datetime="2027-01-01T16:30:00+07:00">1 ม.ค. 2570 16:30</time>
+           - unexpected value "1 ม.ค. 2570 16:30"
+
+
+      1283 |       const due = page.getByTestId('sla-due');
+      1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+    > 1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+           |                                                                        ^
+      1286 |     });
+      1287 |   }
+      1288 | });
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1285:72
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว i dueAt
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2027-01-07T16:30:00+07:00"
+    Received: "2027-01-06T16:30:00+07:00"
+
+      1278 |       const np = await NEW_PAID(ID.SOMCHAI, r.svc, r.at, { browser, areaSqm: r.areaSqm });
+      1279 |       expect(np.caseNo).toBe(EG(31));
+    > 1280 |       expect.soft((await getCase(np.actor.api, EG(31))).dueAt, `แถว ${r.k} dueAt`).toBe(r.due);
+           |                                                                                    ^
+      1281 |       const page = (np.actor as UiActor).page;
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1280:84
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว i sla-due data-iso
+
+    expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "2027-01-07T16:30:00+07:00"
+    Received: "2027-01-06T16:30:00+07:00"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว i sla-due data-iso getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2027-01-06T16:30:00+07:00" datetime="2027-01-06T16:30:00+07:00">6 ม.ค. 2570 16:30</time>
+           - unexpected value "2027-01-06T16:30:00+07:00"
+
+
+      1282 |       await page.goto(`/citizen/cases/${EG(31)}`);
+      1283 |       const due = page.getByTestId('sla-due');
+    > 1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+           |                                                             ^
+      1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+      1286 |     });
+      1287 |   }
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1284:61
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    Error: แถว i sla-due ข้อความ
+
+    expect(locator).toHaveText(expected) failed
+
+    Locator:  getByTestId('sla-due')
+    Expected: "7 ม.ค. 2570 16:30"
+    Received: "6 ม.ค. 2570 16:30"
+    Timeout:  10000ms
+
+    Call log:
+      - แถว i sla-due ข้อความ getByTestId('sla-due') with timeout 10000ms
+      - waiting for getByTestId('sla-due')
+        24 × locator resolved to <time data-testid="sla-due" data-iso="2027-01-06T16:30:00+07:00" datetime="2027-01-06T16:30:00+07:00">6 ม.ค. 2570 16:30</time>
+           - unexpected value "6 ม.ค. 2570 16:30"
+
+
+      1283 |       const due = page.getByTestId('sla-due');
+      1284 |       await expect.soft(due, `แถว ${r.k} sla-due data-iso`).toHaveAttribute('data-iso', r.due);
+    > 1285 |       if (r.text) await expect.soft(due, `แถว ${r.k} sla-due ข้อความ`).toHaveText(r.text);
+           |                                                                        ^
+      1286 |     });
+      1287 |   }
+      1288 | });
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1285:72
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1276:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/test-failed-5.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/test-failed-6.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/test-failed-7.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/test-failed-8.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/test-failed-9.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace runs/B03+B07/artifacts/part1-TC-SLA-01-กำหนดเสร็จตามตารางวันที่-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › e2e/part1.spec.ts:1290:1 › TC-SLA-02 หยุดนับ SLA ระหว่างรอแก้ไข › ส่วน 1: ตีกลับ 2 ธ.ค. 11:00 ส่งแก้ 3 ธ.ค. 10:00 → 8 ธ.ค. 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2026-12-08T16:30:00+07:00"
+    Received: "2026-12-07T16:30:00+07:00"
+
+      1313 |     await expectCaseStatus(somchai.page, 'IN_REVIEW');
+      1314 |
+    > 1315 |     expect((await getCase(somchai.api, EG(31))).dueAt).toBe('2026-12-08T16:30:00+07:00');
+           |                                                        ^
+      1316 |     await somchai.page.goto(`/citizen/cases/${EG(31)}`);
+      1317 |     await expect(somchai.page.getByTestId('sla-due')).toHaveText('8 ธ.ค. 2569 16:30');
+      1318 |     await expect(somchai.page.getByTestId('sla-due')).toHaveAttribute('data-iso', '2026-12-08T16:30:00+07:00');
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1315:56
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1291:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-02-หยุดนับ-SLA-ระหว่างรอแก้ไข-chromium/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-02-หยุดนับ-SLA-ระหว่างรอแก้ไข-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: runs/B03+B07/artifacts/part1-TC-SLA-02-หยุดนับ-SLA-ระหว่างรอแก้ไข-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-02-หยุดนับ-SLA-ระหว่างรอแก้ไข-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace runs/B03+B07/artifacts/part1-TC-SLA-02-หยุดนับ-SLA-ระหว่างรอแก้ไข-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › e2e/part1.spec.ts:1389:1 › TC-SLA-03 ระดับเตือน ปกติ / ใกล้ครบกำหนด / เกินกำหนด › ส่วน B: seed …000016 กำหนด อ. 8 ธ.ค. 16:30 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  getByTestId('sla-level')
+    Expected: "ใกล้ครบกำหนด"
+    Received: "ปกติ"
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "soft toHaveText" getByTestId('sla-level') with timeout 10000ms
+      - waiting for getByTestId('sla-level')
+        24 × locator resolved to <span class="chip" data-level="normal" data-testid="sla-level">ปกติ</span>
+           - unexpected value "ปกติ"
+
+
+      111 | async function expectLevel(loc: Locator, level: SlaLevel, soft = false): Promise<void> {
+      112 |   const e = soft ? expect.soft : expect;
+    > 113 |   await e(loc).toHaveText(LEVEL_TH[level]);
+          |                ^
+      114 |   await e(loc).toHaveAttribute('data-level', level);
+      115 | }
+      116 |
+        at expectLevel (/workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:113:16)
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1424:13
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1412:3
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByTestId('sla-level')
+    Expected: "near"
+    Received: "normal"
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "soft toHaveAttribute" getByTestId('sla-level') with timeout 10000ms
+      - waiting for getByTestId('sla-level')
+        24 × locator resolved to <span class="chip" data-level="normal" data-testid="sla-level">ปกติ</span>
+           - unexpected value "normal"
+
+
+      112 |   const e = soft ? expect.soft : expect;
+      113 |   await e(loc).toHaveText(LEVEL_TH[level]);
+    > 114 |   await e(loc).toHaveAttribute('data-level', level);
+          |                ^
+      115 | }
+      116 |
+      117 | /** ตรวจ case-status (ข้อความไทย + data-status) */
+        at expectLevel (/workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:114:16)
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1424:7
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1412:3
+
+    Error: slaLevel @ 2026-12-04T09:00:00+07:00
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "near"
+    Received: "normal"
+
+      1423 |       await piti.page.goto(`/citizen/cases/${EG(16)}`);
+      1424 |       await expectLevel(piti.page.getByTestId('sla-level'), lv, true);
+    > 1425 |       expect.soft((await getCase(piti.api, EG(16))).slaLevel, `slaLevel @ ${t}`).toBe(lv);
+           |                                                                                  ^
+      1426 |     }
+      1427 |   });
+      1428 |
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1425:82
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1412:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-03-ระดับเตือน-ปกติ-ใกล้ครบกำหนด-เกินกำหนด-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-03-ระดับเตือน-ปกติ-ใกล้ครบกำหนด-เกินกำหนด-chromium/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-03-ระดับเตือน-ปกติ-ใกล้ครบกำหนด-เกินกำหนด-chromium/test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-03-ระดับเตือน-ปกติ-ใกล้ครบกำหนด-เกินกำหนด-chromium/test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: runs/B03+B07/artifacts/part1-TC-SLA-03-ระดับเตือน-ปกติ-ใกล้ครบกำหนด-เกินกำหนด-chromium/error-context.md
+
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-SLA-03-ระดับเตือน-ปกติ-ใกล้ครบกำหนด-เกินกำหนด-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace runs/B03+B07/artifacts/part1-TC-SLA-03-ระดับเตือน-ปกติ-ใกล้ครบกำหนด-เกินกำหนด-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium] › e2e/part1.spec.ts:1489:1 › TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร › ส่วน B ข้ามระดับ: request แรกที่ ส. 5 ธ.ค. 10:00 (TEST-DATA 8.1) 
+
+    Error: off.reg2 @5 ธ.ค.: GET /api/notifications
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 0
+
+    @@ -1,9 +1,8 @@
+      Array [
+        "EG-2569-000013|overdue",
+        "EG-2569-000015|overdue",
+    -   "EG-2569-000016|near",
+        "EG-2569-000024|overdue",
+        "EG-2569-000025|overdue",
+        "EG-2569-000026|overdue",
+        "EG-2569-000027|overdue",
+        "EG-2569-000028|overdue",
+
+      129 |   const want = expected.map(([n, l]) => `${EG(n)}|${l}`).sort();
+      130 |   const items = await notificationsApi(actor.api);
+    > 131 |   expect(items.map((i) => `${i.caseNo}|${i.level}`).sort(), `${label}: GET /api/notifications`).toEqual(want);
+          |                                                                                                 ^
+      132 |   for (const i of items) {
+      133 |     expect(String(i.text), `${label}: text ของ ${i.caseNo}`).toBe(`คำขอ ${i.caseNo} ${LEVEL_TH[i.level as SlaLevel]}`);
+      134 |   }
+        at expectNoti (/workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:131:97)
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1518:5
+        at /workspace/plans/egov-eservice/app/tests/e2e/part1.spec.ts:1508:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium/test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium/test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium/test-failed-5.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium/test-failed-6.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium/test-failed-7.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium/test-failed-8.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: runs/B03+B07/artifacts/part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium/error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace runs/B03+B07/artifacts/part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium] › e2e/part2.spec.ts:1928:1 › TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API) › 1 approve …000014 (PENDING_APPROVAL) → 403 
+
+    Error: http://localhost:3000/api/cases/EG-2569-000014/approve → 200 {"caseNo":"EG-2569-000014","status":"APPROVED"}
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 403
+    Received: 200
+
+       at helpers.ts:218
+
+      216 | export async function expectStatus(res: APIResponse, status: number, label = ''): Promise<any> {
+      217 |   const text = await res.text().catch(() => '');
+    > 218 |   expect(res.status(), `${label} ${res.url()} → ${res.status()} ${text.slice(0, 500)}`.trim()).toBe(status);
+          |                                                                                                ^
+      219 |   try {
+      220 |     return text ? JSON.parse(text) : null;
+      221 |   } catch {
+        at expectStatus (/workspace/plans/egov-eservice/app/tests/e2e/helpers.ts:218:96)
+        at expectApiError (/workspace/plans/egov-eservice/app/tests/e2e/helpers.ts:234:16)
+        at /workspace/plans/egov-eservice/app/tests/e2e/part2.spec.ts:1933:5
+        at /workspace/plans/egov-eservice/app/tests/e2e/part2.spec.ts:1932:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part2-TC-RBAC-02-เจ้าหน้าท-2ec1a-ิ-SV-02-ไม่ได้-ตรวจที่-API--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: runs/B03+B07/artifacts/part2-TC-RBAC-02-เจ้าหน้าท-2ec1a-ิ-SV-02-ไม่ได้-ตรวจที่-API--chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part2-TC-RBAC-02-เจ้าหน้าท-2ec1a-ิ-SV-02-ไม่ได้-ตรวจที่-API--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace runs/B03+B07/artifacts/part2-TC-RBAC-02-เจ้าหน้าท-2ec1a-ิ-SV-02-ไม่ได้-ตรวจที่-API--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [chromium] › e2e/part2.spec.ts:2113:1 › TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก › 7 หลังเพิ่มวันหยุด NEW_PAID SV-01 ฿25 → …000033 กำหนด 8 ธ.ค. 16:30 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2026-12-08T16:30:00+07:00"
+    Received: "2026-12-04T16:30:00+07:00"
+
+      2196 |     expect(r.fee).toBe(25);
+      2197 |     expect(r.caseNo).toBe(EG(33));
+    > 2198 |     expect((await getCase(r.actor.api, EG(33))).dueAt).toBe('2026-12-08T16:30:00+07:00');
+           |                                                        ^
+      2199 |   });
+      2200 |
+      2201 |   const exPage = (await newBrowserContext(browser)).page;
+        at /workspace/plans/egov-eservice/app/tests/e2e/part2.spec.ts:2198:56
+        at /workspace/plans/egov-eservice/app/tests/e2e/part2.spec.ts:2194:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part2-TC-RBAC-04-ผู้ดูแลระ-0f95b-ันหยุด-ผู้ใช้-และยอดที่ล็อก-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part2-TC-RBAC-04-ผู้ดูแลระ-0f95b-ันหยุด-ผู้ใช้-และยอดที่ล็อก-chromium/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: runs/B03+B07/artifacts/part2-TC-RBAC-04-ผู้ดูแลระ-0f95b-ันหยุด-ผู้ใช้-และยอดที่ล็อก-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    runs/B03+B07/artifacts/part2-TC-RBAC-04-ผู้ดูแลระ-0f95b-ันหยุด-ผู้ใช้-และยอดที่ล็อก-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace runs/B03+B07/artifacts/part2-TC-RBAC-04-ผู้ดูแลระ-0f95b-ันหยุด-ผู้ใช้-และยอดที่ล็อก-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6 failed
+    [chromium] › e2e/part1.spec.ts:1263:1 › TC-SLA-01 กำหนดเสร็จตามตารางวันที่ ─────────────────────
+    [chromium] › e2e/part1.spec.ts:1290:1 › TC-SLA-02 หยุดนับ SLA ระหว่างรอแก้ไข ───────────────────
+    [chromium] › e2e/part1.spec.ts:1389:1 › TC-SLA-03 ระดับเตือน ปกติ / ใกล้ครบกำหนด / เกินกำหนด ───
+    [chromium] › e2e/part1.spec.ts:1489:1 › TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร 
+    [chromium] › e2e/part2.spec.ts:1928:1 › TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API) 
+    [chromium] › e2e/part2.spec.ts:2113:1 › TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก 
+  45 passed (3.7m)
+rc=1 seconds=223 BASE_URL=http://localhost:3000 BASE_URL_NO_TEST_MODE=http://localhost:3001 PII_SCAN_PATHS=/workspace/plans/egov-eservice/app/tests/runs/B03+B07/web.log

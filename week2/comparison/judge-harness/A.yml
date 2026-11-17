@@ -1,0 +1,10 @@
+services:
+  web:
+    volumes:
+      - C:/src/compare/judge/adata:/data
+  web-nohook:
+    build: .
+    environment:
+      TEST_MODE: "0"
+    ports:
+      - "${NOHOOK_PORT}:3000"

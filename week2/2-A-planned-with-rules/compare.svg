@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="838" viewBox="0 0 1500 838" font-family="Sarabun, Loma, Garuda, 'Noto Sans Thai', Tahoma, 'Noto Color Emoji', sans-serif">
+<defs><marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#9a9a9a"/></marker><marker id="ac" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#e8590c"/></marker></defs>
+<rect width="1500" height="838" fill="#ffffff"/>
+<rect width="1500" height="64" fill="#1e3a5f"/>
+<text x="30" y="42" font-size="26" font-weight="700" fill="#fff">แผน vs จริง · egov-eservice</text>
+<text x="30" y="88" font-size="16" fill="#555">ซ้าย = แผน KC-QUEST (4 บัญชีจำลอง) · ขวา = subagent ในเครื่องนี้ทำจริง</text>
+<text x="487.5" y="116" font-size="18" text-anchor="middle" font-weight="700" fill="#333">แผน (KC-QUEST) · 161.9 นาที</text>
+<text x="1162.5" y="116" font-size="18" text-anchor="middle" font-weight="700" fill="#333">จริง (agent-team) · 144.1 นาที</text>
+<line x1="180.0" y1="130" x2="180.0" y2="728" stroke="#eee"/><text x="180.0" y="746" font-size="12" text-anchor="middle" fill="#777">0</text>
+<line x1="293.95923409512045" y1="130" x2="293.95923409512045" y2="728" stroke="#eee"/><text x="293.95923409512045" y="746" font-size="12" text-anchor="middle" fill="#777">30</text>
+<line x1="407.9184681902409" y1="130" x2="407.9184681902409" y2="728" stroke="#eee"/><text x="407.9184681902409" y="746" font-size="12" text-anchor="middle" fill="#777">60</text>
+<line x1="521.8777022853612" y1="130" x2="521.8777022853612" y2="728" stroke="#eee"/><text x="521.8777022853612" y="746" font-size="12" text-anchor="middle" fill="#777">90</text>
+<line x1="635.8369363804818" y1="130" x2="635.8369363804818" y2="728" stroke="#eee"/><text x="635.8369363804818" y="746" font-size="12" text-anchor="middle" fill="#777">120</text>
+<line x1="749.7961704756023" y1="130" x2="749.7961704756023" y2="728" stroke="#eee"/><text x="749.7961704756023" y="746" font-size="12" text-anchor="middle" fill="#777">150</text>
+<line x1="855.0" y1="130" x2="855.0" y2="728" stroke="#eee"/><text x="855.0" y="746" font-size="12" text-anchor="middle" fill="#777">0</text>
+<line x1="940.34751937088" y1="130" x2="940.34751937088" y2="728" stroke="#eee"/><text x="940.34751937088" y="746" font-size="12" text-anchor="middle" fill="#777">20</text>
+<line x1="1025.69503874176" y1="130" x2="1025.69503874176" y2="728" stroke="#eee"/><text x="1025.69503874176" y="746" font-size="12" text-anchor="middle" fill="#777">40</text>
+<line x1="1111.04255811264" y1="130" x2="1111.04255811264" y2="728" stroke="#eee"/><text x="1111.04255811264" y="746" font-size="12" text-anchor="middle" fill="#777">60</text>
+<line x1="1196.3900774835201" y1="130" x2="1196.3900774835201" y2="728" stroke="#eee"/><text x="1196.3900774835201" y="746" font-size="12" text-anchor="middle" fill="#777">80</text>
+<line x1="1281.7375968544004" y1="130" x2="1281.7375968544004" y2="728" stroke="#eee"/><text x="1281.7375968544004" y="746" font-size="12" text-anchor="middle" fill="#777">100</text>
+<line x1="1367.0851162252804" y1="130" x2="1367.0851162252804" y2="728" stroke="#eee"/><text x="1367.0851162252804" y="746" font-size="12" text-anchor="middle" fill="#777">120</text>
+<line x1="1452.4326355961605" y1="130" x2="1452.4326355961605" y2="728" stroke="#eee"/><text x="1452.4326355961605" y="746" font-size="12" text-anchor="middle" fill="#777">140</text>
+<rect x="30" y="130" width="1440" height="46" fill="#fff"/>
+<text x="170" y="158" font-size="16" text-anchor="end" fill="#333">🧠 B01</text>
+<rect x="180.0" y="139" width="47.48301420630018" height="28" rx="4" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed"/>
+<text x="233.4830142063002" y="158" font-size="12" fill="#555">12.5</text>
+<rect x="855.0" y="139" width="32.92991789059789" height="28" rx="4" fill="#7c3aed"/>
+<text x="893.9299178905978" y="158" font-size="12" fill="#555">7.7</text>
+<rect x="30" y="176" width="1440" height="46" fill="#fafafa"/>
+<text x="170" y="204" font-size="16" text-anchor="end" fill="#333">⚙️ B02</text>
+<rect x="227.4830142063002" y="185" width="71.03458925262507" height="28" rx="4" fill="#059669" fill-opacity="0.35" stroke="#059669"/>
+<text x="304.51760345892524" y="204" font-size="12" fill="#555">18.7</text>
+<rect x="887.9299178905978" y="185" width="29.942754712617084" height="28" rx="4" fill="#059669"/>
+<text x="923.8726726032149" y="204" font-size="12" fill="#555">7.0</text>
+<rect x="30" y="222" width="1440" height="46" fill="#fff"/>
+<text x="170" y="250" font-size="16" text-anchor="end" fill="#333">🔍 B03</text>
+<rect x="227.4830142063002" y="231" width="27.350216182828905" height="28" rx="4" fill="#2563eb" fill-opacity="0.35" stroke="#2563eb"/>
+<text x="260.8332303891291" y="250" font-size="12" fill="#555">7.2</text>
+<rect x="887.9299178905978" y="231" width="27.16896033306349" height="28" rx="4" fill="#2563eb"/>
+<text x="921.0988782236614" y="250" font-size="12" fill="#555">6.4</text>
+<rect x="30" y="268" width="1440" height="46" fill="#fafafa"/>
+<text x="170" y="296" font-size="16" text-anchor="end" fill="#333">🧠 B04</text>
+<rect x="298.51760345892524" y="277" width="47.4830142063002" height="28" rx="4" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed"/>
+<text x="352.00061766522543" y="296" font-size="12" fill="#555">12.5</text>
+<rect x="917.8726726032149" y="277" width="19.416560656875227" height="28" rx="4" fill="#7c3aed"/>
+<text x="943.2892332600902" y="296" font-size="12" fill="#555">4.6</text>
+<rect x="30" y="314" width="1440" height="46" fill="#fff"/>
+<text x="170" y="342" font-size="16" text-anchor="end" fill="#333">🔍 B05</text>
+<rect x="346.00061766522543" y="323" width="69.13526868437306" height="28" rx="4" fill="#2563eb" fill-opacity="0.35" stroke="#2563eb"/>
+<text x="421.1358863495985" y="342" font-size="12" fill="#555">18.2</text>
+<rect x="937.2892332600902" y="323" width="49.35931536949231" height="28" rx="4" fill="#2563eb"/>
+<text x="992.6485486295825" y="342" font-size="12" fill="#555">11.6</text>
+<rect x="30" y="360" width="1440" height="46" fill="#fafafa"/>
+<text x="170" y="388" font-size="16" text-anchor="end" fill="#333">🧠 B06</text>
+<rect x="415.13588634959854" y="369" width="47.48301420630021" height="28" rx="4" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed"/>
+<text x="468.61890055589873" y="388" font-size="12" fill="#555">12.5</text>
+<rect x="966.1651439805713" y="369" width="21.40800277552908" height="28" rx="4" fill="#7c3aed"/>
+<text x="993.5731467561004" y="388" font-size="12" fill="#555">5.0</text>
+<rect x="30" y="406" width="1440" height="46" fill="#fff"/>
+<text x="170" y="434" font-size="16" text-anchor="end" fill="#333">⚙️ B07</text>
+<rect x="254.83323038912908" y="415" width="71.41445336627548" height="28" rx="4" fill="#059669" fill-opacity="0.35" stroke="#059669"/>
+<text x="332.2476837554046" y="434" font-size="12" fill="#555">18.8</text>
+<rect x="901.798889788366" y="415" width="16.92725800855788" height="28" rx="4" fill="#059669"/>
+<text x="924.7261477969238" y="434" font-size="12" fill="#555">4.0</text>
+<rect x="30" y="452" width="1440" height="46" fill="#fafafa"/>
+<text x="170" y="480" font-size="16" text-anchor="end" fill="#333">🧠 B08</text>
+<rect x="462.6189005558987" y="461" width="94.96602841260037" height="28" rx="4" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed"/>
+<text x="563.5849289684991" y="480" font-size="12" fill="#555">25.0</text>
+<rect x="987.5731467561004" y="461" width="62.94379553602406" height="28" rx="4" fill="#7c3aed"/>
+<text x="1056.5169422921244" y="480" font-size="12" fill="#555">14.8</text>
+<rect x="30" y="498" width="1440" height="46" fill="#fff"/>
+<text x="170" y="526" font-size="16" text-anchor="end" fill="#333">🔍 B09</text>
+<rect x="346.00061766522543" y="507" width="137.89067325509572" height="28" rx="4" fill="#2563eb" fill-opacity="0.35" stroke="#2563eb"/>
+<text x="489.8912909203211" y="526" font-size="12" fill="#555">36.3</text>
+<rect x="937.2892332600902" y="507" width="108.96033306349024" height="28" rx="4" fill="#2563eb"/>
+<text x="1052.2495663235804" y="526" font-size="12" fill="#555">25.5</text>
+<rect x="30" y="544" width="1440" height="46" fill="#fafafa"/>
+<text x="170" y="572" font-size="16" text-anchor="end" fill="#333">⚙️ B10</text>
+<rect x="462.6189005558987" y="553" width="142.44904261890056" height="28" rx="4" fill="#059669" fill-opacity="0.35" stroke="#059669"/>
+<text x="611.0679431747992" y="572" font-size="12" fill="#555">37.5</text>
+<rect x="987.5731467561004" y="553" width="85.77425696773446" height="28" rx="4" fill="#059669"/>
+<text x="1079.3474037238348" y="572" font-size="12" fill="#555">20.1</text>
+<rect x="30" y="590" width="1440" height="46" fill="#fff"/>
+<text x="170" y="618" font-size="16" text-anchor="end" fill="#333">⚙️ B11</text>
+<rect x="557.5849289684991" y="599" width="142.44904261890056" height="28" rx="4" fill="#059669" fill-opacity="0.35" stroke="#059669"/>
+<text x="706.0339715873996" y="618" font-size="12" fill="#555">37.5</text>
+<rect x="1050.5169422921244" y="599" width="56.1871169191627" height="28" rx="4" fill="#059669"/>
+<text x="1112.7040592112871" y="618" font-size="12" fill="#555">13.2</text>
+<rect x="30" y="636" width="1440" height="46" fill="#fafafa"/>
+<text x="170" y="664" font-size="16" text-anchor="end" fill="#333">🧠 B12</text>
+<rect x="180.0" y="645" width="94.96602841260037" height="28" rx="4" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed"/>
+<text x="280.9660284126004" y="664" font-size="12" fill="#555">25.0</text>
+<rect x="855.0" y="645" width="99.57210593269342" height="28" rx="4" fill="#7c3aed"/>
+<text x="960.5721059326934" y="664" font-size="12" fill="#555">23.3</text>
+<rect x="30" y="682" width="1440" height="46" fill="#fff"/>
+<text x="170" y="710" font-size="16" text-anchor="end" fill="#333">🧠 B13</text>
+<rect x="700.0339715873996" y="691" width="94.96602841260037" height="28" rx="4" fill="#7c3aed" fill-opacity="0.35" stroke="#7c3aed"/>
+<text x="801.0" y="710" font-size="12" fill="#555">25.0</text>
+<rect x="1106.7040592112871" y="691" width="363.29594078871287" height="28" rx="4" fill="#7c3aed"/>
+<text x="1476.0" y="710" font-size="12" fill="#555">85.1</text>
+<text x="30" y="808" font-size="15" fill="#555">แท่งจาง = เวลาตามแผน · แท่งทึบ = เวลาจริง · ตัวเลข = นาทีของบล็อก · ตัวปรับ k = จริง ÷ แผน (แยกตามสกิล) บันทึกใน calib.json</text>
+</svg>

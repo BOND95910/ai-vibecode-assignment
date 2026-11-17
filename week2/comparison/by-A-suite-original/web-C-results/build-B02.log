@@ -1,0 +1,58 @@
+ Image eservice-web Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 492B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 470B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:24-alpine
+#3 DONE 1.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 130B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 333B done
+#5 DONE 0.0s
+
+#6 [1/5] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#6 resolve docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5 0.0s done
+#6 DONE 0.0s
+
+#7 [3/5] COPY package.json package-lock.json ./
+#7 CACHED
+
+#8 [4/5] RUN npm ci --omit=dev && npm cache clean --force
+#8 CACHED
+
+#9 [2/5] WORKDIR /app
+#9 CACHED
+
+#10 [5/5] COPY app ./app
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:6c383644290126282e06e73a628fb6fcd0bf5f9144d5db5b06eb78fa307aef7c done
+#11 exporting config sha256:187ec5d0d2e37a3ca6bd39b278c080681b3ca17575b02ce1dc17885d5b1c2387 done
+#11 exporting attestation manifest sha256:55d86cc5123ff93505afef87d64159482120c6a2d4657fbf5e0822c80a8b62f3 0.0s done
+#11 exporting manifest list sha256:45d4068b9cade917b1fb8943e410916a5728d2e55ef059e89fddcbbd8ebb1034 0.0s done
+#11 naming to docker.io/library/eservice-web:latest
+#11 naming to docker.io/library/eservice-web:latest done
+#11 unpacking to docker.io/library/eservice-web:latest done
+#11 DONE 0.1s
+
+#12 resolving provenance for metadata file
+#12 DONE 0.0s
+ Image eservice-web Built 
+ Network judge-c_default Creating 
+ Network judge-c_default Creating 
+ Network judge-c_default Created 
+ Network judge-c_default Created 
+ Container judge-c-web-1 Creating 
+ Container judge-c-web-1 Created 
+ Container judge-c-web-1 Starting 
+ Container judge-c-web-1 Started 

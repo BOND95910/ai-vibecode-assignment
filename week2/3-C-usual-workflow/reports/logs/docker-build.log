@@ -1,0 +1,344 @@
+ Image c-usual-tests Building 
+ Image eservice-web Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 910B done
+#1 DONE 0.0s
+
+#2 [web internal] load build definition from Dockerfile
+#2 transferring dockerfile: 470B 0.0s done
+#2 DONE 0.1s
+
+#3 [tests internal] load build definition from Dockerfile.tests
+#3 transferring dockerfile: 412B 0.0s done
+#3 DONE 0.1s
+
+#4 [web internal] load metadata for docker.io/library/node:24-alpine
+#4 ...
+
+#5 [auth] library/node:pull token for registry-1.docker.io
+#5 DONE 0.0s
+
+#6 [tests internal] load metadata for mcr.microsoft.com/playwright:v1.65.1-noble
+#6 DONE 1.3s
+
+#4 [web internal] load metadata for docker.io/library/node:24-alpine
+#4 ...
+
+#7 [tests internal] load .dockerignore
+#7 transferring context: 130B done
+#7 DONE 0.0s
+
+#8 [tests internal] load build context
+#8 transferring context: 381.89kB 0.0s done
+#8 DONE 0.1s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 resolve mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579 0.0s done
+#9 DONE 0.2s
+
+#4 [web internal] load metadata for docker.io/library/node:24-alpine
+#4 DONE 4.3s
+
+#7 [web internal] load .dockerignore
+#7 transferring context: 130B done
+#7 DONE 0.0s
+
+#10 [web internal] load build context
+#10 transferring context: 228.89kB 0.0s done
+#10 DONE 0.1s
+
+#11 [web 1/5] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#11 resolve docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5 0.0s done
+#11 sha256:7bb632bc9bd793a348866a7dd7920cf89dfc87205c6d38cda182ea6d8065b8e5 0B / 442B 0.2s
+#11 sha256:7eb569707982863466c2b0bcfddda86fb4842fccfaec088d1354f6a29e2856bb 0B / 1.26MB 0.2s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 0B / 57.42MB 0.2s
+#11 sha256:7bb632bc9bd793a348866a7dd7920cf89dfc87205c6d38cda182ea6d8065b8e5 442B / 442B 0.3s done
+#11 sha256:7eb569707982863466c2b0bcfddda86fb4842fccfaec088d1354f6a29e2856bb 1.26MB / 1.26MB 1.0s done
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 3.15MB / 57.42MB 1.5s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 6.29MB / 57.42MB 1.8s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 9.44MB / 57.42MB 2.4s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 12.58MB / 57.42MB 2.7s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 15.73MB / 57.42MB 3.0s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 19.92MB / 57.42MB 3.5s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 24.12MB / 57.42MB 3.9s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 27.26MB / 57.42MB 4.2s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 30.41MB / 57.42MB 4.7s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 34.60MB / 57.42MB 5.1s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 37.75MB / 57.42MB 5.4s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 40.89MB / 57.42MB 6.2s
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 44.04MB / 57.42MB 6.5s
+#11 ...
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 sha256:47752f912df11e40e8aa4458765dea5bc3f7203289565aac58d3e22c3ca01c93 99.61MB / 124.81MB 9.5s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 30.41MB / 328.99MB 9.3s
+#9 sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223 59.77MB / 111.77MB 9.3s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 25.17MB / 294.00MB 9.3s
+#9 sha256:47752f912df11e40e8aa4458765dea5bc3f7203289565aac58d3e22c3ca01c93 105.91MB / 124.81MB 10.4s
+#9 sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223 66.06MB / 111.77MB 10.4s
+#9 sha256:47752f912df11e40e8aa4458765dea5bc3f7203289565aac58d3e22c3ca01c93 113.25MB / 124.81MB 11.7s
+#9 sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223 72.35MB / 111.77MB 12.0s
+#9 sha256:47752f912df11e40e8aa4458765dea5bc3f7203289565aac58d3e22c3ca01c93 119.54MB / 124.81MB 12.8s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 40.89MB / 294.00MB 12.6s
+#9 sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223 78.64MB / 111.77MB 13.1s
+#9 sha256:47752f912df11e40e8aa4458765dea5bc3f7203289565aac58d3e22c3ca01c93 124.81MB / 124.81MB 13.2s done
+#9 sha256:9e0eed0efbea1fa9e728dd871b007c05163dec7ef7fdab23b353652d842e347a 0B / 3.23MB 0.2s
+#9 sha256:9e0eed0efbea1fa9e728dd871b007c05163dec7ef7fdab23b353652d842e347a 1.05MB / 3.23MB 0.3s
+#9 sha256:9e0eed0efbea1fa9e728dd871b007c05163dec7ef7fdab23b353652d842e347a 3.23MB / 3.23MB 0.4s done
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 0B / 120.07MB 0.2s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 47.19MB / 328.99MB 14.1s
+#9 sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223 84.93MB / 111.77MB 14.0s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 6.29MB / 120.07MB 0.8s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 56.62MB / 294.00MB 14.6s
+#9 sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223 91.23MB / 111.77MB 15.0s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 12.58MB / 120.07MB 1.4s
+#9 ...
+
+#11 [web 1/5] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#11 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 57.42MB / 57.42MB 8.6s done
+#11 extracting sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 3.6s done
+#11 extracting sha256:7eb569707982863466c2b0bcfddda86fb4842fccfaec088d1354f6a29e2856bb 0.1s done
+#11 DONE 12.5s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 ...
+
+#11 [web 1/5] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#11 extracting sha256:7bb632bc9bd793a348866a7dd7920cf89dfc87205c6d38cda182ea6d8065b8e5 0.0s done
+#11 DONE 12.5s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 18.87MB / 120.07MB 2.0s
+#9 ...
+
+#12 [web 2/5] WORKDIR /app
+#12 DONE 0.7s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 ...
+
+#13 [web 3/5] COPY package.json package-lock.json ./
+#13 DONE 0.1s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223 97.52MB / 111.77MB 16.1s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 25.17MB / 120.07MB 2.6s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 72.35MB / 294.00MB 16.5s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 31.46MB / 120.07MB 3.3s
+#9 sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223 103.81MB / 111.77MB 17.3s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 37.75MB / 120.07MB 4.2s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 63.96MB / 328.99MB 18.5s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 45.09MB / 120.07MB 5.3s
+#9 sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223 110.10MB / 111.77MB 19.1s
+#9 sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223 111.77MB / 111.77MB 19.4s done
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 0B / 29.79MB 0.2s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 88.08MB / 294.00MB 19.7s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 51.38MB / 120.07MB 6.0s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 2.10MB / 29.79MB 0.8s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 4.19MB / 29.79MB 1.1s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 57.67MB / 120.07MB 7.1s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 6.29MB / 29.79MB 1.5s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 8.39MB / 29.79MB 2.3s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 63.96MB / 120.07MB 8.3s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 10.49MB / 29.79MB 2.7s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 71.30MB / 120.07MB 9.2s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 12.58MB / 29.79MB 3.5s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 79.69MB / 328.99MB 23.6s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 14.68MB / 29.79MB 4.1s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 77.59MB / 120.07MB 10.4s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 16.78MB / 29.79MB 5.0s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 103.81MB / 294.00MB 24.5s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 18.87MB / 29.79MB 5.9s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 83.89MB / 120.07MB 12.0s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 20.97MB / 29.79MB 6.5s
+#9 ...
+
+#14 [web 4/5] RUN npm ci --omit=dev && npm cache clean --force
+#14 6.519 npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+#14 6.785 npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
+#14 6.839 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+#14 7.060 npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+#14 7.266 npm warn deprecated fstream@1.0.12: This package is no longer supported.
+#14 7.561 npm warn deprecated uuid@8.3.2: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+#14 ...
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 23.07MB / 29.79MB 7.1s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 90.18MB / 120.07MB 13.2s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 25.17MB / 29.79MB 7.7s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 27.26MB / 29.79MB 8.3s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 96.47MB / 120.07MB 14.3s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 119.54MB / 294.00MB 28.1s
+#9 sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 29.79MB / 29.79MB 8.9s done
+#9 extracting sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 95.42MB / 328.99MB 28.7s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 102.76MB / 120.07MB 15.3s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 110.10MB / 120.07MB 16.2s
+#9 ...
+
+#14 [web 4/5] RUN npm ci --omit=dev && npm cache clean --force
+#14 11.73 
+#14 11.73 added 193 packages, and audited 194 packages in 11s
+#14 11.73 
+#14 11.73 79 packages are looking for funding
+#14 11.74   run `npm fund` for details
+#14 11.74 
+#14 11.74 2 moderate severity vulnerabilities
+#14 11.74 
+#14 11.74 To address all issues (including breaking changes), run:
+#14 11.74   npm audit fix --force
+#14 11.74 
+#14 11.74 Run `npm audit` for details.
+#14 11.74 npm notice
+#14 11.74 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+#14 11.74 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+#14 11.74 npm notice To update run: npm install -g npm@12.2.2
+#14 11.74 npm notice
+#14 12.46 npm warn using --force Recommended protections disabled.
+#14 DONE 14.0s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 ...
+
+#15 [web 5/5] COPY app ./app
+#15 DONE 0.2s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 135.27MB / 294.00MB 30.5s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 116.39MB / 120.07MB 17.0s
+#9 sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 120.07MB / 120.07MB 17.5s done
+#9 extracting sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe 3.4s done
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 112.20MB / 328.99MB 32.0s
+#9 extracting sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 150.99MB / 294.00MB 32.3s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 166.72MB / 294.00MB 34.4s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 128.97MB / 328.99MB 35.6s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 182.45MB / 294.00MB 36.3s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 198.18MB / 294.00MB 39.2s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 145.75MB / 328.99MB 39.9s
+#9 ...
+
+#16 [web] exporting to image
+#16 exporting layers 6.4s done
+#16 exporting manifest sha256:bd222057b59c18c7825e726bb303dc5d5bc95ea39fcecb3c422479ec32e434b1 0.0s done
+#16 exporting config sha256:285cd43f897604601b7ea1705112a904db61b13b23baa8eb902142a2549e6875 0.0s done
+#16 exporting attestation manifest sha256:cafa68bdf7de84eacf744e377f795c3ce0eec9323e1b8da56af9d4183a7daa39 0.0s done
+#16 exporting manifest list sha256:5085b013455e47c91abdd11d438886f2c2538ec7645702520adcead730bbd8af 0.0s done
+#16 naming to docker.io/library/eservice-web:latest done
+#16 unpacking to docker.io/library/eservice-web:latest
+#16 ...
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 214.96MB / 294.00MB 41.9s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 230.69MB / 294.00MB 44.3s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 162.53MB / 328.99MB 44.9s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 247.46MB / 294.00MB 46.1s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 179.31MB / 328.99MB 48.0s
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 265.29MB / 294.00MB 48.2s
+#9 extracting sha256:a41e11046077fca670cefe0a4d933749d030a154fc96e143e0c9aa3ca3b010a0 17.5s done
+#9 extracting sha256:9e0eed0efbea1fa9e728dd871b007c05163dec7ef7fdab23b353652d842e347a 0.1s done
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 281.02MB / 294.00MB 49.8s
+#9 ...
+
+#16 [web] exporting to image
+#16 unpacking to docker.io/library/eservice-web:latest 13.1s done
+#16 DONE 19.8s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 197.13MB / 328.99MB 50.4s
+#9 ...
+
+#17 [web] resolving provenance for metadata file
+#17 DONE 0.0s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 294.00MB / 294.00MB 51.0s done
+#9 extracting sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 213.91MB / 328.99MB 52.8s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 231.74MB / 328.99MB 54.9s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 248.51MB / 328.99MB 56.7s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 265.29MB / 328.99MB 58.4s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 282.07MB / 328.99MB 60.0s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 298.84MB / 328.99MB 61.4s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 316.67MB / 328.99MB 62.9s
+#9 sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 328.99MB / 328.99MB 63.8s done
+#9 extracting sha256:6802dea8d812abb78fe5f2c91d21fec13f6e18b44c93270b5c4bf43b842b63de 19.0s done
+#9 DONE 70.3s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 extracting sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193
+#9 extracting sha256:16013128adc12408994436e79a979c00444d275883a39ed170fb00ff95c9e193 27.4s done
+#9 DONE 97.7s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 extracting sha256:47752f912df11e40e8aa4458765dea5bc3f7203289565aac58d3e22c3ca01c93
+#9 extracting sha256:47752f912df11e40e8aa4458765dea5bc3f7203289565aac58d3e22c3ca01c93 5.4s done
+#9 DONE 103.1s
+
+#9 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#9 extracting sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223
+#9 extracting sha256:80e9d9e1b5bbe54a8ce0b223013d7cfdb3dcadb5dce77a24f7ad852216685223 2.6s done
+#9 DONE 105.7s
+
+#18 [tests 2/8] WORKDIR /work
+#18 DONE 0.9s
+
+#19 [tests 3/8] COPY package.json package-lock.json ./
+#19 DONE 0.3s
+
+#20 [tests 4/8] RUN npm ci && npm cache clean --force
+#20 3.137 npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+#20 3.256 npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
+#20 3.322 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+#20 3.331 npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+#20 4.044 npm warn deprecated fstream@1.0.12: This package is no longer supported.
+#20 4.695 npm warn deprecated uuid@8.3.2: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+#20 6.809 
+#20 6.809 added 198 packages, and audited 199 packages in 6s
+#20 6.809 
+#20 6.809 79 packages are looking for funding
+#20 6.809   run `npm fund` for details
+#20 6.811 
+#20 6.811 2 moderate severity vulnerabilities
+#20 6.811 
+#20 6.811 To address all issues (including breaking changes), run:
+#20 6.811   npm audit fix --force
+#20 6.811 
+#20 6.811 Run `npm audit` for details.
+#20 6.812 npm notice
+#20 6.812 npm notice New major version of npm available! 11.20.0 -> 12.2.2
+#20 6.812 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+#20 6.812 npm notice To update run: npm install -g npm@12.2.2
+#20 6.812 npm notice
+#20 6.912 npm warn using --force Recommended protections disabled.
+#20 DONE 7.3s
+
+#21 [tests 5/8] COPY playwright.config.js ./
+#21 DONE 0.1s
+
+#22 [tests 6/8] COPY tests ./tests
+#22 DONE 0.0s
+
+#23 [tests 7/8] COPY app ./app
+#23 DONE 0.1s
+
+#24 [tests 8/8] COPY scripts ./scripts
+#24 DONE 0.0s
+
+#25 [tests] exporting to image
+#25 exporting layers
+#25 exporting layers 2.1s done
+#25 exporting manifest sha256:fc5861c93a67de381b42f25312947fbc3c393c117a5545f6128c034055e67704 0.0s done
+#25 exporting config sha256:4214cf7c2926d3b91abd5fc6b7a5c253ed2ce37a419197f19943b96fefc8e245 0.0s done
+#25 exporting attestation manifest sha256:70ff45aa36a6bea96a3ce34f1d2a8449349399258262b7ab65823e4cecabeeeb 0.0s done
+#25 exporting manifest list sha256:fee72426526923a9989c47fc59366a48f7c29585ae87ef55b6e62e9ba6bdc92d 0.0s done
+#25 naming to docker.io/library/c-usual-tests:latest done
+#25 unpacking to docker.io/library/c-usual-tests:latest
+#25 unpacking to docker.io/library/c-usual-tests:latest 52.9s done
+#25 DONE 55.1s
+
+#26 [tests] resolving provenance for metadata file
+#26 DONE 0.1s
+ Image c-usual-tests Built 
+ Image eservice-web Built 
+EXIT 0

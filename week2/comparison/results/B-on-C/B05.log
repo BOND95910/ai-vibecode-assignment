@@ -1,0 +1,336 @@
+
+Running 51 tests using 1 worker
+
+  ✓   1 [chromium] › e2e\part1.spec.ts:167:1 › TC-AUTH-01 เลขบัตร 13 หลัก + checksum (1.5s)
+  ✓   2 [chromium] › e2e\part1.spec.ts:204:1 › TC-AUTH-02 OTP ผิด 3 ครั้งล็อก 15 นาที (2.9s)
+  ✓   3 [chromium] › e2e\part1.spec.ts:331:1 › TC-AUTH-03 ลงทะเบียนครั้งแรก (2.0s)
+  ✓   4 [chromium] › e2e\part1.spec.ts:408:1 › TC-AUTH-04 เจ้าหน้าที่ SSO จำลองและหน้าตั้งต้น (3.9s)
+  ✓   5 [chromium] › e2e\part1.spec.ts:463:1 › TC-FEE-01 ค่าธรรมเนียม SV-01 / SV-02 / SV-03 (990ms)
+  ✓   6 [chromium] › e2e\part1.spec.ts:536:1 › TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร (1.1s)
+  ✓   7 [chromium] › e2e\part1.spec.ts:612:1 › TC-SUBMIT-02 เอกสารบังคับครบก่อนชำระ (949ms)
+  ✓   8 [chromium] › e2e\part1.spec.ts:672:1 › TC-SUBMIT-03 ร่าง และการยกเลิก (2.1s)
+  ✓   9 [chromium] › e2e\part1.spec.ts:781:1 › TC-UPLOAD-01 ขนาดและจำนวนไฟล์ (2.3s)
+  ✓  10 [chromium] › e2e\part1.spec.ts:850:1 › TC-UPLOAD-02 ชนิดไฟล์จากเนื้อไฟล์ (1.1s)
+  ✘  11 [chromium] › e2e\part1.spec.ts:901:1 › TC-PAY-01 อายุ QR 15:00 (498ms)
+  ✓  12 [chromium] › e2e\part1.spec.ts:945:1 › TC-PAY-02 ยอดเงินและ callback ซ้ำ (907ms)
+  ✓  13 [chromium] › e2e\part1.spec.ts:984:1 › TC-PAY-03 ชำระพร้อมกัน เลขไม่ซ้ำ (638ms)
+  ✓  14 [chromium] › e2e\part1.spec.ts:1028:1 › TC-PAY-04 เลขคำขอข้ามปี (804ms)
+  ✘  15 [chromium] › e2e\part1.spec.ts:1076:1 › TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก (410ms)
+  ✓  16 [chromium] › e2e\part1.spec.ts:1142:1 › TC-QUEUE-02 รับเรื่องซ้อน (พร้อมกันและต่อกัน) (1.2s)
+  ✘  17 [chromium] › e2e\part1.spec.ts:1215:1 › TC-QUEUE-03 งานในมือสูงสุด 10 (467ms)
+  ✓  18 [chromium] › e2e\part1.spec.ts:1299:1 › TC-SLA-01 กำหนดเสร็จตามตารางวันที่ (3.1s)
+  ✓  19 [chromium] › e2e\part1.spec.ts:1326:1 › TC-SLA-02 หยุดนับ SLA ระหว่างรอแก้ไข (2.5s)
+  ✓  20 [chromium] › e2e\part1.spec.ts:1425:1 › TC-SLA-03 ระดับเตือน ปกติ / ใกล้ครบกำหนด / เกินกำหนด (2.1s)
+  ✘  21 [chromium] › e2e\part1.spec.ts:1521:1 › TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ (10.6s)
+  ✘  22 [chromium] › e2e\part1.spec.ts:1525:1 › TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร (10.7s)
+  ✓  23 [chromium] › e2e\part2.spec.ts:744:1 › TC-WORKFLOW-01 SV-01 อนุมัติ + ออกเอกสาร (973ms)
+  ✓  24 [chromium] › e2e\part2.spec.ts:797:1 › TC-WORKFLOW-02 SV-02 ผ่านหัวหน้า (1.7s)
+  ✘  25 [chromium] › e2e\part2.spec.ts:865:1 › TC-WORKFLOW-03 SV-03 สามขั้นตอน (794ms)
+  ✓  26 [chromium] › e2e\part2.spec.ts:937:1 › TC-WORKFLOW-04 ตีกลับสูงสุด 2 ครั้ง และผลหลังครบ (2.3s)
+  ✓  27 [chromium] › e2e\part2.spec.ts:1015:1 › TC-WORKFLOW-05 เหตุผล ≥ 10 ตัวอักษร (ตีกลับ / ไม่อนุมัติ) (2.2s)
+  ✓  28 [chromium] › e2e\part2.spec.ts:1080:1 › TC-WORKFLOW-06 เวลาแก้ไข 168 ชั่วโมง (923ms)
+  ✓  29 [chromium] › e2e\part2.spec.ts:1134:1 › TC-DOC-01 ออกเอกสารและข้อมูลในเอกสาร (632ms)
+  ✓  30 [chromium] › e2e\part2.spec.ts:1189:1 › TC-DOC-02 ตรวจเอกสาร /verify (323ms)
+  ✓  31 [chromium] › e2e\part2.spec.ts:1226:1 › TC-DOC-03 เอกสารหมดอายุและลายเซ็นไม่ตรง (2.0s)
+  ✓  32 [chromium] › e2e\part2.spec.ts:1297:1 › TC-PDPA-01 ปิดบังเลขบัตรบนจอ (753ms)
+  ✓  33 [chromium] › e2e\part2.spec.ts:1334:1 › TC-PDPA-02 API (JSON) ไม่ส่งเลขบัตรเต็ม (197ms)
+  ✓  34 [chromium] › e2e\part2.spec.ts:1380:1 › TC-PDPA-03 แสดงเลขเต็มต้องมีเหตุผลและบันทึก Audit (947ms)
+  ✓  35 [chromium] › e2e\part2.spec.ts:1450:1 › TC-DASH-01 Dashboard ตัวเลขเริ่มต้น (504ms)
+  ✓  36 [chromium] › e2e\part2.spec.ts:1496:1 › TC-DASH-02 Dashboard ย้อนหลัง (943ms)
+  ✓  37 [chromium] › e2e\part2.spec.ts:1526:1 › TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ (1.5s)
+  ✓  38 [chromium] › e2e\part2.spec.ts:1609:1 › TC-DASH-04 ค่าขอบ "ทันกำหนด" 16:29:59 / 16:30:00 / 16:30:01 (885ms)
+  ✓  39 [chromium] › e2e\part2.spec.ts:1660:1 › TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit (1.3s)
+  ✓  40 [chromium] › e2e\part2.spec.ts:1797:1 › TC-AUDIT-02 Audit แก้/ลบไม่ได้ (405) (377ms)
+  ✓  41 [chromium] › e2e\part2.spec.ts:1843:1 › TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย (1.5s)
+  ✓  42 [chromium] › e2e\part2.spec.ts:1894:1 › TC-RBAC-01 ประชาชนเปิดคำขอคนอื่นไม่ได้ (IDOR) (309ms)
+  ✓  43 [chromium] › e2e\part2.spec.ts:1929:1 › TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API) (626ms)
+  ✓  44 [chromium] › e2e\part2.spec.ts:1974:1 › TC-RBAC-03 ตารางสิทธิ์หน้า/API ตามบทบาท (4.9s)
+  ✓  45 [chromium] › e2e\part2.spec.ts:2114:1 › TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก (2.5s)
+  ✓  46 [chromium] › e2e\part2.spec.ts:2241:1 › TC-RBAC-05 สิทธิ์เปิด/ดาวน์โหลดไฟล์แนบ (1.1s)
+  ✓  47 [chromium] › e2e\part2.spec.ts:2322:1 › TC-RBAC-06 ผู้ดูแลระบบ: ช่วงค่าที่ยอมรับ (1.7s)
+  ✓  48 [chromium] › e2e\part2.spec.ts:2436:1 › TC-NFR-01 Responsive 375 / 768 / 1280 (2.6s)
+  ✓  49 [chromium] › e2e\part2.spec.ts:2504:1 › TC-NFR-02 WCAG: axe + คีย์บอร์ด + label + สถานะไม่ใช้สีอย่างเดียว (13.1s)
+  ✓  50 [chromium] › e2e\part2.spec.ts:2676:1 › TC-NFR-03 Health เวลาโหลด และผลซ้ำได้ (1.5s)
+  ✘  51 [chromium] › e2e\part2.spec.ts:2754:1 › TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection) (94ms)
+
+
+  1) [chromium] › e2e\part1.spec.ts:901:1 › TC-PAY-01 อายุ QR 15:00 › รอบ 3 อายุ 15:00 → 410 QR_EXPIRED 
+
+    Error: {"status":"PAID","caseNo":"EG-2569-000031","receiptNo":"RC-2569-000031","duplicate":false}
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 410
+    Received: 200
+
+      917 |         return;
+      918 |       }
+    > 919 |       expect(paid.status, JSON.stringify(paid.body)).toBe(410);
+          |                                                      ^
+      920 |       expect(paid.body?.code).toBe('QR_EXPIRED');
+      921 |       if (r.n !== 3) return;
+      922 |
+        at C:\src\compare\judge\suiteB\e2e\part1.spec.ts:919:54
+        at C:\src\compare\judge\suiteB\e2e\part1.spec.ts:909:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-PAY-01-อายุ-QR-15-00-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\x\results\B-on-C\art-B05\part1-TC-PAY-01-อายุ-QR-15-00-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-PAY-01-อายุ-QR-15-00-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\x\results\B-on-C\art-B05\part1-TC-PAY-01-อายุ-QR-15-00-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › e2e\part1.spec.ts:1076:1 › TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก › off.reg1 · filter all 17 แถว 
+
+    Error: locator.evaluateAll: Execution context was destroyed, most likely because of a navigation
+
+       at helpers.ts:545
+
+      543 | /** อ่านค่าแอตทริบิวต์ของทุก element ใน locator */
+      544 | export function attrsOf(loc: Locator, attr: string): Promise<string[]> {
+    > 545 |   return loc.evaluateAll((els, a) => els.map((e) => e.getAttribute(a as string) ?? ''), attr);
+          |              ^
+      546 | }
+      547 |
+      548 | /** กรอกค่าในช่องแล้ว blur ให้เกิด input + change */
+        at attrsOf (C:\src\compare\judge\suiteB\e2e\helpers.ts:545:14)
+        at queueOrder (C:\src\compare\judge\suiteB\e2e\part1.spec.ts:75:36)
+        at C:\src\compare\judge\suiteB\e2e\part1.spec.ts:1107:29
+        at C:\src\compare\judge\suiteB\e2e\part1.spec.ts:1107:5
+        at C:\src\compare\judge\suiteB\e2e\part1.spec.ts:1081:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-QUEUE-01-ลำดับคิวและขอบเขตแผนก-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\x\results\B-on-C\art-B05\part1-TC-QUEUE-01-ลำดับคิวและขอบเขตแผนก-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-QUEUE-01-ลำดับคิวและขอบเขตแผนก-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\x\results\B-on-C\art-B05\part1-TC-QUEUE-01-ลำดับคิวและขอบเขตแผนก-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › e2e\part1.spec.ts:1215:1 › TC-QUEUE-03 งานในมือสูงสุด 10 › 2 claim …000028 (ครั้งที่ 10) → 10 
+
+    Error: page.goto: net::ERR_ABORTED at http://localhost:4403/officer/queue
+    Call log:
+      - navigating to "http://localhost:4403/officer/queue", waiting until "load"
+
+
+       at helpers.ts:583
+
+      581 | /** workload-count จากหน้า /officer/queue */
+      582 | export async function workloadUi(page: Page): Promise<Locator> {
+    > 583 |   await page.goto('/officer/queue');
+          |              ^
+      584 |   return page.getByTestId('workload-count');
+      585 | }
+      586 |
+        at workloadUi (C:\src\compare\judge\suiteB\e2e\helpers.ts:583:14)
+        at C:\src\compare\judge\suiteB\e2e\part1.spec.ts:1227:24
+        at C:\src\compare\judge\suiteB\e2e\part1.spec.ts:1224:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-QUEUE-03-งานในมือสูงสุด-10-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\x\results\B-on-C\art-B05\part1-TC-QUEUE-03-งานในมือสูงสุด-10-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-QUEUE-03-งานในมือสูงสุด-10-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\x\results\B-on-C\art-B05\part1-TC-QUEUE-03-งานในมือสูงสุด-10-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium] › e2e\part1.spec.ts:1521:1 › TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ ────────────────────
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('[data-testid="noti-item"][data-case-no="EG-2569-000024"][data-level="near"]')
+    Expected: "คำขอ EG-2569-000024 ใกล้ครบกำหนด"
+    Received: "คำขอ EG-2569-000024 ใกล้ครบกำหนด 1 ธ.ค. 2569 09:00"
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveText" locator('[data-testid="noti-item"][data-case-no="EG-2569-000024"][data-level="near"]') with timeout 10000ms
+      - waiting for locator('[data-testid="noti-item"][data-case-no="EG-2569-000024"][data-level="near"]')
+        23 × locator resolved to <li class="lv-near" data-level="near" data-testid="noti-item" data-case-no="EG-2569-000024">…</li>
+           - unexpected value "คำขอ EG-2569-000024 ใกล้ครบกำหนด 1 ธ.ค. 2569 09:00"
+
+
+      142 |     await expect(
+      143 |       page.locator(`[data-testid="noti-item"][data-case-no="${EG(n)}"][data-level="${l}"]`),
+    > 144 |     ).toHaveText(`คำขอ ${EG(n)} ${LEVEL_TH[l]}`);
+          |       ^
+      145 |   }
+      146 |   if (want.length === 0) await expect(page.getByTestId('noti-empty')).toHaveText(MSG.NOTI_EMPTY);
+      147 |   await expect(page.getByTestId('bell-count'), `${label}: bell-count`).toHaveText(String(want.length));
+        at expectNoti (C:\src\compare\judge\suiteB\e2e\part1.spec.ts:144:7)
+        at notiFlow01 (C:\src\compare\judge\suiteB\e2e\part1.spec.ts:1509:3)
+        at C:\src\compare\judge\suiteB\e2e\part1.spec.ts:1522:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ-chromium\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ-chromium\test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\x\results\B-on-C\art-B05\part1-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ-chromium\error-context.md
+
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\x\results\B-on-C\art-B05\part1-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium] › e2e\part1.spec.ts:1525:1 › TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร › ส่วน A ไม่แจ้งซ้ำ 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('[data-testid="noti-item"][data-case-no="EG-2569-000024"][data-level="near"]')
+    Expected: "คำขอ EG-2569-000024 ใกล้ครบกำหนด"
+    Received: "คำขอ EG-2569-000024 ใกล้ครบกำหนด 1 ธ.ค. 2569 09:00"
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveText" locator('[data-testid="noti-item"][data-case-no="EG-2569-000024"][data-level="near"]') with timeout 10000ms
+      - waiting for locator('[data-testid="noti-item"][data-case-no="EG-2569-000024"][data-level="near"]')
+        23 × locator resolved to <li class="lv-near" data-level="near" data-testid="noti-item" data-case-no="EG-2569-000024">…</li>
+           - unexpected value "คำขอ EG-2569-000024 ใกล้ครบกำหนด 1 ธ.ค. 2569 09:00"
+
+
+      142 |     await expect(
+      143 |       page.locator(`[data-testid="noti-item"][data-case-no="${EG(n)}"][data-level="${l}"]`),
+    > 144 |     ).toHaveText(`คำขอ ${EG(n)} ${LEVEL_TH[l]}`);
+          |       ^
+      145 |   }
+      146 |   if (want.length === 0) await expect(page.getByTestId('noti-empty')).toHaveText(MSG.NOTI_EMPTY);
+      147 |   await expect(page.getByTestId('bell-count'), `${label}: bell-count`).toHaveText(String(want.length));
+        at expectNoti (C:\src\compare\judge\suiteB\e2e\part1.spec.ts:144:7)
+        at notiFlow01 (C:\src\compare\judge\suiteB\e2e\part1.spec.ts:1509:3)
+        at C:\src\compare\judge\suiteB\e2e\part1.spec.ts:1527:28
+        at C:\src\compare\judge\suiteB\e2e\part1.spec.ts:1526:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium\test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\x\results\B-on-C\art-B05\part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium\error-context.md
+
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\x\results\B-on-C\art-B05\part1-TC-NOTI-02-ไม่แจ้งซ้-4d45e-ละขั้นรออนุมัติ-รอออกเอกสาร-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [chromium] › e2e\part2.spec.ts:865:1 › TC-WORKFLOW-03 SV-03 สามขั้นตอน › 6 off.works1 claim แล้วส่งต่อ → รออนุมัติ · ขั้นตอน 3/3 · หัวหน้าฝ่าย 
+
+    Error: page.goto: net::ERR_ABORTED at http://localhost:4403/officer/cases/EG-2569-000012
+    Call log:
+      - navigating to "http://localhost:4403/officer/cases/EG-2569-000012", waiting until "load"
+
+
+      905 |     await queueRow(w1.page, EG(12)).getByTestId('claim-btn').click();
+      906 |     await expect.poll(async () => (await getCase(w1.api, EG(12))).owner).toBe('off.works1');
+    > 907 |     await w1.page.goto(officerCase(EG(12)));
+          |                   ^
+      908 |     await expect(w1.page.getByTestId('case-owner')).toHaveText('off.works1');
+      909 |     await w1.page.getByTestId('forward-btn').click();
+      910 |     await expectCaseStatus(w1.page, 'PENDING_APPROVAL');
+        at C:\src\compare\judge\suiteB\e2e\part2.spec.ts:907:19
+        at C:\src\compare\judge\suiteB\e2e\part2.spec.ts:904:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part2-TC-WORKFLOW-03-SV-03-สามขั้นตอน-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part2-TC-WORKFLOW-03-SV-03-สามขั้นตอน-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\x\results\B-on-C\art-B05\part2-TC-WORKFLOW-03-SV-03-สามขั้นตอน-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part2-TC-WORKFLOW-03-SV-03-สามขั้นตอน-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\x\results\B-on-C\art-B05\part2-TC-WORKFLOW-03-SV-03-สามขั้นตอน-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [chromium] › e2e\part2.spec.ts:2754:1 › TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection) › ค้นค่าตรงตัวในไฟล์ฐานข้อมูล (DB_PATH + -wal/-journal/-shm) → 0 ทุกค่า 
+
+    Error: C:/src/compare/judge/cdata2/app.db.json เป็นไฟล์ SQLite
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "SQLite format 3"
+    Received: ""
+
+      2775 |       .concat((process.env.PII_SCAN_PATHS ?? '').split(',').map((s) => s.trim()))
+      2776 |       .filter((p) => !!p && fs.existsSync(p) && fs.statSync(p).isFile());
+    > 2777 |     expect(fs.readFileSync(main!).subarray(0, 15).toString('latin1'), `${main} เป็นไฟล์ SQLite`).toBe('SQLite format 3');
+           |                                                                                                  ^
+      2778 |     const newest = Math.max(...files.map((f) => fs.statSync(f).mtimeMs));
+      2779 |     expect(newest, `${main} ต้องถูกเขียนระหว่าง test นี้ (เป็น DB ของเว็บที่ทดสอบอยู่)`).toBeGreaterThanOrEqual(started - 5_000);
+      2780 |     test.info().annotations.push({ type: 'NFR-04 files', description: files.join(', ') });
+        at C:\src\compare\judge\suiteB\e2e\part2.spec.ts:2777:98
+        at C:\src\compare\judge\suiteB\e2e\part2.spec.ts:2770:3
+
+    Error Context: ..\x\results\B-on-C\art-B05\part2-TC-NFR-04-เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ-inspection--chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\x\results\B-on-C\art-B05\part2-TC-NFR-04-เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ-inspection--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\x\results\B-on-C\art-B05\part2-TC-NFR-04-เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ-inspection--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7 failed
+    [chromium] › e2e\part1.spec.ts:901:1 › TC-PAY-01 อายุ QR 15:00 ─────────────────────────────────
+    [chromium] › e2e\part1.spec.ts:1076:1 › TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก ──────────────────────
+    [chromium] › e2e\part1.spec.ts:1215:1 › TC-QUEUE-03 งานในมือสูงสุด 10 ──────────────────────────
+    [chromium] › e2e\part1.spec.ts:1521:1 › TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ ─────────────────────
+    [chromium] › e2e\part1.spec.ts:1525:1 › TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร 
+    [chromium] › e2e\part2.spec.ts:865:1 › TC-WORKFLOW-03 SV-03 สามขั้นตอน ─────────────────────────
+    [chromium] › e2e\part2.spec.ts:2754:1 › TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection) ──
+  44 passed (1.8m)

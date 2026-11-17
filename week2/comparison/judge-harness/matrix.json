@@ -1,0 +1,294 @@
+{
+ "summary": {
+  "A-suite on A-web": "51/51",
+  "A-suite on B-web": "48/51",
+  "A-suite on C-web": "48/51",
+  "B-suite on A-web": "49/51",
+  "B-suite on B-web": "51/51",
+  "B-suite on C-web": "45/51",
+  "C-suite on A-web": "39/51",
+  "C-suite on B-web": "33/51",
+  "C-suite on C-web": "51/51"
+ },
+ "perWeb": {
+  "A": [
+   {
+    "id": "TC-AUDIT-01",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-AUDIT-03",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-DASH-01",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-DASH-02",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-DASH-03",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-NFR-02",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-NOTI-01",
+    "A": "p",
+    "B": "F",
+    "C": "F",
+    "failIn": 2
+   },
+   {
+    "id": "TC-NOTI-02",
+    "A": "p",
+    "B": "F",
+    "C": "F",
+    "failIn": 2
+   },
+   {
+    "id": "TC-QUEUE-01",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-RBAC-02",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-RBAC-04",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-WORKFLOW-04",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   }
+  ],
+  "B": [
+   {
+    "id": "TC-AUDIT-01",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-AUDIT-03",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-AUTH-01",
+    "A": "F",
+    "B": "p",
+    "C": "F",
+    "failIn": 2
+   },
+   {
+    "id": "TC-AUTH-03",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-DASH-01",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-DASH-02",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-DASH-03",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-DOC-01",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-FEE-01",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-NFR-04",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-PAY-02",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-QUEUE-02",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-QUEUE-03",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-RBAC-02",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-SUBMIT-01",
+    "A": "F",
+    "B": "p",
+    "C": "F",
+    "failIn": 2
+   },
+   {
+    "id": "TC-SUBMIT-03",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-UPLOAD-01",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-WORKFLOW-01",
+    "A": "p",
+    "B": "p",
+    "C": "F",
+    "failIn": 1
+   },
+   {
+    "id": "TC-WORKFLOW-06",
+    "A": "F",
+    "B": "p",
+    "C": "p",
+    "failIn": 1
+   }
+  ],
+  "C": [
+   {
+    "id": "TC-DASH-03",
+    "A": "F",
+    "B": "p",
+    "C": "p",
+    "failIn": 1
+   },
+   {
+    "id": "TC-NFR-04",
+    "A": "F",
+    "B": "F",
+    "C": "p",
+    "failIn": 2
+   },
+   {
+    "id": "TC-NOTI-01",
+    "A": "p",
+    "B": "F",
+    "C": "p",
+    "failIn": 1
+   },
+   {
+    "id": "TC-NOTI-02",
+    "A": "p",
+    "B": "F",
+    "C": "p",
+    "failIn": 1
+   },
+   {
+    "id": "TC-QUEUE-01",
+    "A": "p",
+    "B": "F",
+    "C": "p",
+    "failIn": 1
+   },
+   {
+    "id": "TC-QUEUE-03",
+    "A": "p",
+    "B": "F",
+    "C": "p",
+    "failIn": 1
+   },
+   {
+    "id": "TC-WORKFLOW-03",
+    "A": "p",
+    "B": "F",
+    "C": "p",
+    "failIn": 1
+   },
+   {
+    "id": "TC-WORKFLOW-06",
+    "A": "F",
+    "B": "p",
+    "C": "p",
+    "failIn": 1
+   }
+  ]
+ }
+}

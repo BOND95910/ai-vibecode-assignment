@@ -1,0 +1,93 @@
+<!doctype html><html lang="th"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>รายงานทดสอบ e-Service</title>
+<style>:root{--bg:#fff;--fg:#1f2328;--mut:#656d76;--line:#d0d7de;--ok:#1a7f37;--bad:#cf222e}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--mut:#8b949e;--line:#30363d;--ok:#3fb950;--bad:#f85149}}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif;margin:0 auto;padding:16px;max-width:1200px}
+table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow-x:auto}th,td{border:1px solid var(--line);padding:4px 8px;text-align:left;vertical-align:top}
+.ok{color:var(--ok)}.bad{color:var(--bad)}.mut{color:var(--mut)}figure{margin:0;display:inline-block;width:320px;vertical-align:top}img{max-width:100%;border:1px solid var(--line)}
+a{color:inherit}</style>
+<h1>รายงานทดสอบ e-Service · Week 2</h1>
+<p><b>เว็บปกติ 51/51 ผ่าน</b> · BUG_MODE จับได้ 12/12 ตัว (และชุดรวม 2 ชุด) · รันสอง sweep ได้ผลเหมือนกัน · <span class="mut">รายละเอียด: RESULT.md · BUG-HUNT.md · ../REPORT.md</span></p>
+<h2>BUG-HUNT (รอบที่ 1 เทียบรอบที่ 2)</h2>
+<table><tr><th>BUG_MODE</th><th>คาดว่าล้ม</th><th>ล้มจริง</th><th>ล้มเกิน</th><th>ควรล้มแต่ผ่าน</th><th>2 รอบ</th><th>ข้อความแรก</th></tr>
+<tr><td>B01</td><td>TC-FEE-01</td><td>TC-FEE-01</td><td>–</td><td>–</td><td>เหมือนกัน</td><td>Error: API SV-03 พื้นที่ 101 fee: expected 1010 but received 1000</td></tr>
+<tr><td>B02</td><td>TC-UPLOAD-01</td><td>TC-UPLOAD-01</td><td>–</td><td>–</td><td>เหมือนกัน</td><td>Error: API ไฟล์ 5242880 ไบต์ (≤ 5 MB ต้องรับ): expected HTTP 201 but received 400 body={&quot;code&quot;:&quot;FILE_TOO_LARGE&quot;,&quot;message&quot;:&quot;ไฟล์ใหญ่เกิน 5 MB&quot;}</td></tr>
+<tr><td>B03</td><td>TC-SLA-01 · TC-SLA-02</td><td>TC-NOTI-02 · TC-RBAC-04 · TC-SLA-01 · TC-SLA-02 · TC-SLA-03</td><td>⚠ TC-NOTI-02 (นอกรายการ) · TC-RBAC-04 (อาจล้มด้วย ตามแผน) · TC-SLA-03 (อาจล้มด้วย ตามแผน)</td><td>–</td><td>เหมือนกัน</td><td>Error: ส่วน B off.reg2 API items (caseNo|level): expected [&quot;EG-2569-000013|overdue&quot;,&quot;EG-2569-000015|overdue&quot;,&quot;EG-2569-000016|near&quot;,&quot;EG-2569-000024|overdue&quot;,&quot;EG-2569-000025|overdue&quot;,&quot;EG-2569-000026|overdue&quot;,&quot;EG-2569-000027|overdue&quot;,&quot;EG-2569-000028|overdue&quot;,&quot;EG-2569-000029|overdue&quot;,&quot;EG-2569-000030|overdue&quot;] but received [&quot;EG-2569-000013|overdue&quot;,&quot;EG-2569-000015|overdue&quot;,&quot;EG-2569-000024|overdue&quot;,&quot;EG-2569-000025|overdue&quot;,&quot;EG-2569-000026|overdue&quot;,&quot;EG-2569-000027|overdue&quot;,&quot;EG-2569-000028|overdue&quot;,&quot;EG-2569-000029|overdue&quot;,&quot;EG-2569-000030|overdue&quot;]</td></tr>
+<tr><td>B04</td><td>TC-SLA-02</td><td>TC-SLA-02</td><td>–</td><td>–</td><td>เหมือนกัน</td><td>Error: ส่วน 1 dueAt หลังหยุดนับ 1 วันทำการ (พฤ.3) = ศ.4 + 1 วันทำการ: expected &quot;2026-12-08T16:30:00+07:00&quot; but received &quot;2026-12-04T16:30:00+07:00&quot;</td></tr>
+<tr><td>B05</td><td>TC-PAY-01</td><td>TC-PAY-01</td><td>–</td><td>–</td><td>เหมือนกัน</td><td>Error: รอบ 3 (อายุ 15:00) pay PP-0001 (ต้องหมดอายุ ไม่ใช่จ่ายได้): expected HTTP 410 but received 200 body={&quot;status&quot;:&quot;PAID&quot;,&quot;caseNo&quot;:&quot;EG-2569-000031&quot;,&quot;receiptNo&quot;:&quot;RC-2569-000031&quot;,&quot;duplicate&quot;:false}</td></tr>
+<tr><td>B06</td><td>TC-RBAC-01</td><td>TC-RBAC-01</td><td>–</td><td>–</td><td>เหมือนกัน</td><td>Error: UI HTTP ของ /citizen/cases/…000005 (ของสมชาย): expected 404 but received 200</td></tr>
+<tr><td>B07</td><td>TC-RBAC-02</td><td>TC-RBAC-02</td><td>–</td><td>–</td><td>เหมือนกัน</td><td>Error: 1 off.reg2 approve …000014 (SV-02 PENDING_APPROVAL): expected HTTP 403 but received 200 body={&quot;status&quot;:&quot;APPROVED&quot;}</td></tr>
+<tr><td>B08</td><td>TC-QUEUE-02</td><td>TC-QUEUE-02</td><td>–</td><td>–</td><td>เหมือนกัน</td><td>Error: ส่วน 1 Audit CLAIM ของ …000028 ต้องมี 1 แถวเท่านั้น: expected 1 but received 2</td></tr>
+<tr><td>B09</td><td>TC-PDPA-02</td><td>TC-PDPA-02</td><td>–</td><td>–</td><td>เหมือนกัน</td><td>Error: off.reg1 GET /api/officer/queue?filter=all: ต้องไม่พบเลข 13 หลักติดกัน · พบ 1101700123456</td></tr>
+<tr><td>B10</td><td>TC-DASH-02</td><td>TC-DASH-01 · TC-DASH-02 · TC-DASH-03</td><td>TC-DASH-01 (อาจล้มด้วย ตามแผน) · TC-DASH-03 (อาจล้มด้วย ตามแผน)</td><td>–</td><td>เหมือนกัน</td><td>Error: ALL ธ.ค. kpi-ontime-pct: expected &quot;–&quot;</td></tr>
+<tr><td>B11</td><td>TC-PDPA-03 · TC-AUDIT-01</td><td>TC-AUDIT-01 · TC-PDPA-03</td><td>–</td><td>–</td><td>เหมือนกัน</td><td>Error: audit count (ไม่กรอง): expected 16 but received 15</td></tr>
+<tr><td>B12</td><td>TC-WORKFLOW-04</td><td>TC-WORKFLOW-04</td><td>–</td><td>–</td><td>เหมือนกัน</td><td>Error: A.5 return-btn ต้อง 0 (B12: ตีกลับครั้งที่ 3 ต้องไม่ได้): expected count 0</td></tr>
+<tr><td>B03+B07</td><td>TC-SLA-01 · TC-SLA-02 · TC-RBAC-02</td><td>TC-NOTI-02 · TC-RBAC-02 · TC-RBAC-04 · TC-SLA-01 · TC-SLA-02 · TC-SLA-03</td><td>⚠ TC-NOTI-02 (นอกรายการ) · TC-RBAC-04 (อาจล้มด้วย ตามแผน) · TC-SLA-03 (อาจล้มด้วย ตามแผน)</td><td>–</td><td>เหมือนกัน</td><td>Error: ส่วน B off.reg2 API items (caseNo|level): expected [&quot;EG-2569-000013|overdue&quot;,&quot;EG-2569-000015|overdue&quot;,&quot;EG-2569-000016|near&quot;,&quot;EG-2569-000024|overdue&quot;,&quot;EG-2569-000025|overdue&quot;,&quot;EG-2569-000026|overdue&quot;,&quot;EG-2569-000027|overdue&quot;,&quot;EG-2569-000028|overdue&quot;,&quot;EG-2569-000029|overdue&quot;,&quot;EG-2569-000030|overdue&quot;] but received [&quot;EG-2569-000013|overdue&quot;,&quot;EG-2569-000015|overdue&quot;,&quot;EG-2569-000024|overdue&quot;,&quot;EG-2569-000025|overdue&quot;,&quot;EG-2569-000026|overdue&quot;,&quot;EG-2569-000027|overdue&quot;,&quot;EG-2569-000028|overdue&quot;,&quot;EG-2569-000029|overdue&quot;,&quot;EG-2569-000030|overdue&quot;]</td></tr>
+<tr><td>B01+B05+B09</td><td>TC-FEE-01 · TC-PAY-01 · TC-PDPA-02</td><td>TC-FEE-01 · TC-PAY-01 · TC-PDPA-02</td><td>–</td><td>–</td><td>เหมือนกัน</td><td>Error: API SV-03 พื้นที่ 101 fee: expected 1010 but received 1000</td></tr></table>
+<h2>ผลรายข้อ (เว็บปกติ)</h2>
+<table><tr><th>TC</th><th>ชื่อ</th><th>ผล</th><th>ms</th><th>GIF</th></tr>
+<tr><td>TC-AUDIT-01</td><td>เหตุการณ์และฟิลด์ใน Audit</td><td class="ok">✅ ผ่าน</td><td>2012</td><td><a href="gifs/TC-AUDIT-01.gif">gif</a></td></tr>
+<tr><td>TC-AUDIT-02</td><td>Audit แก้/ลบไม่ได้ (405)</td><td class="ok">✅ ผ่าน</td><td>622</td><td></td></tr>
+<tr><td>TC-AUDIT-03</td><td>กรองช่วงวันที่ตามเวลาไทย</td><td class="ok">✅ ผ่าน</td><td>1322</td><td></td></tr>
+<tr><td>TC-AUTH-01</td><td>เลขบัตร 13 หลัก + checksum</td><td class="ok">✅ ผ่าน</td><td>2483</td><td></td></tr>
+<tr><td>TC-AUTH-02</td><td>OTP ผิด 3 ครั้งล็อก 15 นาที</td><td class="ok">✅ ผ่าน</td><td>1779</td><td></td></tr>
+<tr><td>TC-AUTH-03</td><td>ลงทะเบียนครั้งแรก</td><td class="ok">✅ ผ่าน</td><td>3540</td><td></td></tr>
+<tr><td>TC-AUTH-04</td><td>เจ้าหน้าที่ SSO จำลองและหน้าตั้งต้นตามบทบาท</td><td class="ok">✅ ผ่าน</td><td>4496</td><td></td></tr>
+<tr><td>TC-DASH-01</td><td>Dashboard ตัวเลขเริ่มต้น</td><td class="ok">✅ ผ่าน</td><td>686</td><td></td></tr>
+<tr><td>TC-DASH-02</td><td>Dashboard ย้อนหลัง พ.ย. ต.ค. รายปี</td><td class="ok">✅ ผ่าน</td><td>1446</td><td><a href="gifs/TC-DASH-02.gif">gif</a></td></tr>
+<tr><td>TC-DASH-03</td><td>ส่งออก Excel/PDF เท่าหน้าจอ และไม่มีข้อมูลส่วนบุคคล</td><td class="ok">✅ ผ่าน</td><td>10192</td><td></td></tr>
+<tr><td>TC-DASH-04</td><td>ค่าขอบ &quot;ทันกำหนด&quot; 16:29:59 / 16:30:00 / 16:30:01</td><td class="ok">✅ ผ่าน</td><td>3121</td><td></td></tr>
+<tr><td>TC-DOC-01</td><td>ออกเอกสารและข้อมูลใน PDF</td><td class="ok">✅ ผ่าน</td><td>2504</td><td></td></tr>
+<tr><td>TC-DOC-02</td><td>ตรวจเอกสาร /verify</td><td class="ok">✅ ผ่าน</td><td>1223</td><td></td></tr>
+<tr><td>TC-DOC-03</td><td>เอกสารหมดอายุและลายเซ็นไม่ตรง</td><td class="ok">✅ ผ่าน</td><td>3161</td><td></td></tr>
+<tr><td>TC-FEE-01</td><td>ค่าธรรมเนียม SV-01/SV-02/SV-03</td><td class="ok">✅ ผ่าน</td><td>1242</td><td><a href="gifs/TC-FEE-01.gif">gif</a></td></tr>
+<tr><td>TC-NFR-01</td><td>Responsive 375/768/1280</td><td class="ok">✅ ผ่าน</td><td>8161</td><td></td></tr>
+<tr><td>TC-NFR-02</td><td>WCAG: axe + คีย์บอร์ด + label + สถานะไม่ใช้สีอย่างเดียว</td><td class="ok">✅ ผ่าน</td><td>12308</td><td></td></tr>
+<tr><td>TC-NFR-03</td><td>Health เวลาโหลด และผลซ้ำได้</td><td class="ok">✅ ผ่าน</td><td>2742</td><td></td></tr>
+<tr><td>TC-NFR-04</td><td>เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection)</td><td class="ok">✅ ผ่าน</td><td>460</td><td></td></tr>
+<tr><td>TC-NOTI-01</td><td>ผู้รับแจ้งเตือนตามระดับ</td><td class="ok">✅ ผ่าน</td><td>2560</td><td></td></tr>
+<tr><td>TC-NOTI-02</td><td>ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร</td><td class="ok">✅ ผ่าน</td><td>4039</td><td></td></tr>
+<tr><td>TC-PAY-01</td><td>อายุ QR 15:00</td><td class="ok">✅ ผ่าน</td><td>833</td><td><a href="gifs/TC-PAY-01.gif">gif</a></td></tr>
+<tr><td>TC-PAY-02</td><td>ยอดเงินและ callback ซ้ำ</td><td class="ok">✅ ผ่าน</td><td>447</td><td></td></tr>
+<tr><td>TC-PAY-03</td><td>ชำระพร้อมกัน เลขไม่ซ้ำ</td><td class="ok">✅ ผ่าน</td><td>739</td><td></td></tr>
+<tr><td>TC-PAY-04</td><td>เลขคำขอข้ามปี 2569 → 2570</td><td class="ok">✅ ผ่าน</td><td>1332</td><td></td></tr>
+<tr><td>TC-PDPA-01</td><td>ปิดบังเลขบัตรบนจอ</td><td class="ok">✅ ผ่าน</td><td>2000</td><td></td></tr>
+<tr><td>TC-PDPA-02</td><td>API (JSON) ไม่ส่งเลขบัตรเต็ม</td><td class="ok">✅ ผ่าน</td><td>333</td><td></td></tr>
+<tr><td>TC-PDPA-03</td><td>แสดงเลขเต็มต้องมีเหตุผลและ Audit</td><td class="ok">✅ ผ่าน</td><td>1532</td><td><a href="gifs/TC-PDPA-03.gif">gif</a></td></tr>
+<tr><td>TC-QUEUE-01</td><td>ลำดับคิวและขอบเขตแผนก</td><td class="ok">✅ ผ่าน</td><td>1579</td><td></td></tr>
+<tr><td>TC-QUEUE-02</td><td>รับเรื่องซ้อน (พร้อมกันและต่อกัน)</td><td class="ok">✅ ผ่าน</td><td>1967</td><td><a href="gifs/TC-QUEUE-02.gif">gif</a></td></tr>
+<tr><td>TC-QUEUE-03</td><td>งานในมือสูงสุด 10</td><td class="ok">✅ ผ่าน</td><td>3580</td><td></td></tr>
+<tr><td>TC-RBAC-01</td><td>ประชาชนเปิดคำขอคนอื่นไม่ได้ (IDOR)</td><td class="ok">✅ ผ่าน</td><td>855</td><td><a href="gifs/TC-RBAC-01.gif">gif</a></td></tr>
+<tr><td>TC-RBAC-02</td><td>เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (API)</td><td class="ok">✅ ผ่าน</td><td>1395</td><td><a href="gifs/TC-RBAC-02.gif">gif</a></td></tr>
+<tr><td>TC-RBAC-03</td><td>ตารางสิทธิ์หน้า/API ตามบทบาท</td><td class="ok">✅ ผ่าน</td><td>9696</td><td></td></tr>
+<tr><td>TC-RBAC-04</td><td>ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก</td><td class="ok">✅ ผ่าน</td><td>2377</td><td></td></tr>
+<tr><td>TC-RBAC-05</td><td>สิทธิ์เปิด/ดาวน์โหลดไฟล์แนบ</td><td class="ok">✅ ผ่าน</td><td>1785</td><td></td></tr>
+<tr><td>TC-RBAC-06</td><td>ผู้ดูแลระบบ: ช่วงค่าที่ยอมรับ</td><td class="ok">✅ ผ่าน</td><td>2623</td><td></td></tr>
+<tr><td>TC-SLA-01</td><td>กำหนดเสร็จตามตารางวันที่</td><td class="ok">✅ ผ่าน</td><td>5297</td><td><a href="gifs/TC-SLA-01.gif">gif</a></td></tr>
+<tr><td>TC-SLA-02</td><td>หยุดนับ SLA ระหว่างรอแก้ไข</td><td class="ok">✅ ผ่าน</td><td>4094</td><td><a href="gifs/TC-SLA-02.gif">gif</a></td></tr>
+<tr><td>TC-SLA-03</td><td>ระดับเตือน ปกติ/ใกล้/เกิน</td><td class="ok">✅ ผ่าน</td><td>4513</td><td></td></tr>
+<tr><td>TC-SUBMIT-01</td><td>ยื่นคำขอ SV-01 ครบวงจร</td><td class="ok">✅ ผ่าน</td><td>1337</td><td></td></tr>
+<tr><td>TC-SUBMIT-02</td><td>เอกสารบังคับครบก่อนชำระ</td><td class="ok">✅ ผ่าน</td><td>1074</td><td></td></tr>
+<tr><td>TC-SUBMIT-03</td><td>ร่าง การลบร่าง และการยกเลิก</td><td class="ok">✅ ผ่าน</td><td>4861</td><td></td></tr>
+<tr><td>TC-UPLOAD-01</td><td>ขนาดและจำนวนไฟล์</td><td class="ok">✅ ผ่าน</td><td>3514</td><td><a href="gifs/TC-UPLOAD-01.gif">gif</a></td></tr>
+<tr><td>TC-UPLOAD-02</td><td>ชนิดไฟล์จากเนื้อไฟล์</td><td class="ok">✅ ผ่าน</td><td>1287</td><td></td></tr>
+<tr><td>TC-WORKFLOW-01</td><td>SV-01 อนุมัติ + ออกเอกสาร</td><td class="ok">✅ ผ่าน</td><td>913</td><td></td></tr>
+<tr><td>TC-WORKFLOW-02</td><td>SV-02 ผ่านหัวหน้า</td><td class="ok">✅ ผ่าน</td><td>3470</td><td></td></tr>
+<tr><td>TC-WORKFLOW-03</td><td>SV-03 สามขั้นตอน</td><td class="ok">✅ ผ่าน</td><td>3235</td><td></td></tr>
+<tr><td>TC-WORKFLOW-04</td><td>ตีกลับสูงสุด 2 ครั้ง และผลหลังครบ</td><td class="ok">✅ ผ่าน</td><td>3494</td><td><a href="gifs/TC-WORKFLOW-04.gif">gif</a></td></tr>
+<tr><td>TC-WORKFLOW-05</td><td>เหตุผล ≥ 10 ตัวอักษร (ตีกลับ/ไม่อนุมัติ)</td><td class="ok">✅ ผ่าน</td><td>4233</td><td></td></tr>
+<tr><td>TC-WORKFLOW-06</td><td>เวลาแก้ไข 168 ชั่วโมง</td><td class="ok">✅ ผ่าน</td><td>2363</td><td></td></tr></table>
+<h2>GIF ของ TC ที่จับบั๊ก</h2>
+<figure><img loading="lazy" src="gifs/TC-AUDIT-01.gif" alt="TC-AUDIT-01"><figcaption>TC-AUDIT-01</figcaption></figure>
+<figure><img loading="lazy" src="gifs/TC-DASH-02.gif" alt="TC-DASH-02"><figcaption>TC-DASH-02</figcaption></figure>
+<figure><img loading="lazy" src="gifs/TC-FEE-01.gif" alt="TC-FEE-01"><figcaption>TC-FEE-01</figcaption></figure>
+<figure><img loading="lazy" src="gifs/TC-PAY-01.gif" alt="TC-PAY-01"><figcaption>TC-PAY-01</figcaption></figure>
+<figure><img loading="lazy" src="gifs/TC-PDPA-03.gif" alt="TC-PDPA-03"><figcaption>TC-PDPA-03</figcaption></figure>
+<figure><img loading="lazy" src="gifs/TC-QUEUE-02.gif" alt="TC-QUEUE-02"><figcaption>TC-QUEUE-02</figcaption></figure>
+<figure><img loading="lazy" src="gifs/TC-RBAC-01.gif" alt="TC-RBAC-01"><figcaption>TC-RBAC-01</figcaption></figure>
+<figure><img loading="lazy" src="gifs/TC-RBAC-02.gif" alt="TC-RBAC-02"><figcaption>TC-RBAC-02</figcaption></figure>
+<figure><img loading="lazy" src="gifs/TC-SLA-01.gif" alt="TC-SLA-01"><figcaption>TC-SLA-01</figcaption></figure>
+<figure><img loading="lazy" src="gifs/TC-SLA-02.gif" alt="TC-SLA-02"><figcaption>TC-SLA-02</figcaption></figure>
+<figure><img loading="lazy" src="gifs/TC-UPLOAD-01.gif" alt="TC-UPLOAD-01"><figcaption>TC-UPLOAD-01</figcaption></figure>
+<figure><img loading="lazy" src="gifs/TC-WORKFLOW-04.gif" alt="TC-WORKFLOW-04"><figcaption>TC-WORKFLOW-04</figcaption></figure>
+</html>

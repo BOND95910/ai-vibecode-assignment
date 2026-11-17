@@ -1,0 +1,48 @@
+# Web:    docker compose up -d --build --wait web                 → http://localhost:${WEB_PORT:-3000} (TEST_MODE=1)
+# Tests:  docker compose --profile test run --rm tests            → 51 TCs against http://web:3000
+# Bug:    BUG_MODE=B03 docker compose up -d --build --wait --force-recreate web  (then run tests again)
+# Matrix: node scripts/run-bugs.js --docker   (BUG_MODE matrix through compose; set WEB_PORT if 3000 is taken)
+services:
+  web:
+    build: .
+    image: eservice-web
+    environment:
+      TEST_MODE: "1"
+      BUG_MODE: ${BUG_MODE:-}
+      DB_PATH: /data/app.db.json
+    ports:
+      - "${WEB_PORT:-3000}:3000"   # host port; tests use the compose network (http://web:3000)
+    volumes:
+      - dbdata:/data
+
+  # same image without TEST_MODE: /api/test/* must answer 404 (TC-NFR-03)
+  web-nohook:
+    image: eservice-web
+    profiles: ["test"]
+    environment:
+      DB_PATH: /data/nohook.db.json
+    depends_on:
+      - web
+
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile.tests
+    profiles: ["test"]
+    depends_on:
+      web:
+        condition: service_healthy
+      web-nohook:
+        condition: service_healthy
+    environment:
+      BASE_URL: http://web:3000
+      NOHOOK_URL: http://web-nohook:3000
+      DB_PATH: /data/app.db.json       # TC-NFR-04 inspects the web's database file (shared volume, read-only)
+      PW_JSON: /work/out/results.json
+    volumes:
+      - dbdata:/data:ro
+      - ./reports/docker:/work/out
+    ipc: host
+
+volumes:
+  dbdata:

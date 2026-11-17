@@ -1,0 +1,7 @@
+services:
+  web:
+    volumes:
+      - C:/src/compare/judge/cdata2:/data
+  web-nohook:
+    ports:
+      - "${NOHOOK_PORT}:3000"

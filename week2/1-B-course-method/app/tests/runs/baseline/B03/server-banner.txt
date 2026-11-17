@@ -1,0 +1,1 @@
+[egov] listening on :3000 · TEST_MODE=1 · BUG_MODE=B03 · DB_PATH=/data/egov.db · clock=2026-12-01T09:00:00+07:00

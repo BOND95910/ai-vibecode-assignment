@@ -1,0 +1,13 @@
+services:
+  web:
+    volumes:
+      - C:/src/compare/judge/bdata:/data
+  web-nohook:
+    build: .
+    environment:
+      PORT: "3000"
+      TEST_MODE: ""
+      DB_PATH: /data/egov.db
+      TZ: Asia/Bangkok
+    ports:
+      - "${NOHOOK_PORT}:3000"

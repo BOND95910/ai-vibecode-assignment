@@ -1,0 +1,389 @@
+{
+  "generatedAt": "2026-11-16T11:16:12.368Z",
+  "runs": [
+    {
+      "tag": "normal-1",
+      "mode": "",
+      "total": 51,
+      "passed": 51,
+      "failed": [],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [],
+      "may": [],
+      "seconds": 49,
+      "messages": {},
+      "ok": true
+    },
+    {
+      "tag": "normal-2",
+      "mode": "",
+      "total": 51,
+      "passed": 51,
+      "failed": [],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [],
+      "may": [],
+      "seconds": 46,
+      "messages": {},
+      "ok": true
+    },
+    {
+      "tag": "B01",
+      "mode": "B01",
+      "total": 51,
+      "passed": 50,
+      "failed": [
+        "TC-FEE-01"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [
+        "TC-FEE-01"
+      ],
+      "may": [],
+      "seconds": 57,
+      "messages": {
+        "TC-FEE-01": "Error: area 101 | Expected: \"฿1,010\" | Received: \"฿1,000\" |   - area 101 getByTestId('fee-total') with timeout 5000ms |   - waiting for getByTestId('fee-total') |        - unexpected value \"฿1,000\""
+      },
+      "ok": true
+    },
+    {
+      "tag": "B02",
+      "mode": "B02",
+      "total": 51,
+      "passed": 50,
+      "failed": [
+        "TC-UPLOAD-01"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [
+        "TC-UPLOAD-01"
+      ],
+      "may": [],
+      "seconds": 57,
+      "messages": {
+        "TC-UPLOAD-01": "Error: size 5242880 accepted | Expected: 1 | Received: 0 |   - size 5242880 accepted getByTestId('file-item') with timeout 5000ms |   - waiting for getByTestId('file-item') |        - unexpected value \"0\""
+      },
+      "ok": true
+    },
+    {
+      "tag": "B03",
+      "mode": "B03",
+      "total": 51,
+      "passed": 48,
+      "failed": [
+        "TC-RBAC-04",
+        "TC-SLA-01",
+        "TC-SLA-02"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [
+        "TC-RBAC-04"
+      ],
+      "must": [
+        "TC-SLA-01",
+        "TC-SLA-02"
+      ],
+      "may": [
+        "TC-RBAC-04",
+        "TC-SLA-03"
+      ],
+      "seconds": 130,
+      "messages": {
+        "TC-RBAC-04": "Error: step 7 | - Expected  - 1 | + Received  + 1 | -   \"dueAt\": \"2026-12-08T16:30:00+07:00\", | +   \"dueAt\": \"2026-12-04T16:30:00+07:00\",",
+        "TC-SLA-01": "Error: row c dueAt (paid 2026-12-01T16:30:00+07:00) | Expected: \"2026-12-08T16:30:00+07:00\" | Received: \"2026-12-07T16:30:00+07:00\"",
+        "TC-SLA-02": "Error: part 1 dueAt (paused Thu 3) | Expected: \"2026-12-08T16:30:00+07:00\" | Received: \"2026-12-07T16:30:00+07:00\""
+      },
+      "ok": true
+    },
+    {
+      "tag": "B04",
+      "mode": "B04",
+      "total": 51,
+      "passed": 50,
+      "failed": [
+        "TC-SLA-02"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [
+        "TC-SLA-02"
+      ],
+      "may": [],
+      "seconds": 70,
+      "messages": {
+        "TC-SLA-02": "Error: part 1 dueAt (paused Thu 3) | Expected: \"2026-12-08T16:30:00+07:00\" | Received: \"2026-12-04T16:30:00+07:00\""
+      },
+      "ok": true
+    },
+    {
+      "tag": "B05",
+      "mode": "B05",
+      "total": 51,
+      "passed": 50,
+      "failed": [
+        "TC-PAY-01"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [
+        "TC-PAY-01"
+      ],
+      "may": [],
+      "seconds": 62,
+      "messages": {
+        "TC-PAY-01": "Error: expect(received).toEqual(expected) // deep equality | - Expected  - 2 | + Received  + 2 | -   \"code\": \"QR_EXPIRED\", | +   \"code\": undefined, | -   \"status\": 410, | +   \"status\": 200,"
+      },
+      "ok": true
+    },
+    {
+      "tag": "B06",
+      "mode": "B06",
+      "total": 51,
+      "passed": 50,
+      "failed": [
+        "TC-RBAC-01"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [
+        "TC-RBAC-01"
+      ],
+      "may": [],
+      "seconds": 50,
+      "messages": {
+        "TC-RBAC-01": "Error: UI other citizen case HTTP | Expected: 404 | Received: 200"
+      },
+      "ok": true
+    },
+    {
+      "tag": "B07",
+      "mode": "B07",
+      "total": 51,
+      "passed": 50,
+      "failed": [
+        "TC-RBAC-02"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [
+        "TC-RBAC-02"
+      ],
+      "may": [
+        "TC-WORKFLOW-01"
+      ],
+      "seconds": 53,
+      "messages": {
+        "TC-RBAC-02": "Error: off.reg2 approves SV-02 PENDING_APPROVAL | - Expected  - 2 | + Received  + 2 | -   \"code\": \"FORBIDDEN\", | -   \"status\": 403, | +   \"code\": undefined, | +   \"status\": 200,"
+      },
+      "ok": true
+    },
+    {
+      "tag": "B08",
+      "mode": "B08",
+      "total": 51,
+      "passed": 50,
+      "failed": [
+        "TC-QUEUE-02"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [
+        "TC-QUEUE-02"
+      ],
+      "may": [],
+      "seconds": 53,
+      "messages": {
+        "TC-QUEUE-02": "Error: exactly one claim succeeds | - Expected  - 1 | + Received  + 1 | -   409, | +   200,"
+      },
+      "ok": true
+    },
+    {
+      "tag": "B09",
+      "mode": "B09",
+      "total": 51,
+      "passed": 50,
+      "failed": [
+        "TC-PDPA-02"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [
+        "TC-PDPA-02"
+      ],
+      "may": [],
+      "seconds": 49,
+      "messages": {
+        "TC-PDPA-02": "Error: off.reg1 GET /api/officer/queue?filter=all: 13-digit run | Received: [\"1101700123456\", \"3100600987659\", \"1909900555015\", \"3100600987659\", \"3100600987659\", \"1101700123456\", \"1101700123456\", \"3100600987659\", \"1909900555015\", \"3100600987659\", …]"
+      },
+      "ok": true
+    },
+    {
+      "tag": "B10",
+      "mode": "B10",
+      "total": 51,
+      "passed": 48,
+      "failed": [
+        "TC-DASH-01",
+        "TC-DASH-02",
+        "TC-DASH-03"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [
+        "TC-DASH-01",
+        "TC-DASH-03"
+      ],
+      "must": [
+        "TC-DASH-02"
+      ],
+      "may": [
+        "TC-DASH-01",
+        "TC-DASH-03"
+      ],
+      "seconds": 53,
+      "messages": {
+        "TC-DASH-01": "Error: expect(received).toEqual(expected) // deep equality | - Expected  - 1 | + Received  + 1 | -   \"ontime-pct\": \"–\", | +   \"ontime-pct\": \"0.0%\",",
+        "TC-DASH-02": "Error: 2026-11 ALL | - Expected  - 1 | + Received  + 1 | -   \"ontime-pct\": \"85.7%\", | +   \"ontime-pct\": \"23.1%\",",
+        "TC-DASH-03": "Error: expect(received).toEqual(expected) // deep equality | - Expected  - 1 | + Received  + 1 | -   \"ontime-pct\": \"85.7%\", | +   \"ontime-pct\": \"23.1%\","
+      },
+      "ok": true
+    },
+    {
+      "tag": "B11",
+      "mode": "B11",
+      "total": 51,
+      "passed": 49,
+      "failed": [
+        "TC-AUDIT-01",
+        "TC-PDPA-03"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [
+        "TC-AUDIT-01",
+        "TC-PDPA-03"
+      ],
+      "may": [],
+      "seconds": 62,
+      "messages": {
+        "TC-AUDIT-01": "Error: expect(received).toEqual(expected) // deep equality | - Expected  - 1 | + Received  + 0 | -   \"UNMASK\": 1,",
+        "TC-PDPA-03": "Error: expect(locator).toHaveText(expected) failed | Expected: \"1\" | Received: \"0\" |   - Expect \"toHaveText\" getByTestId('audit-count') with timeout 5000ms |   - waiting for getByTestId('audit-count') |        - unexpected value \"0\""
+      },
+      "ok": true
+    },
+    {
+      "tag": "B12",
+      "mode": "B12",
+      "total": 51,
+      "passed": 50,
+      "failed": [
+        "TC-WORKFLOW-04"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [
+        "TC-WORKFLOW-04"
+      ],
+      "may": [],
+      "seconds": 75,
+      "messages": {
+        "TC-WORKFLOW-04": "Error: 3rd return EG-2569-000020 | - Expected  - 3 | + Received  + 3 | -   \"code\": \"RETURN_LIMIT\", | -   \"message\": \"ตีกลับได้สูงสุด 2 ครั้ง\", | -   \"status\": 409, | +   \"code\": undefined, | +   \"message\": undefined,"
+      },
+      "ok": true
+    },
+    {
+      "tag": "B03,B07",
+      "mode": "B03,B07",
+      "total": 51,
+      "passed": 47,
+      "failed": [
+        "TC-RBAC-02",
+        "TC-RBAC-04",
+        "TC-SLA-01",
+        "TC-SLA-02"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [
+        "TC-RBAC-04"
+      ],
+      "must": [
+        "TC-RBAC-02",
+        "TC-SLA-01",
+        "TC-SLA-02"
+      ],
+      "may": [
+        "TC-RBAC-04",
+        "TC-SLA-03",
+        "TC-WORKFLOW-01"
+      ],
+      "seconds": 131,
+      "messages": {
+        "TC-RBAC-02": "Error: off.reg2 approves SV-02 PENDING_APPROVAL | - Expected  - 2 | + Received  + 2 | -   \"code\": \"FORBIDDEN\", | -   \"status\": 403, | +   \"code\": undefined, | +   \"status\": 200,",
+        "TC-RBAC-04": "Error: step 7 | - Expected  - 1 | + Received  + 1 | -   \"dueAt\": \"2026-12-08T16:30:00+07:00\", | +   \"dueAt\": \"2026-12-04T16:30:00+07:00\",",
+        "TC-SLA-01": "Error: row c dueAt (paid 2026-12-01T16:30:00+07:00) | Expected: \"2026-12-08T16:30:00+07:00\" | Received: \"2026-12-07T16:30:00+07:00\"",
+        "TC-SLA-02": "Error: part 1 dueAt (paused Thu 3) | Expected: \"2026-12-08T16:30:00+07:00\" | Received: \"2026-12-07T16:30:00+07:00\""
+      },
+      "ok": true
+    },
+    {
+      "tag": "B01,B05,B09",
+      "mode": "B01,B05,B09",
+      "total": 51,
+      "passed": 48,
+      "failed": [
+        "TC-FEE-01",
+        "TC-PAY-01",
+        "TC-PDPA-02"
+      ],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [
+        "TC-FEE-01",
+        "TC-PAY-01",
+        "TC-PDPA-02"
+      ],
+      "may": [],
+      "seconds": 63,
+      "messages": {
+        "TC-FEE-01": "Error: area 101 | Expected: \"฿1,010\" | Received: \"฿1,000\" |   - area 101 getByTestId('fee-total') with timeout 5000ms |   - waiting for getByTestId('fee-total') |        - unexpected value \"฿1,000\"",
+        "TC-PAY-01": "Error: expect(received).toEqual(expected) // deep equality | - Expected  - 2 | + Received  + 2 | -   \"code\": \"QR_EXPIRED\", | +   \"code\": undefined, | -   \"status\": 410, | +   \"status\": 200,",
+        "TC-PDPA-02": "Error: off.reg1 GET /api/officer/queue?filter=all: 13-digit run | Received: [\"1101700123456\", \"3100600987659\", \"1909900555015\", \"3100600987659\", \"3100600987659\", \"1101700123456\", \"1101700123456\", \"3100600987659\", \"1909900555015\", \"3100600987659\", …]"
+      },
+      "ok": true
+    },
+    {
+      "tag": "normal-final",
+      "mode": "",
+      "total": 51,
+      "passed": 51,
+      "failed": [],
+      "missed": [],
+      "extra": [],
+      "alsoFailed": [],
+      "must": [],
+      "may": [],
+      "seconds": 45,
+      "messages": {},
+      "ok": true
+    }
+  ]
+}

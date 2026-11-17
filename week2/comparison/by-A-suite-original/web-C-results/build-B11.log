@@ -1,0 +1,65 @@
+ Image eservice-web Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 492B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile:
+#2 transferring dockerfile: 470B done
+#2 DONE 1.1s
+
+#3 [internal] load metadata for docker.io/library/node:24-alpine
+#3 ...
+
+#4 [auth] library/node:pull token for registry-1.docker.io
+#4 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:24-alpine
+#3 DONE 2.0s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 130B done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 333B done
+#6 DONE 0.0s
+
+#7 [1/5] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#7 resolve docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5 0.0s done
+#7 DONE 0.0s
+
+#8 [4/5] RUN npm ci --omit=dev && npm cache clean --force
+#8 CACHED
+
+#9 [2/5] WORKDIR /app
+#9 CACHED
+
+#10 [3/5] COPY package.json package-lock.json ./
+#10 CACHED
+
+#11 [5/5] COPY app ./app
+#11 CACHED
+
+#12 exporting to image
+#12 exporting layers done
+#12 exporting manifest sha256:6c383644290126282e06e73a628fb6fcd0bf5f9144d5db5b06eb78fa307aef7c done
+#12 exporting config sha256:187ec5d0d2e37a3ca6bd39b278c080681b3ca17575b02ce1dc17885d5b1c2387 done
+#12 exporting attestation manifest sha256:14dbd004493f682ecb0623b8644cdd028160adae85f1c9519dc223b0c950296c 0.0s done
+#12 exporting manifest list sha256:422b0066e00113ca03587ca12fd6834d0f71ecab95423564ea3614e0dc2562ce
+#12 exporting manifest list sha256:422b0066e00113ca03587ca12fd6834d0f71ecab95423564ea3614e0dc2562ce 0.0s done
+#12 naming to docker.io/library/eservice-web:latest done
+#12 unpacking to docker.io/library/eservice-web:latest done
+#12 DONE 0.1s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.0s
+ Image eservice-web Built 
+ Network judge-c_default Creating 
+ Network judge-c_default Creating 
+ Network judge-c_default Created 
+ Network judge-c_default Created 
+ Container judge-c-web-1 Creating 
+ Container judge-c-web-1 Created 
+ Container judge-c-web-1 Starting 
+ Container judge-c-web-1 Started 

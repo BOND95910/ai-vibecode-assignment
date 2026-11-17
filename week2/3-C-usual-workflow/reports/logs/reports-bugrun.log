@@ -1,0 +1,70 @@
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=(none) DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== normal-1 (BUG_MODE=-)
+   51/51 passed · failed: - · OK
+== normal-2 (BUG_MODE=-, same server)
+   51/51 passed · failed: - · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B01 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B01 (BUG_MODE=B01)
+   50/51 passed · failed: TC-FEE-01 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B02 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B02 (BUG_MODE=B02)
+   50/51 passed · failed: TC-UPLOAD-01 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B03 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B03 (BUG_MODE=B03)
+   48/51 passed · failed: TC-RBAC-04 TC-SLA-01 TC-SLA-02 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B04 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B04 (BUG_MODE=B04)
+   50/51 passed · failed: TC-SLA-02 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B05 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B05 (BUG_MODE=B05)
+   50/51 passed · failed: TC-PAY-01 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B06 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B06 (BUG_MODE=B06)
+   50/51 passed · failed: TC-RBAC-01 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B07 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B07 (BUG_MODE=B07)
+   50/51 passed · failed: TC-RBAC-02 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B08 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B08 (BUG_MODE=B08)
+   50/51 passed · failed: TC-QUEUE-02 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B09 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B09 (BUG_MODE=B09)
+   50/51 passed · failed: TC-PDPA-02 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B10 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B10 (BUG_MODE=B10)
+   48/51 passed · failed: TC-DASH-01 TC-DASH-02 TC-DASH-03 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B11 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B11 (BUG_MODE=B11)
+   49/51 passed · failed: TC-AUDIT-01 TC-PDPA-03 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B12 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B12 (BUG_MODE=B12)
+   50/51 passed · failed: TC-WORKFLOW-04 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B03,B07 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B03,B07 (BUG_MODE=B03,B07)
+   47/51 passed · failed: TC-RBAC-02 TC-RBAC-04 TC-SLA-01 TC-SLA-02 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B01,B05,B09 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B01,B05,B09 (BUG_MODE=B01,B05,B09)
+   48/51 passed · failed: TC-FEE-01 TC-PAY-01 TC-PDPA-02 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=(none) DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== normal-final (BUG_MODE=-)
+   51/51 passed · failed: - · OK
+| รอบ | BUG_MODE | TC ที่คาดว่าล้ม (BUGS.md ตาราง 2) | TC ที่ล้มจริง | TC ล้มเกินที่คาด | TC ที่ควรล้มแต่ผ่าน | ผล |
+|---|---|---|---|---|---|---|
+| normal-1 | (ไม่ตั้ง) | – | – | – | – | 51/51 passed ✅ |
+| normal-2 | (ไม่ตั้ง) | – | – | – | – | 51/51 passed ✅ |
+| B01 | B01 | TC-FEE-01 | TC-FEE-01 | – | – | 50/51 passed ✅ |
+| B02 | B02 | TC-UPLOAD-01 | TC-UPLOAD-01 | – | – | 50/51 passed ✅ |
+| B03 | B03 | TC-SLA-01 · TC-SLA-02 (อาจล้มด้วย TC-RBAC-04 · TC-SLA-03) | TC-RBAC-04 · TC-SLA-01 · TC-SLA-02 | – | – | 48/51 passed ✅ |
+| B04 | B04 | TC-SLA-02 | TC-SLA-02 | – | – | 50/51 passed ✅ |
+| B05 | B05 | TC-PAY-01 | TC-PAY-01 | – | – | 50/51 passed ✅ |
+| B06 | B06 | TC-RBAC-01 | TC-RBAC-01 | – | – | 50/51 passed ✅ |
+| B07 | B07 | TC-RBAC-02 (อาจล้มด้วย TC-WORKFLOW-01) | TC-RBAC-02 | – | – | 50/51 passed ✅ |
+| B08 | B08 | TC-QUEUE-02 | TC-QUEUE-02 | – | – | 50/51 passed ✅ |
+| B09 | B09 | TC-PDPA-02 | TC-PDPA-02 | – | – | 50/51 passed ✅ |
+| B10 | B10 | TC-DASH-02 (อาจล้มด้วย TC-DASH-01 · TC-DASH-03) | TC-DASH-01 · TC-DASH-02 · TC-DASH-03 | – | – | 48/51 passed ✅ |
+| B11 | B11 | TC-AUDIT-01 · TC-PDPA-03 | TC-AUDIT-01 · TC-PDPA-03 | – | – | 49/51 passed ✅ |
+| B12 | B12 | TC-WORKFLOW-04 | TC-WORKFLOW-04 | – | – | 50/51 passed ✅ |
+| B03,B07 | B03,B07 | TC-RBAC-02 · TC-SLA-01 · TC-SLA-02 (อาจล้มด้วย TC-RBAC-04 · TC-SLA-03 · TC-WORKFLOW-01) | TC-RBAC-02 · TC-RBAC-04 · TC-SLA-01 · TC-SLA-02 | – | – | 47/51 passed ✅ |
+| B01,B05,B09 | B01,B05,B09 | TC-FEE-01 · TC-PAY-01 · TC-PDPA-02 | TC-FEE-01 · TC-PAY-01 · TC-PDPA-02 | – | – | 48/51 passed ✅ |
+| normal-final | (ไม่ตั้ง) | – | – | – | – | 51/51 passed ✅ |
+EXIT 0

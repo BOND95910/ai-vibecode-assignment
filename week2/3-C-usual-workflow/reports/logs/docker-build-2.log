@@ -1,0 +1,122 @@
+ Image c-usual-tests Building 
+ Image eservice-web Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 910B done
+#1 DONE 0.0s
+
+#2 [tests internal] load build definition from Dockerfile.tests
+#2 transferring dockerfile: 412B 0.0s done
+#2 DONE 0.0s
+
+#3 [web internal] load build definition from Dockerfile
+#3 transferring dockerfile: 470B 0.0s done
+#3 DONE 0.0s
+
+#4 [web internal] load metadata for docker.io/library/node:24-alpine
+#4 ...
+
+#5 [tests internal] load metadata for mcr.microsoft.com/playwright:v1.65.1-noble
+#5 DONE 0.4s
+
+#6 [tests internal] load .dockerignore
+#6 transferring context: 130B done
+#6 DONE 0.0s
+
+#7 [tests 1/8] FROM mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
+#7 resolve mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579 0.0s done
+#7 DONE 0.0s
+
+#8 [tests internal] load build context
+#8 transferring context: 283.95kB 0.0s done
+#8 DONE 0.0s
+
+#9 [tests 2/8] WORKDIR /work
+#9 CACHED
+
+#10 [tests 3/8] COPY package.json package-lock.json ./
+#10 CACHED
+
+#11 [tests 4/8] RUN npm ci && npm cache clean --force
+#11 CACHED
+
+#12 [tests 5/8] COPY playwright.config.js ./
+#12 DONE 0.1s
+
+#4 [web internal] load metadata for docker.io/library/node:24-alpine
+#4 ...
+
+#13 [tests 6/8] COPY tests ./tests
+#13 DONE 0.1s
+
+#14 [tests 7/8] COPY app ./app
+#14 DONE 0.1s
+
+#15 [tests 8/8] COPY scripts ./scripts
+#15 DONE 0.0s
+
+#16 [tests] exporting to image
+#16 exporting layers
+#16 exporting layers 0.4s done
+#16 ...
+
+#17 [auth] library/node:pull token for registry-1.docker.io
+#17 DONE 0.0s
+
+#16 [tests] exporting to image
+#16 exporting manifest sha256:ffef66d694a4c4359ac8b9de0d861cfd80a0d52aef809e1203856439f1917bb7 0.0s done
+#16 exporting config sha256:dac43a579114acb0a3e9fd6caf3421ea1cb14f10999c7318b4e757e61986c397 0.0s done
+#16 exporting attestation manifest sha256:a1a5e75d7b03e1b1e7a7d532185a044b04414ddaf6d7c95cb13994fb01655a90 0.0s done
+#16 exporting manifest list sha256:c327172ff8541fccd09bf7f7b4c8cc9a5ca64416b93479540fa76c38695a1229
+#16 exporting manifest list sha256:c327172ff8541fccd09bf7f7b4c8cc9a5ca64416b93479540fa76c38695a1229 0.1s done
+#16 naming to docker.io/library/c-usual-tests:latest 0.0s done
+#16 unpacking to docker.io/library/c-usual-tests:latest
+#16 unpacking to docker.io/library/c-usual-tests:latest 0.3s done
+#16 DONE 0.9s
+
+#4 [web internal] load metadata for docker.io/library/node:24-alpine
+#4 ...
+
+#18 [tests] resolving provenance for metadata file
+#18 DONE 0.0s
+
+#4 [web internal] load metadata for docker.io/library/node:24-alpine
+#4 DONE 2.0s
+
+#6 [web internal] load .dockerignore
+#6 CACHED
+
+#19 [web internal] load build context
+#19 transferring context: 333B done
+#19 DONE 0.0s
+
+#20 [web 1/5] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#20 resolve docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5 0.0s done
+#20 DONE 0.0s
+
+#21 [web 3/5] COPY package.json package-lock.json ./
+#21 CACHED
+
+#22 [web 2/5] WORKDIR /app
+#22 CACHED
+
+#23 [web 4/5] RUN npm ci --omit=dev && npm cache clean --force
+#23 CACHED
+
+#24 [web 5/5] COPY app ./app
+#24 DONE 0.1s
+
+#25 [web] exporting to image
+#25 exporting layers 0.1s done
+#25 exporting manifest sha256:42d33e27953485ffb6ba93e11ff4a22245b06091b122f8819f8fd7e516259610 0.0s done
+#25 exporting config sha256:8922c462dc52281229e340ac0314726e28399505597fc4d944395d966196ee22
+#25 exporting config sha256:8922c462dc52281229e340ac0314726e28399505597fc4d944395d966196ee22 0.0s done
+#25 exporting attestation manifest sha256:3159be5eb0e4d7a3873980e7225abc79f311e8b96d490482707a62d30d0511aa 0.0s done
+#25 exporting manifest list sha256:92417caf1afaca92108413a61dc15d0acb420ab6dee81ed3f44f90e5dca3daf1 0.0s done
+#25 naming to docker.io/library/eservice-web:latest done
+#25 unpacking to docker.io/library/eservice-web:latest 0.0s done
+#25 DONE 0.3s
+
+#26 [web] resolving provenance for metadata file
+#26 DONE 0.0s
+ Image c-usual-tests Built 
+ Image eservice-web Built 

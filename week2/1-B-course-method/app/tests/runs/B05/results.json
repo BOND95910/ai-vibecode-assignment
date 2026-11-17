@@ -1,0 +1,3083 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/workspace/out/week2/egov-eservice/app/tests/node_modules/.bin/playwright",
+      "test",
+      "--reporter=list,json",
+      "--output=runs/B05/artifacts"
+    ],
+    "configFile": "/workspace/out/week2/egov-eservice/app/tests/playwright.config.ts",
+    "rootDir": "/workspace/out/week2/egov-eservice/app/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/out/week2/egov-eservice/app/tests/runs/B05/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/out/week2/egov-eservice/app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.spec\\.ts$/"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/out/week2/egov-eservice/app/tests/runs/B05/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "/workspace/out/week2/egov-eservice/app/tests/e2e",
+        "snapshotDir": "/workspace/out/week2/egov-eservice/app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": {},
+        "timeout": 300000,
+        "use": {
+          "baseURL": "http://localhost:3000",
+          "testIdAttribute": "data-testid",
+          "locale": "th-TH",
+          "timezoneId": "Asia/Bangkok",
+          "actionTimeout": 15000,
+          "navigationTimeout": 30000,
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "part1.spec.ts",
+      "file": "part1.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-AUTH-01 เลขบัตร 13 หลัก + checksum",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1528,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "110170012345 (12 หลัก ต่ำกว่าขอบ) → thaid-error · API 400 INVALID_ID",
+                      "duration": 235
+                    },
+                    {
+                      "title": "11017001234567 (14 หลัก เกินขอบ) → thaid-error · API 400 INVALID_ID",
+                      "duration": 161
+                    },
+                    {
+                      "title": "1101700123457 (checksum ผิด) → thaid-error · API 400 INVALID_ID",
+                      "duration": 165
+                    },
+                    {
+                      "title": "11017001234ab (ไม่ใช่ตัวเลขล้วน) → thaid-error · API 400 INVALID_ID",
+                      "duration": 189
+                    },
+                    {
+                      "title": "1101700123456 (checksum ถูก) → otp-step · API 200 OTP_SENT",
+                      "duration": 149
+                    },
+                    {
+                      "title": "3100600987659 (checksum ถูก) → otp-step · API 200 OTP_SENT",
+                      "duration": 145
+                    },
+                    {
+                      "title": "1909900555015 (checksum ถูก) → otp-step · API 200 OTP_SENT",
+                      "duration": 189
+                    },
+                    {
+                      "title": "5500400111221 (checksum ถูก) → otp-step · API 200 OTP_SENT",
+                      "duration": 166
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:23.129Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-88b634001ea88dd4937a",
+          "file": "part1.spec.ts",
+          "line": 167,
+          "column": 1
+        },
+        {
+          "title": "TC-AUTH-02 OTP ผิด 3 ครั้งล็อก 15 นาที",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2573,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "API แถว 1–8",
+                      "duration": 100
+                    },
+                    {
+                      "title": "API แถว 9: OTP ถูกรีเซ็ตตัวนับ",
+                      "duration": 68
+                    },
+                    {
+                      "title": "หน้าจอ แถว 1–3, 5, 7–8",
+                      "duration": 1292
+                    },
+                    {
+                      "title": "หน้าจอ แถว 9: ผิด 2 → ถูก → ออก → ผิด 2 ยัง \"เหลือ 1 ครั้ง\"",
+                      "duration": 1068
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:24.720Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-a89677e1a8c6a11aa89d",
+          "file": "part1.spec.ts",
+          "line": 204,
+          "column": 1
+        },
+        {
+          "title": "TC-AUTH-03 ลงทะเบียนครั้งแรก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 reg-name = มานะ ตั้งใจ และ readOnly",
+                      "duration": 56
+                    },
+                    {
+                      "title": "2–4 เบอร์ 081234567 → reg-error-mobile",
+                      "duration": 160
+                    },
+                    {
+                      "title": "2–4 เบอร์ 08123456789 → reg-error-mobile",
+                      "duration": 166
+                    },
+                    {
+                      "title": "2–4 เบอร์ 1812345678 → reg-error-mobile",
+                      "duration": 167
+                    },
+                    {
+                      "title": "2–4 เบอร์ 08123abcde → reg-error-mobile",
+                      "duration": 166
+                    },
+                    {
+                      "title": "5 ไม่ติ๊ก reg-consent → reg-error-consent",
+                      "duration": 111
+                    },
+                    {
+                      "title": "6 ครบ → /citizen สวัสดี มานะ ตั้งใจ",
+                      "duration": 257
+                    },
+                    {
+                      "title": "7 ออกจากระบบ → ล็อกอินอีกครั้งเข้า /citizen ตรง ๆ",
+                      "duration": 349
+                    },
+                    {
+                      "title": "8 RESET · API register: 400 INVALID_MOBILE / 400 CONSENT_REQUIRED",
+                      "duration": 179
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:27.302Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-f68aaba1356a5c2cd54c",
+          "file": "part1.spec.ts",
+          "line": 331,
+          "column": 1
+        },
+        {
+          "title": "TC-AUTH-04 เจ้าหน้าที่ SSO จำลองและหน้าตั้งต้น",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3308,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "off.reg1 → /officer/queue",
+                      "duration": 349
+                    },
+                    {
+                      "title": "off.reg2 → /officer/queue",
+                      "duration": 334
+                    },
+                    {
+                      "title": "off.works1 → /officer/queue",
+                      "duration": 349
+                    },
+                    {
+                      "title": "head1 → /head/approvals",
+                      "duration": 299
+                    },
+                    {
+                      "title": "exec1 → /dashboard",
+                      "duration": 299
+                    },
+                    {
+                      "title": "audit1 → /audit",
+                      "duration": 301
+                    },
+                    {
+                      "title": "admin1 → /admin/services",
+                      "duration": 300
+                    },
+                    {
+                      "title": "รหัสผ่านผิด → staff-error · 401 INVALID_CREDENTIALS",
+                      "duration": 175
+                    },
+                    {
+                      "title": "username ไม่มี → staff-error · 401 INVALID_CREDENTIALS",
+                      "duration": 184
+                    },
+                    {
+                      "title": "เลขบัตรประชาชนในช่อง username → staff-error · 401 INVALID_CREDENTIALS",
+                      "duration": 178
+                    },
+                    {
+                      "title": "logout-btn → /login · เปิด /officer/queue หลังออกจากระบบ → /login",
+                      "duration": 335
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:29.301Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-1cf8a199f5480383ce66",
+          "file": "part1.spec.ts",
+          "line": 408,
+          "column": 1
+        },
+        {
+          "title": "TC-FEE-01 ค่าธรรมเนียม SV-01 / SV-02 / SV-03",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 948,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "SV-03 area-input",
+                      "duration": 499
+                    },
+                    {
+                      "title": "SV-01 qty-input",
+                      "duration": 301
+                    },
+                    {
+                      "title": "SV-02 ไม่มีช่องกรอก ฿500",
+                      "duration": 52
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:32.614Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-1ed60fd4e79211dd4909",
+          "file": "part1.spec.ts",
+          "line": 463,
+          "column": 1
+        },
+        {
+          "title": "TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 971,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 กรอกข้อมูล qty 2 → ฿40",
+                      "duration": 240
+                    },
+                    {
+                      "title": "2 แนบเอกสาร id-card.pdf",
+                      "duration": 114
+                    },
+                    {
+                      "title": "3 ชำระเงิน สร้าง QR PP-0002",
+                      "duration": 113
+                    },
+                    {
+                      "title": "4 ธนาคารจำลองชำระ ฿40 → EG-2569-000031",
+                      "duration": 120
+                    },
+                    {
+                      "title": "5 หน้า /citizen/cases/EG-2569-000031",
+                      "duration": 103
+                    },
+                    {
+                      "title": "off.reg1 เห็นในคิว ท้ายกลุ่ม 4 ธ.ค. หลัง …000030",
+                      "duration": 171
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:33.567Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-e6db1192a21818b5f8ed",
+          "file": "part1.spec.ts",
+          "line": 536,
+          "column": 1
+        },
+        {
+          "title": "TC-SUBMIT-02 เอกสารบังคับครบก่อนชำระ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 686,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "SV-02",
+                      "duration": 276
+                    },
+                    {
+                      "title": "SV-03 พื้นที่ 100",
+                      "duration": 275
+                    },
+                    {
+                      "title": "API: SV-03 ขาดแบบแปลน → 409 MISSING_DOCS · แนบครบ → 201",
+                      "duration": 31
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:34.544Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-777bf9a22999a9b57672",
+          "file": "part1.spec.ts",
+          "line": 612,
+          "column": 1
+        },
+        {
+          "title": "TC-SUBMIT-03 ร่าง และการยกเลิก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1701,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ส่วน A ร่าง",
+                      "duration": 478
+                    },
+                    {
+                      "title": "ส่วน B ยกเลิก …000030",
+                      "duration": 620
+                    },
+                    {
+                      "title": "ส่วน C ยกเลิกไม่ได้เมื่อมีผู้รับ",
+                      "duration": 273
+                    },
+                    {
+                      "title": "ส่วน E ลบร่าง",
+                      "duration": 219
+                    },
+                    {
+                      "title": "ส่วน F ยกเลิกชนกับรับเรื่อง (พร้อมกัน)",
+                      "duration": 107
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:35.235Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-644139d9180fc4e4e33e",
+          "file": "part1.spec.ts",
+          "line": 672,
+          "column": 1
+        },
+        {
+          "title": "TC-UPLOAD-01 ขนาดและจำนวนไฟล์",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 420000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2351,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "size-5242879.pdf → รับ · 201",
+                      "duration": 683
+                    },
+                    {
+                      "title": "size-5242880.pdf → รับ · 201",
+                      "duration": 663
+                    },
+                    {
+                      "title": "size-5242881.pdf → ไฟล์ใหญ่เกิน 5 MB · 400 FILE_TOO_LARGE",
+                      "duration": 461
+                    },
+                    {
+                      "title": "จำนวน: 5 ไฟล์รับ · ไฟล์ที่ 6 ปฏิเสธ · ลบ 1 แล้วแนบได้",
+                      "duration": 283
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:36.944Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-d0b7a22eee789727f59b",
+          "file": "part1.spec.ts",
+          "line": 781,
+          "column": 1
+        },
+        {
+          "title": "TC-UPLOAD-02 ชนิดไฟล์จากเนื้อไฟล์",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 777,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ok-id.pdf → รับ · 201",
+                      "duration": 99
+                    },
+                    {
+                      "title": "real.jpg → รับ · 201",
+                      "duration": 100
+                    },
+                    {
+                      "title": "real.png → รับ · 201",
+                      "duration": 100
+                    },
+                    {
+                      "title": "fake-text.pdf (ข้อความ นามสกุล .pdf) → ปฏิเสธ · 400 FILE_TYPE",
+                      "duration": 37
+                    },
+                    {
+                      "title": "fake-text.jpg (ข้อความ นามสกุล .jpg) → ปฏิเสธ · 400 FILE_TYPE",
+                      "duration": 33
+                    },
+                    {
+                      "title": "exe-as.png (หัวไฟล์ MZ) → ปฏิเสธ · 400 FILE_TYPE",
+                      "duration": 34
+                    },
+                    {
+                      "title": "notes.txt (ข้อความ .txt) → ปฏิเสธ · 400 FILE_TYPE",
+                      "duration": 36
+                    },
+                    {
+                      "title": "fake-text.pdf (ส่ง mimeType application/pdf (ไม่เชื่อ Content-Type)) → ปฏิเสธ · 400 FILE_TYPE",
+                      "duration": 33
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:39.301Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-b2ecc8c856bf9f226589",
+          "file": "part1.spec.ts",
+          "line": 850,
+          "column": 1
+        },
+        {
+          "title": "TC-PAY-01 อายุ QR 15:00",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 251,
+                  "error": {
+                    "message": "Error: {\"status\":\"PAID\",\"caseNo\":\"EG-2569-000031\",\"receiptNo\":\"RC-2569-000031\",\"duplicate\":false,\"amount\":500,\"paidAt\":\"2026-12-01T09:10:00+07:00\"}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m410\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                    "stack": "Error: {\"status\":\"PAID\",\"caseNo\":\"EG-2569-000031\",\"receiptNo\":\"RC-2569-000031\",\"duplicate\":false,\"amount\":500,\"paidAt\":\"2026-12-01T09:10:00+07:00\"}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m410\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at /workspace/out/week2/egov-eservice/app/tests/e2e/part1.spec.ts:919:54\n    at /workspace/out/week2/egov-eservice/app/tests/e2e/part1.spec.ts:909:5",
+                    "location": {
+                      "file": "/workspace/out/week2/egov-eservice/app/tests/e2e/part1.spec.ts",
+                      "column": 54,
+                      "line": 919
+                    },
+                    "snippet": "  917 |         return;\n  918 |       }\n> 919 |       expect(paid.status, JSON.stringify(paid.body)).toBe(410);\n      |                                                      ^\n  920 |       expect(paid.body?.code).toBe('QR_EXPIRED');\n  921 |       if (r.n !== 3) return;\n  922 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/out/week2/egov-eservice/app/tests/e2e/part1.spec.ts",
+                        "column": 54,
+                        "line": 919
+                      },
+                      "message": "Error: {\"status\":\"PAID\",\"caseNo\":\"EG-2569-000031\",\"receiptNo\":\"RC-2569-000031\",\"duplicate\":false,\"amount\":500,\"paidAt\":\"2026-12-01T09:10:00+07:00\"}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m410\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n  917 |         return;\n  918 |       }\n> 919 |       expect(paid.status, JSON.stringify(paid.body)).toBe(410);\n      |                                                      ^\n  920 |       expect(paid.body?.code).toBe('QR_EXPIRED');\n  921 |       if (r.n !== 3) return;\n  922 |\n    at /workspace/out/week2/egov-eservice/app/tests/e2e/part1.spec.ts:919:54\n    at /workspace/out/week2/egov-eservice/app/tests/e2e/part1.spec.ts:909:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "รอบ 1 อายุ 5:00 → 200 PAID",
+                      "duration": 39
+                    },
+                    {
+                      "title": "รอบ 2 อายุ 14:59 → 200 PAID",
+                      "duration": 56
+                    },
+                    {
+                      "title": "รอบ 3 อายุ 15:00 → 410 QR_EXPIRED",
+                      "duration": 88,
+                      "error": {
+                        "message": "Error: {\"status\":\"PAID\",\"caseNo\":\"EG-2569-000031\",\"receiptNo\":\"RC-2569-000031\",\"duplicate\":false,\"amount\":500,\"paidAt\":\"2026-12-01T09:10:00+07:00\"}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m410\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                        "stack": "Error: {\"status\":\"PAID\",\"caseNo\":\"EG-2569-000031\",\"receiptNo\":\"RC-2569-000031\",\"duplicate\":false,\"amount\":500,\"paidAt\":\"2026-12-01T09:10:00+07:00\"}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m410\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at /workspace/out/week2/egov-eservice/app/tests/e2e/part1.spec.ts:919:54\n    at /workspace/out/week2/egov-eservice/app/tests/e2e/part1.spec.ts:909:5",
+                        "location": {
+                          "file": "/workspace/out/week2/egov-eservice/app/tests/e2e/part1.spec.ts",
+                          "column": 54,
+                          "line": 919
+                        },
+                        "snippet": "  917 |         return;\n  918 |       }\n> 919 |       expect(paid.status, JSON.stringify(paid.body)).toBe(410);\n      |                                                      ^\n  920 |       expect(paid.body?.code).toBe('QR_EXPIRED');\n  921 |       if (r.n !== 3) return;\n  922 |"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:40.083Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/out/week2/egov-eservice/app/tests/runs/B05/artifacts/part1-TC-PAY-01-อายุ-QR-15-00-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/out/week2/egov-eservice/app/tests/runs/B05/artifacts/part1-TC-PAY-01-อายุ-QR-15-00-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/out/week2/egov-eservice/app/tests/runs/B05/artifacts/part1-TC-PAY-01-อายุ-QR-15-00-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/out/week2/egov-eservice/app/tests/e2e/part1.spec.ts",
+                    "column": 54,
+                    "line": 919
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-3b8bd93627aab43822d7",
+          "file": "part1.spec.ts",
+          "line": 901,
+          "column": 1
+        },
+        {
+          "title": "TC-PAY-02 ยอดเงินและ callback ซ้ำ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 206,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 ฿19 → 422 AMOUNT_MISMATCH",
+                      "duration": 30
+                    },
+                    {
+                      "title": "2 ฿21 → 422",
+                      "duration": 25
+                    },
+                    {
+                      "title": "3 ฿20 → 200 PAID EG-2569-000031",
+                      "duration": 19
+                    },
+                    {
+                      "title": "4 ฿20 ซ้ำ → 200 duplicate:true เลขเดิม",
+                      "duration": 22
+                    },
+                    {
+                      "title": "5 ร่างใหม่ SV-01 qty 1 → EG-2569-000032",
+                      "duration": 32
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:40.768Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-915dbd464670d4bf0ed9",
+          "file": "part1.spec.ts",
+          "line": 945,
+          "column": 1
+        },
+        {
+          "title": "TC-PAY-03 ชำระพร้อมกัน เลขไม่ซ้ำ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 167,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T06:53:40.997Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-1c83a281b16ff33cc99d",
+          "file": "part1.spec.ts",
+          "line": 984,
+          "column": 1
+        },
+        {
+          "title": "TC-PAY-04 เลขคำขอข้ามปี",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 660,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 31 ธ.ค. 23:58 สร้างร่าง SV-01 + QR → ยังไม่มีเลขคำขอ",
+                      "duration": 364
+                    },
+                    {
+                      "title": "2 23:59 ชำระ ฿20 → EG-2569-000031",
+                      "duration": 109
+                    },
+                    {
+                      "title": "3 1 ม.ค. 2570 00:00 → EG-2570-000001",
+                      "duration": 47
+                    },
+                    {
+                      "title": "4 อีกใบที่ 2027-01-01T00:00:00 → EG-2570-000002",
+                      "duration": 35
+                    },
+                    {
+                      "title": "5 GET /api/cases/EG-2569-000031 ยังเป็นเลขเดิม",
+                      "duration": 4
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:41.169Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-bf7b6cfde5a470ba05ca",
+          "file": "part1.spec.ts",
+          "line": 1028,
+          "column": 1
+        },
+        {
+          "title": "TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 850,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "off.reg1 · filter all 17 แถว",
+                      "duration": 268
+                    },
+                    {
+                      "title": "off.reg2 · mine 9 แถว",
+                      "duration": 193
+                    },
+                    {
+                      "title": "off.works1 เห็น 1 แถว …000010",
+                      "duration": 130
+                    },
+                    {
+                      "title": "head1 เห็น 18 แถว ไม่มี claim-btn",
+                      "duration": 144
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:41.871Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-6e4f43f6d282805d2017",
+          "file": "part1.spec.ts",
+          "line": 1076,
+          "column": 1
+        },
+        {
+          "title": "TC-QUEUE-02 รับเรื่องซ้อน (พร้อมกันและต่อกัน)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 823,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ส่วน 1 พร้อมกันผ่านหน้าจอ (…000028)",
+                      "duration": 393
+                    },
+                    {
+                      "title": "ส่วน 2 API 10 ครั้งพร้อมกัน (…000029)",
+                      "duration": 187
+                    },
+                    {
+                      "title": "ส่วน 3 ต่อกัน (…000029)",
+                      "duration": 199
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:42.728Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-4bd97c2fba138d6edb9c",
+          "file": "part1.spec.ts",
+          "line": 1142,
+          "column": 1
+        },
+        {
+          "title": "TC-QUEUE-03 งานในมือสูงสุด 10",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1443,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 workload-count = 9",
+                      "duration": 79
+                    },
+                    {
+                      "title": "2 claim …000028 (ครั้งที่ 10) → 10",
+                      "duration": 92
+                    },
+                    {
+                      "title": "3 claim …000029 (ครั้งที่ 11) → รับงานได้สูงสุด 10 เรื่อง",
+                      "duration": 121
+                    },
+                    {
+                      "title": "4 อนุมัติ …000025 (→ APPROVED) → 9",
+                      "duration": 126
+                    },
+                    {
+                      "title": "5 claim …000029 อีกครั้ง → 10",
+                      "duration": 86
+                    },
+                    {
+                      "title": "6 off.reg1 (งานในมือ 3) claim …000030 → สำเร็จ",
+                      "duration": 17
+                    },
+                    {
+                      "title": "7–10 RESET · NEED_FIX ไม่นับ · ส่งแก้คืนผู้ถือเดิมแม้เกิน 10",
+                      "duration": 799
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:43.558Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-e467d510ddac65b1d7f2",
+          "file": "part1.spec.ts",
+          "line": 1215,
+          "column": 1
+        },
+        {
+          "title": "TC-SLA-01 กำหนดเสร็จตามตารางวันที่",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2169,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "แถว a: SV-01 ชำระ 2026-12-01T09:00:00+07:00 → 2026-12-04T16:30:00+07:00",
+                      "duration": 193
+                    },
+                    {
+                      "title": "แถว b: SV-01 ชำระ 2026-12-01T16:29:00+07:00 → 2026-12-04T16:30:00+07:00",
+                      "duration": 232
+                    },
+                    {
+                      "title": "แถว c: SV-01 ชำระ 2026-12-01T16:30:00+07:00 → 2026-12-08T16:30:00+07:00",
+                      "duration": 284
+                    },
+                    {
+                      "title": "แถว d: SV-01 ชำระ 2026-12-04T10:00:00+07:00 → 2026-12-11T16:30:00+07:00",
+                      "duration": 237
+                    },
+                    {
+                      "title": "แถว e: SV-01 ชำระ 2026-12-05T10:00:00+07:00 → 2026-12-14T16:30:00+07:00",
+                      "duration": 230
+                    },
+                    {
+                      "title": "แถว f: SV-02 ชำระ 2026-12-01T09:00:00+07:00 → 2026-12-17T16:30:00+07:00",
+                      "duration": 224
+                    },
+                    {
+                      "title": "แถว g: SV-03 ชำระ 2026-12-01T09:00:00+07:00 → 2026-12-24T16:30:00+07:00",
+                      "duration": 232
+                    },
+                    {
+                      "title": "แถว h: SV-01 ชำระ 2026-12-29T10:00:00+07:00 → 2027-01-05T16:30:00+07:00",
+                      "duration": 261
+                    },
+                    {
+                      "title": "แถว i: SV-01 ชำระ 2026-12-31T23:59:00+07:00 → 2027-01-07T16:30:00+07:00",
+                      "duration": 231
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:45.007Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-db532b2e07259542fdf0",
+          "file": "part1.spec.ts",
+          "line": 1299,
+          "column": 1
+        },
+        {
+          "title": "TC-SLA-02 หยุดนับ SLA ระหว่างรอแก้ไข",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1657,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ส่วน 1: ตีกลับ 2 ธ.ค. 11:00 ส่งแก้ 3 ธ.ค. 10:00 → 8 ธ.ค.",
+                      "duration": 581
+                    },
+                    {
+                      "title": "ส่วน 2: …000017 ส่งแก้ 1 ธ.ค. 09:00 → 1 ธ.ค. 16:30 ใกล้ครบกำหนด",
+                      "duration": 386
+                    },
+                    {
+                      "title": "ส่วน 3: …000017 ส่งแก้ 4 ธ.ค. 10:00 → 4 ธ.ค. 16:30",
+                      "duration": 223
+                    },
+                    {
+                      "title": "ส่วน 4: ตีกลับและส่งแก้วันเดียวกัน → dueAt ไม่เปลี่ยน",
+                      "duration": 182
+                    },
+                    {
+                      "title": "ส่วน 5: คร่อมสุดสัปดาห์/วันหยุด ส่งแก้ 8 ธ.ค. 17:00 → 8 ธ.ค. 16:30 เกินกำหนด",
+                      "duration": 242
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:47.187Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-7b7b6f2b46542e376890",
+          "file": "part1.spec.ts",
+          "line": 1326,
+          "column": 1
+        },
+        {
+          "title": "TC-SLA-03 ระดับเตือน ปกติ / ใกล้ครบกำหนด / เกินกำหนด",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1651,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ส่วน A: คำขอใหม่ …000031 กำหนด ศ. 4 ธ.ค. 16:30",
+                      "duration": 522
+                    },
+                    {
+                      "title": "ส่วน B: seed …000016 กำหนด อ. 8 ธ.ค. 16:30",
+                      "duration": 383
+                    },
+                    {
+                      "title": "ส่วน C: seed ที่ 09:00 ผ่าน /officer/queue และหน้าเคส",
+                      "duration": 686
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:48.855Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-f7c92c132c21485bef93",
+          "file": "part1.spec.ts",
+          "line": 1425,
+          "column": 1
+        },
+        {
+          "title": "TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 849,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-16T06:53:50.515Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-40646b588e385510c3c8",
+          "file": "part1.spec.ts",
+          "line": 1521,
+          "column": 1
+        },
+        {
+          "title": "TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2614,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ส่วน A ไม่แจ้งซ้ำ",
+                      "duration": 1214
+                    },
+                    {
+                      "title": "ส่วน B ข้ามระดับ: request แรกที่ ส. 5 ธ.ค. 10:00 (TEST-DATA 8.1)",
+                      "duration": 953
+                    },
+                    {
+                      "title": "ส่วน C ขั้นรออนุมัติ (…000014) และรอออกเอกสาร (…000019)",
+                      "duration": 407
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:51.370Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8dbcb4fca86226392ee-fdc3125edddf5e9e3c08",
+          "file": "part1.spec.ts",
+          "line": 1525,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "part2.spec.ts",
+      "file": "part2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-WORKFLOW-01 SV-01 อนุมัติ + ออกเอกสาร",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 695,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 ตรวจปุ่ม …000025 (SV-01 ฿60 ผู้ถือ off.reg2)",
+                      "duration": 112
+                    },
+                    {
+                      "title": "2 off.reg1 approve …000026 (ผู้ถือ off.reg2) → 403 FORBIDDEN",
+                      "duration": 22
+                    },
+                    {
+                      "title": "3 approve-btn → อนุมัติ",
+                      "duration": 76
+                    },
+                    {
+                      "title": "4 issue-btn → เสร็จสิ้น DOC-2569-000002",
+                      "duration": 106
+                    },
+                    {
+                      "title": "5 สมหญิงเปิดคำขอและดาวน์โหลด PDF",
+                      "duration": 248
+                    },
+                    {
+                      "title": "6 exec1 Dashboard ธ.ค. ALL: closed 1 · onTime 1 · received 3 · backlog 20",
+                      "duration": 17
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:54.050Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-c9da0d823a4ff682fa84",
+          "file": "part2.spec.ts",
+          "line": 744,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-02 SV-02 ผ่านหัวหน้า",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1474,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 …000013 (SV-02): approve-btn 0 · forward-btn 1 · ไม่มี forward-target",
+                      "duration": 88
+                    },
+                    {
+                      "title": "2 forward-btn → รออนุมัติ · workload 8 · หายจากคิว",
+                      "duration": 149
+                    },
+                    {
+                      "title": "3 head1 /head/approvals = 3 แถว …13 → …14 → …11",
+                      "duration": 81
+                    },
+                    {
+                      "title": "4 approval-open …000013 → approve-btn 1 · reject-btn 1 · issue-btn 0",
+                      "duration": 82
+                    },
+                    {
+                      "title": "5 head1 approve-btn → อนุมัติ · หัวหน้าไม่มี issue-btn",
+                      "duration": 68
+                    },
+                    {
+                      "title": "6 off.reg1 (ไม่ใช่ผู้รับเรื่อง) issue-btn 0 · API 403",
+                      "duration": 134
+                    },
+                    {
+                      "title": "7 off.reg2 issue-btn → เสร็จสิ้น DOC-2569-000002 · verify-signer = หัวหน้าฝ่าย",
+                      "duration": 247
+                    },
+                    {
+                      "title": "8 RESET · off.reg1 ออกเอกสาร seed …000019 (APPROVED โดย head1)",
+                      "duration": 474
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:54.751Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-01245ed15383b42c4495",
+          "file": "part2.spec.ts",
+          "line": 797,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-03 SV-03 สามขั้นตอน",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1262,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 …000012 ขั้นตอน 1/3 · ฝ่ายทะเบียน · ฿1,010 · forward-btn 1",
+                      "duration": 81
+                    },
+                    {
+                      "title": "2 forward-btn → ยัง IN_REVIEW · ขั้นตอน 2/3 · ฝ่ายโยธา · ยังไม่มีผู้รับ · workload 8",
+                      "duration": 121
+                    },
+                    {
+                      "title": "3 คิว off.reg2 ไม่มี …000012 (เหลือ 16 แถว)",
+                      "duration": 55
+                    },
+                    {
+                      "title": "4 คิว off.works1 = …000010 → …000012 · claim-btn 2",
+                      "duration": 93
+                    },
+                    {
+                      "title": "5 off.reg1 claim …000012 (ข้ามแผนก) → 403",
+                      "duration": 15
+                    },
+                    {
+                      "title": "6 off.works1 claim แล้วส่งต่อ → รออนุมัติ · ขั้นตอน 3/3 · หัวหน้าฝ่าย",
+                      "duration": 173
+                    },
+                    {
+                      "title": "7 head1 เห็น …000012 (รวม 3 แถว) → อนุมัติ",
+                      "duration": 262
+                    },
+                    {
+                      "title": "8 off.works1 issue-btn 0 · off.reg2 (ทะเบียนขั้นแรก) ออกเอกสาร · signer หัวหน้าฝ่าย",
+                      "duration": 275
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:56.234Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-af31bd35d37145a4f541",
+          "file": "part2.spec.ts",
+          "line": 865,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-04 ตีกลับสูงสุด 2 ครั้ง และผลหลังครบ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1904,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ส่วน A …000020 (SV-01): ครั้งที่ 1, 2 ✓ · ครั้งที่ 3 ✗ · ยังอนุมัติ/ไม่อนุมัติได้",
+                      "duration": 629
+                    },
+                    {
+                      "title": "ส่วน B seed …000023 ตีกลับแล้ว 2 ครั้ง",
+                      "duration": 242
+                    },
+                    {
+                      "title": "ส่วน C …000013 (SV-02) หลังตีกลับครบ: ไม่มี return/approve/reject · ส่งต่อพร้อมหมายเหตุ",
+                      "duration": 965
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:57.502Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-c53b04f61f1177145a14",
+          "file": "part2.spec.ts",
+          "line": 937,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-05 เหตุผล ≥ 10 ตัวอักษร (ตีกลับ / ไม่อนุมัติ)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2032,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ส่วน A ตีกลับ …000020 (off.reg1)",
+                      "duration": 765
+                    },
+                    {
+                      "title": "ส่วน B ไม่อนุมัติ SV-01 …000026 (off.reg2)",
+                      "duration": 695
+                    },
+                    {
+                      "title": "ส่วน C head1 ไม่อนุมัติ …000011",
+                      "duration": 522
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:53:59.413Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-de73cba9e57a2e1b1571",
+          "file": "part2.spec.ts",
+          "line": 1015,
+          "column": 1
+        },
+        {
+          "title": "TC-WORKFLOW-06 เวลาแก้ไข 168 ชั่วโมง",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 734,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "หน้าตั้งต้น …000017 (ตีกลับครั้งที่ 2 เมื่อ 27 พ.ย. 14:00)",
+                      "duration": 151
+                    },
+                    {
+                      "title": "รอบ A 167:59 → ส่งแก้ได้ → กำลังตรวจสอบ",
+                      "duration": 306
+                    },
+                    {
+                      "title": "รอบ B 168:00 → ยกเลิกอัตโนมัติ · resubmit 409 · timeline 14:00 · backlog 20",
+                      "duration": 242
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:01.452Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-33b40774af4d7ef308bd",
+          "file": "part2.spec.ts",
+          "line": 1080,
+          "column": 1
+        },
+        {
+          "title": "TC-DOC-01 ออกเอกสารและข้อมูลในเอกสาร",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 505,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "สมหญิงดาวน์โหลด PDF: header + บรรทัด ASCII",
+                      "duration": 22
+                    },
+                    {
+                      "title": "หน้า /verify/<code> (ไม่ล็อกอิน)",
+                      "duration": 126
+                    },
+                    {
+                      "title": "doc-qr data-url = <BASE_URL>/verify/<code> (หน้าเจ้าหน้าที่และประชาชน)",
+                      "duration": 183
+                    },
+                    {
+                      "title": "GET /api/verify/<code> → VALID · validUntil · issuedAt",
+                      "duration": 4
+                    },
+                    {
+                      "title": "สมชาย (ไม่ใช่ผู้ยื่น) ขอ PDF → 404",
+                      "duration": 12
+                    },
+                    {
+                      "title": "ออกซ้ำ → 409 INVALID_STATE · เอกสารถัดไปยังเป็น DOC-2569-000003",
+                      "duration": 20
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:02.191Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-74b5a98465bf10c46617",
+          "file": "part2.spec.ts",
+          "line": 1134,
+          "column": 1
+        },
+        {
+          "title": "TC-DOC-02 ตรวจเอกสาร /verify",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 258,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "/verify/K7M2Q9XA → เอกสารถูกต้อง (ไม่ redirect)",
+                      "duration": 105
+                    },
+                    {
+                      "title": "PDPA: หน้าไม่มี ใจดี และเลขบัตร",
+                      "duration": 9
+                    },
+                    {
+                      "title": "/verify/ZZZZZZZZ → 404 ไม่พบเอกสาร",
+                      "duration": 54
+                    },
+                    {
+                      "title": "API /api/verify",
+                      "duration": 8
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:02.701Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-c42f32f597605753e48c",
+          "file": "part2.spec.ts",
+          "line": 1189,
+          "column": 1
+        },
+        {
+          "title": "TC-DOC-03 เอกสารหมดอายุและลายเซ็นไม่ตรง",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1459,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ส่วน A SV-01 ออก 1 ธ.ค. 69 → ใช้ได้ถึง 28 ก.พ. 70",
+                      "duration": 217
+                    },
+                    {
+                      "title": "ส่วน B SV-02 ออก 1 ธ.ค. 69 → ใช้ได้ถึง 30 พ.ย. 70",
+                      "duration": 270
+                    },
+                    {
+                      "title": "ส่วน C seed K7M2Q9XA ใช้ได้ถึง 2 ก.พ. 70",
+                      "duration": 257
+                    },
+                    {
+                      "title": "ส่วน E ออกวันที่ 29 ก.พ. 2571 → DOC-2571-000001/2 · SV-01 +89 วัน · SV-02 ครบรอบ − 1 วัน",
+                      "duration": 415
+                    },
+                    {
+                      "title": "ส่วน D tamper DOC-2569-000001 → ลายเซ็นไม่ถูกต้อง (แม้หมดอายุด้วย)",
+                      "duration": 253
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:02.964Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-a8e048d7556dbffb91bd",
+          "file": "part2.spec.ts",
+          "line": 1226,
+          "column": 1
+        },
+        {
+          "title": "TC-PDPA-01 ปิดบังเลขบัตรบนจอ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 685,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "off.reg2 /officer/queue: row-id-masked ทุกแถว",
+                      "duration": 114
+                    },
+                    {
+                      "title": "off.reg2 หน้าคำขอ …000025: applicant-id ปิดบัง · HTML ไม่มีเลขเต็ม",
+                      "duration": 48
+                    },
+                    {
+                      "title": "head1 หน้าคำขอ …000025 ปิดบังเหมือนกัน",
+                      "duration": 124
+                    },
+                    {
+                      "title": "ประชาชนเห็นเลขของตัวเองเต็ม",
+                      "duration": 246
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:04.434Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-f8084a0b889e221d5f5a",
+          "file": "part2.spec.ts",
+          "line": 1297,
+          "column": 1
+        },
+        {
+          "title": "TC-PDPA-02 API (JSON) ไม่ส่งเลขบัตรเต็ม",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 105,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "off.reg1: ทุก response JSON ไม่มีเลขบัตร",
+                      "duration": 44
+                    },
+                    {
+                      "title": "head1: ทุก response JSON ไม่มีเลขบัตร",
+                      "duration": 42
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:05.123Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-8d5de332747393aeb3ef",
+          "file": "part2.spec.ts",
+          "line": 1334,
+          "column": 1
+        },
+        {
+          "title": "TC-PDPA-03 แสดงเลขเต็มต้องมีเหตุผลและบันทึก Audit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 849,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 เหตุผลว่าง → กรุณากรอกเหตุผล · API 400 REASON_REQUIRED",
+                      "duration": 162
+                    },
+                    {
+                      "title": "2 เหตุผลเว้นวรรคล้วน → ข้อความเดียวกัน",
+                      "duration": 96
+                    },
+                    {
+                      "title": "3 เหตุผล ตรวจสอบตัวตนซ้ำ → full-id",
+                      "duration": 91
+                    },
+                    {
+                      "title": "4 โหลดหน้าซ้ำ → ปิดบังตามเดิม",
+                      "duration": 50
+                    },
+                    {
+                      "title": "5 audit1 กรอง UNMASK → 1 แถว (ความพยายามที่ผิดไม่ถูกบันทึก)",
+                      "duration": 210
+                    },
+                    {
+                      "title": "6 exec1 · audit1 · สมหญิง เรียก unmask → 403",
+                      "duration": 32
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:05.233Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-fd378d3be870a5e82019",
+          "file": "part2.spec.ts",
+          "line": 1380,
+          "column": 1
+        },
+        {
+          "title": "TC-DASH-01 Dashboard ตัวเลขเริ่มต้น",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 387,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ค่าเริ่มต้น 2026-12 / ALL",
+                      "duration": 68
+                    },
+                    {
+                      "title": "ไม่มีข้อมูลส่วนบุคคลบนหน้า",
+                      "duration": 6
+                    },
+                    {
+                      "title": "service-select SV-01",
+                      "duration": 58
+                    },
+                    {
+                      "title": "service-select SV-02",
+                      "duration": 57
+                    },
+                    {
+                      "title": "service-select SV-03",
+                      "duration": 55
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:06.088Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-19182df690695c079217",
+          "file": "part2.spec.ts",
+          "line": 1450,
+          "column": 1
+        },
+        {
+          "title": "TC-DASH-02 Dashboard ย้อนหลัง",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 714,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "2026-10 / ALL → 1 · 1 · 100.0%",
+                      "duration": 81
+                    },
+                    {
+                      "title": "2026-11 / ALL → 26 · 7 · 85.7%",
+                      "duration": 66
+                    },
+                    {
+                      "title": "2026-11 / SV-01 → 12 · 3 · 100.0%",
+                      "duration": 57
+                    },
+                    {
+                      "title": "2026-11 / SV-02 → 10 · 3 · 66.7%",
+                      "duration": 54
+                    },
+                    {
+                      "title": "2026-11 / SV-03 → 4 · 1 · 100.0%",
+                      "duration": 52
+                    },
+                    {
+                      "title": "2026 / ALL → 30 · 8 · 87.5%",
+                      "duration": 82
+                    },
+                    {
+                      "title": "2026 / SV-01 → 16 · 4 · 100.0%",
+                      "duration": 52
+                    },
+                    {
+                      "title": "2026 / SV-02 → 10 · 3 · 66.7%",
+                      "duration": 54
+                    },
+                    {
+                      "title": "2026 / SV-03 → 4 · 1 · 100.0%",
+                      "duration": 59
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:06.480Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-a4c09315e92a28db440e",
+          "file": "part2.spec.ts",
+          "line": 1496,
+          "column": 1
+        },
+        {
+          "title": "TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1250,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "2026-11 / ALL → xlsx",
+                      "duration": 483
+                    },
+                    {
+                      "title": "2026-11 / ALL → pdf",
+                      "duration": 127
+                    },
+                    {
+                      "title": "2026-12 / ALL → xlsx (ปิดงาน 0 → –)",
+                      "duration": 238
+                    },
+                    {
+                      "title": "ทุกไฟล์ไม่มีข้อมูลส่วนบุคคล",
+                      "duration": 4
+                    },
+                    {
+                      "title": "Audit EXPORT = 3 แถวของ exec1",
+                      "duration": 230
+                    },
+                    {
+                      "title": "pdf พ.ย. Content-Type: application/pdf (ไฟล์มาทาง <a download> → ขอ URL เดิมซ้ำหลังนับ Audit แล้ว)",
+                      "duration": 12
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:07.198Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-a4afd3bc589c4e20bb9b",
+          "file": "part2.spec.ts",
+          "line": 1526,
+          "column": 1
+        },
+        {
+          "title": "TC-DASH-04 ค่าขอบ \"ทันกำหนด\" 16:29:59 / 16:30:00 / 16:30:01",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 709,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 16:00 approve …000025 (off.reg2) และ …000023 (off.reg1)",
+                      "duration": 9
+                    },
+                    {
+                      "title": "2 16:29:59 issue …000025 → ทัน (1 · 1)",
+                      "duration": 173
+                    },
+                    {
+                      "title": "3 16:30:00 reject …000026 → ทัน ที่ขอบ (2 · 2)",
+                      "duration": 106
+                    },
+                    {
+                      "title": "4 16:30:01 issue …000023 → ไม่ทัน (3 · 2) · backlog 18",
+                      "duration": 154
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:08.453Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-5a8ccdb0cbf7af9b90db",
+          "file": "part2.spec.ts",
+          "line": 1609,
+          "column": 1
+        },
+        {
+          "title": "TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 980,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ทำรายการ 1–7 ผ่าน API (ล็อกอินครั้งเดียวต่อบัญชี)",
+                      "duration": 94
+                    },
+                    {
+                      "title": "ไม่กรอง: audit-count 16 · ทุกแถวตามตาราง",
+                      "duration": 69
+                    },
+                    {
+                      "title": "API GET /api/audit = 16 แถว",
+                      "duration": 9
+                    },
+                    {
+                      "title": "กรอง: actor off.reg2 = 7 · event APPROVE = 2 · ทั้งสอง = 1",
+                      "duration": 328
+                    },
+                    {
+                      "title": "CSV: หัวตาราง · 16 แถว · หลังส่งออก audit-count 17 (EXPORT audit-csv)",
+                      "duration": 321
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:09.169Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-3fb947ca101d8fd2a600",
+          "file": "part2.spec.ts",
+          "line": 1660,
+          "column": 1
+        },
+        {
+          "title": "TC-AUDIT-02 Audit แก้/ลบไม่ได้ (405)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 235,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "admin1: PUT/PATCH/DELETE → 405",
+                      "duration": 20
+                    },
+                    {
+                      "title": "audit1: PUT/PATCH/DELETE → 405",
+                      "duration": 20
+                    },
+                    {
+                      "title": "ข้อมูลเดิมไม่ถูกแก้/หาย · เพิ่มเฉพาะ STAFF_LOGIN ของ admin1",
+                      "duration": 4
+                    },
+                    {
+                      "title": "UI ไม่มีปุ่มแก้/ลบ · admin1 GET /api/audit → 403",
+                      "duration": 81
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:10.155Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-7564ce34053acff7b3f6",
+          "file": "part2.spec.ts",
+          "line": 1797,
+          "column": 1
+        },
+        {
+          "title": "TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1144,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "สร้าง STAFF_LOGIN L1–L5 ตามนาฬิกา",
+                      "duration": 170
+                    },
+                    {
+                      "title": "from=2026-12-01 to=2026-12-01 → L2 L3",
+                      "duration": 127
+                    },
+                    {
+                      "title": "from=2026-11-30 to=2026-11-30 → L1",
+                      "duration": 118
+                    },
+                    {
+                      "title": "from=2026-11-30 to=2026-12-01 → L1 L2 L3",
+                      "duration": 120
+                    },
+                    {
+                      "title": "from=2026-12-02 to=(ว่าง) → L4 L5",
+                      "duration": 113
+                    },
+                    {
+                      "title": "from=(ว่าง) to=2026-11-30 → L1",
+                      "duration": 121
+                    },
+                    {
+                      "title": "from=2026-12-01 to=2026-12-02 → L2 L3 L4 L5",
+                      "duration": 130
+                    },
+                    {
+                      "title": "from=2026-12-01 to=2026-12-01 actor=off.reg2 → L2",
+                      "duration": 115
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:10.397Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-09f00ca7758ab46c5e3f",
+          "file": "part2.spec.ts",
+          "line": 1843,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-01 ประชาชนเปิดคำขอคนอื่นไม่ได้ (IDOR)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "UI …000005 (ของสมชาย) → 404 ไม่พบคำขอ",
+                      "duration": 64
+                    },
+                    {
+                      "title": "API ของคนอื่น = ไม่มีจริง (404 เนื้อหาเดียวกัน)",
+                      "duration": 16
+                    },
+                    {
+                      "title": "ของตัวเอง …000007 → 200 · สมชายเปิด …000005 ของตัวเอง → 200 · …000030 ยังไม่ถูกยกเลิก",
+                      "duration": 58
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:11.547Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-70cd0d52a3c0807754c6",
+          "file": "part2.spec.ts",
+          "line": 1894,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 500,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 approve …000014 (PENDING_APPROVAL) → 403",
+                      "duration": 12
+                    },
+                    {
+                      "title": "2 approve …000013 (ถือเอง IN_REVIEW) → 403",
+                      "duration": 6
+                    },
+                    {
+                      "title": "3 reject …000014 → 403",
+                      "duration": 6
+                    },
+                    {
+                      "title": "4 UI …000013 และ …000014 ไม่มี approve-btn",
+                      "duration": 121
+                    },
+                    {
+                      "title": "5 head1 approve SV-01 …000025 → 403",
+                      "duration": 6
+                    },
+                    {
+                      "title": "6 head1 approve …000014 → 200 APPROVED",
+                      "duration": 3
+                    },
+                    {
+                      "title": "7 Audit APPROVE = 1 แถว (head1)",
+                      "duration": 231
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:11.780Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-bde92ec1170bc51b143c",
+          "file": "part2.spec.ts",
+          "line": 1929,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-03 ตารางสิทธิ์หน้า/API ตามบทบาท",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4489,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "บทบาท anon: หน้า · API · เมนู",
+                      "duration": 326
+                    },
+                    {
+                      "title": "บทบาท citizen: หน้า · API · เมนู",
+                      "duration": 642
+                    },
+                    {
+                      "title": "บทบาท officer: หน้า · API · เมนู",
+                      "duration": 650
+                    },
+                    {
+                      "title": "บทบาท head: หน้า · API · เมนู",
+                      "duration": 628
+                    },
+                    {
+                      "title": "บทบาท executive: หน้า · API · เมนู",
+                      "duration": 660
+                    },
+                    {
+                      "title": "บทบาท auditor: หน้า · API · เมนู",
+                      "duration": 635
+                    },
+                    {
+                      "title": "บทบาท admin: หน้า · API · เมนู",
+                      "duration": 663
+                    },
+                    {
+                      "title": "ส่วน C ขอบเขตแผนก",
+                      "duration": 249
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:12.286Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-d16c60bb8550ded5fa35",
+          "file": "part2.spec.ts",
+          "line": 1974,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2342,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "1 /admin/holidays = 4 แถว",
+                      "duration": 85
+                    },
+                    {
+                      "title": "2 ก่อนแก้: NEW_PAID SV-01 qty 1 → …000031 กำหนด 4 ธ.ค. 16:30",
+                      "duration": 82
+                    },
+                    {
+                      "title": "3 แก้ SV-01 = ฿25 · SV-02 = ฿600 ผ่านหน้าจอ",
+                      "duration": 276
+                    },
+                    {
+                      "title": "4 ร่างใหม่ใช้ค่าใหม่ · คำขอเดิมไม่เปลี่ยน",
+                      "duration": 200
+                    },
+                    {
+                      "title": "5 PP-0001 (DR-0002) ยอดล็อก ฿500 · ชำระ 600 → 422 · 500 → …000032",
+                      "duration": 571
+                    },
+                    {
+                      "title": "6 เพิ่มวันหยุด 2026-12-02 → 5 แถว · คำขอเดิมไม่คำนวณใหม่",
+                      "duration": 147
+                    },
+                    {
+                      "title": "7 หลังเพิ่มวันหยุด NEW_PAID SV-01 ฿25 → …000033 กำหนด 8 ธ.ค. 16:30",
+                      "duration": 59
+                    },
+                    {
+                      "title": "8 เปลี่ยน exec1 เป็น auditor → ล็อกอินใหม่ได้หน้า /audit · /dashboard 403",
+                      "duration": 310
+                    },
+                    {
+                      "title": "9 exec1 (auditor) กรอง ADMIN_CHANGE = 4",
+                      "duration": 172
+                    },
+                    {
+                      "title": "10 admin POST /api/drafts → 403",
+                      "duration": 4
+                    },
+                    {
+                      "title": "11 ลบวันหยุด 2026-12-02 → 4 แถว · ADMIN_CHANGE รวม 5",
+                      "duration": 228
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:16.785Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-244e2e27a74c16e3ca0c",
+          "file": "part2.spec.ts",
+          "line": 2114,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-05 สิทธิ์เปิด/ดาวน์โหลดไฟล์แนบ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5630,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ตารางสิทธิ์ /files และ /api/files/:fileId",
+                      "duration": 130
+                    },
+                    {
+                      "title": "fileId ที่ไม่มี → 404",
+                      "duration": 2
+                    },
+                    {
+                      "title": "UI doc-item และ doc-download-link",
+                      "duration": 257
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:19.134Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-dff790decdc0160f96c4",
+          "file": "part2.spec.ts",
+          "line": 2241,
+          "column": 1
+        },
+        {
+          "title": "TC-RBAC-06 ผู้ดูแลระบบ: ช่วงค่าที่ยอมรับ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1741,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "fee −1 → 400 INVALID_FEE",
+                      "duration": 156
+                    },
+                    {
+                      "title": "fee 0 → 200 ยอมรับ",
+                      "duration": 129
+                    },
+                    {
+                      "title": "fee 100000 → 200 ยอมรับ",
+                      "duration": 116
+                    },
+                    {
+                      "title": "fee 100001 → 400 INVALID_FEE",
+                      "duration": 138
+                    },
+                    {
+                      "title": "sla 0 → 400 INVALID_SLA",
+                      "duration": 135
+                    },
+                    {
+                      "title": "sla 1 → 200 ยอมรับ",
+                      "duration": 112
+                    },
+                    {
+                      "title": "sla 60 → 200 ยอมรับ",
+                      "duration": 114
+                    },
+                    {
+                      "title": "sla 61 → 400 INVALID_SLA",
+                      "duration": 137
+                    },
+                    {
+                      "title": "วันหยุดซ้ำ 2026-12-07 → 409 · วันเสาร์ 2026-12-05 → 201",
+                      "duration": 228
+                    },
+                    {
+                      "title": "admin1 เปลี่ยนบทบาทตัวเอง → 409 SELF_ROLE_CHANGE",
+                      "duration": 121
+                    },
+                    {
+                      "title": "Audit ADMIN_CHANGE = 5 (คำขอที่ถูกปฏิเสธไม่ถูกบันทึก)",
+                      "duration": 237
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:24.769Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-484867aefb38c6450e2f",
+          "file": "part2.spec.ts",
+          "line": 2322,
+          "column": 1
+        },
+        {
+          "title": "TC-NFR-01 Responsive 375 / 768 / 1280",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2501,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "11 หน้า × 3 ขนาด: scrollWidth ≤ innerWidth",
+                      "duration": 1402
+                    },
+                    {
+                      "title": "งานหลักที่ 375 px: ล็อกอิน → SV-01 → แนบ → ไปชำระ → create-qr-btn อยู่ในจอ",
+                      "duration": 642
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:26.516Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-231e7bb76cbc3a739543",
+          "file": "part2.spec.ts",
+          "line": 2436,
+          "column": 1
+        },
+        {
+          "title": "TC-NFR-02 WCAG: axe + คีย์บอร์ด + label + สถานะไม่ใช้สีอย่างเดียว",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13668,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "ส่วน A axe (serious/critical = 0) · ส่วน C label · ส่วน D สถานะมีข้อความ",
+                      "duration": 12775
+                    },
+                    {
+                      "title": "ส่วน B คีย์บอร์ดอย่างเดียว: ล็อกอิน → SV-01 → แนบ → ไปชำระ",
+                      "duration": 681
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:29.024Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-f82f9694f28c7128af22",
+          "file": "part2.spec.ts",
+          "line": 2504,
+          "column": 1
+        },
+        {
+          "title": "TC-NFR-03 Health เวลาโหลด และผลซ้ำได้",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1185,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "GET /api/health → {\"status\":\"ok\"} ตรงตัว",
+                      "duration": 7
+                    },
+                    {
+                      "title": "เวลาโหลดรอบที่ 2 ≤ 3,000 ms",
+                      "duration": 678
+                    },
+                    {
+                      "title": "ผลซ้ำได้: RESET → S1 → เปลี่ยนสถานะ → RESET → S2 = S1",
+                      "duration": 463
+                    },
+                    {
+                      "title": "PUT /api/test/clock ไม่มี offset → 400 INVALID_TIME",
+                      "duration": 7
+                    },
+                    {
+                      "title": "ปิด hook: เว็บที่ไม่ตั้ง TEST_MODE → POST /api/test/reset = 404",
+                      "duration": 6
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:42.699Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-7e5bcf7009862b0a8600",
+          "file": "part2.spec.ts",
+          "line": 2676,
+          "column": 1
+        },
+        {
+          "title": "TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [
+                {
+                  "type": "NFR-04 files",
+                  "description": "/workspace/out/week2/egov-eservice/app/data/egov.db, /workspace/out/week2/egov-eservice/app/data/egov.db-wal, /workspace/out/week2/egov-eservice/app/data/egov.db-shm, /workspace/out/week2/egov-eservice/app/tests/runs/B05/web.log"
+                },
+                {
+                  "type": "NFR-04",
+                  "description": "ผู้ทดสอบบันทึกวิธีเข้ารหัสที่เว็บใช้ (เช่น AES-256-GCM) ในรายงาน · HTTPS เป็น Q-08 ไม่ทดสอบที่นี่"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 155,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "มานะลงทะเบียน เบอร์ 0845678901 (ตาม TC-AUTH-03)",
+                      "duration": 16
+                    },
+                    {
+                      "title": "ค้นค่าตรงตัวในไฟล์ฐานข้อมูล (DB_PATH + -wal/-journal/-shm) → 0 ทุกค่า",
+                      "duration": 101
+                    },
+                    {
+                      "title": "ตัวควบคุมบวก: สมชายยังเห็น idNo เต็มของตัวเอง",
+                      "duration": 14
+                    }
+                  ],
+                  "startTime": "2026-11-16T06:54:43.892Z",
+                  "annotations": [
+                    {
+                      "type": "NFR-04 files",
+                      "description": "/workspace/out/week2/egov-eservice/app/data/egov.db, /workspace/out/week2/egov-eservice/app/data/egov.db-wal, /workspace/out/week2/egov-eservice/app/data/egov.db-shm, /workspace/out/week2/egov-eservice/app/tests/runs/B05/web.log"
+                    },
+                    {
+                      "type": "NFR-04",
+                      "description": "ผู้ทดสอบบันทึกวิธีเข้ารหัสที่เว็บใช้ (เช่น AES-256-GCM) ในรายงาน · HTTPS เป็น Q-08 ไม่ทดสอบที่นี่"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613b9ecc447899c37353-e45d64037fcf4d9e934e",
+          "file": "part2.spec.ts",
+          "line": 2754,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-16T06:53:22.733Z",
+    "duration": 81501.822,
+    "expected": 50,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

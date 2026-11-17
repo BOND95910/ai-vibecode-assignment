@@ -1,0 +1,28 @@
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=(none) DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== normal-1 (BUG_MODE=-)
+   51/51 passed · failed: - · OK
+== normal-2 (BUG_MODE=-, same server)
+   51/51 passed · failed: - · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B01 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B01 (BUG_MODE=B01)
+   50/51 passed · failed: TC-FEE-01 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B02 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B02 (BUG_MODE=B02)
+   50/51 passed · failed: TC-UPLOAD-01 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B03 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B03 (BUG_MODE=B03)
+   48/51 passed · failed: TC-RBAC-04 TC-SLA-01 TC-SLA-02 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B04 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B04 (BUG_MODE=B04)
+   50/51 passed · failed: TC-SLA-02 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B05 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B05 (BUG_MODE=B05)
+   50/51 passed · failed: TC-PAY-01 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B06 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B06 (BUG_MODE=B06)
+   50/51 passed · failed: TC-RBAC-01 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B07 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B07 (BUG_MODE=B07)
+   50/51 passed · failed: TC-RBAC-02 · OK
+  [server] e-Service listening on http://localhost:3200 TEST_MODE=1 BUG_MODE=B08 DB_PATH=C:\src\compare\C-usual\data\bugrun.db.json
+== B08 (BUG_MODE=B08)

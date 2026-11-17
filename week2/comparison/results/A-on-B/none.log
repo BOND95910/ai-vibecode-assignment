@@ -1,0 +1,167 @@
+
+Running 51 tests using 1 worker
+
+  ✓   1 [chromium] › specs\audit.spec.js:61:1 › TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit (1.6s)
+  ✓   2 [chromium] › specs\audit.spec.js:144:1 › TC-AUDIT-02 Audit แก้/ลบไม่ได้ (405) (363ms)
+  ✓   3 [chromium] › specs\audit.spec.js:186:1 › TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย (1.1s)
+  ✘   4 [chromium] › specs\auth.spec.js:9:1 › TC-AUTH-01 เลขบัตร 13 หลัก + checksum (6.2s)
+  ✓   5 [chromium] › specs\auth.spec.js:50:1 › TC-AUTH-02 OTP ผิด 3 ครั้งล็อก 15 นาที (1.4s)
+  ✓   6 [chromium] › specs\auth.spec.js:148:1 › TC-AUTH-03 ลงทะเบียนครั้งแรก (1.6s)
+  ✓   7 [chromium] › specs\auth.spec.js:209:1 › TC-AUTH-04 เจ้าหน้าที่ SSO จำลองและหน้าตั้งต้นตามบทบาท (2.8s)
+  ✓   8 [chromium] › specs\dash.spec.js:36:1 › TC-DASH-01 Dashboard ตัวเลขเริ่มต้น (496ms)
+  ✓   9 [chromium] › specs\dash.spec.js:76:1 › TC-DASH-02 Dashboard ย้อนหลัง พ.ย. ต.ค. รายปี (1.0s)
+  ✓  10 [chromium] › specs\dash.spec.js:107:1 › TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ และไม่มีข้อมูลส่วนบุคคล (9.8s)
+  ✓  11 [chromium] › specs\dash.spec.js:176:1 › TC-DASH-04 ค่าขอบ "ทันกำหนด" 16:29:59 / 16:30:00 / 16:30:01 (1.1s)
+  ✓  12 [chromium] › specs\doc.spec.js:35:1 › TC-DOC-01 ออกเอกสารและข้อมูลใน PDF (563ms)
+  ✓  13 [chromium] › specs\doc.spec.js:83:1 › TC-DOC-02 ตรวจเอกสาร /verify (283ms)
+  ✓  14 [chromium] › specs\doc.spec.js:115:1 › TC-DOC-03 เอกสารหมดอายุและลายเซ็นไม่ตรง (2.0s)
+  ✓  15 [chromium] › specs\fee.spec.js:7:1 › TC-FEE-01 ค่าธรรมเนียม SV-01/SV-02/SV-03 (1.3s)
+  ✓  16 [chromium] › specs\nfr.spec.js:12:1 › TC-NFR-01 Responsive 375/768/1280 (3.8s)
+  ✓  17 [chromium] › specs\nfr.spec.js:113:1 › TC-NFR-02 WCAG: axe + คีย์บอร์ด + label + สถานะไม่ใช้สีอย่างเดียว (7.6s)
+  ✓  18 [chromium] › specs\nfr.spec.js:206:1 › TC-NFR-03 Health เวลาโหลด และผลซ้ำได้ (1.7s)
+(node:27520) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  19 [chromium] › specs\nfr.spec.js:269:1 › TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection) (190ms)
+  ✓  20 [chromium] › specs\noti.spec.js:36:1 › TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ (1.4s)
+  ✓  21 [chromium] › specs\noti.spec.js:59:1 › TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร (2.7s)
+  ✓  22 [chromium] › specs\pay.spec.js:7:1 › TC-PAY-01 อายุ QR 15:00 (618ms)
+  ✓  23 [chromium] › specs\pay.spec.js:52:1 › TC-PAY-02 ยอดเงินและ callback ซ้ำ (317ms)
+  ✓  24 [chromium] › specs\pay.spec.js:89:1 › TC-PAY-03 ชำระพร้อมกัน เลขไม่ซ้ำ (677ms)
+  ✓  25 [chromium] › specs\pay.spec.js:118:1 › TC-PAY-04 เลขคำขอข้ามปี 2569 → 2570 (1.2s)
+  ✓  26 [chromium] › specs\pdpa.spec.js:10:1 › TC-PDPA-01 ปิดบังเลขบัตรบนจอ (845ms)
+  ✓  27 [chromium] › specs\pdpa.spec.js:51:1 › TC-PDPA-02 API (JSON) ไม่ส่งเลขบัตรเต็ม (273ms)
+  ✓  28 [chromium] › specs\pdpa.spec.js:83:1 › TC-PDPA-03 แสดงเลขเต็มต้องมีเหตุผลและ Audit (990ms)
+  ✓  29 [chromium] › specs\queue.spec.js:10:1 › TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก (1.1s)
+  ✓  30 [chromium] › specs\queue.spec.js:71:1 › TC-QUEUE-02 รับเรื่องซ้อน (พร้อมกันและต่อกัน) (1.4s)
+  ✓  31 [chromium] › specs\queue.spec.js:142:1 › TC-QUEUE-03 งานในมือสูงสุด 10 (1.8s)
+  ✓  32 [chromium] › specs\rbac.spec.js:9:1 › TC-RBAC-01 ประชาชนเปิดคำขอคนอื่นไม่ได้ (IDOR) (337ms)
+  ✓  33 [chromium] › specs\rbac.spec.js:42:1 › TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (API) (697ms)
+  ✓  34 [chromium] › specs\rbac.spec.js:116:1 › TC-RBAC-03 ตารางสิทธิ์หน้า/API ตามบทบาท (5.4s)
+  ✓  35 [chromium] › specs\rbac.spec.js:167:1 › TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก (1.7s)
+  ✓  36 [chromium] › specs\rbac.spec.js:265:1 › TC-RBAC-05 สิทธิ์เปิด/ดาวน์โหลดไฟล์แนบ (1.4s)
+  ✓  37 [chromium] › specs\rbac.spec.js:324:1 › TC-RBAC-06 ผู้ดูแลระบบ: ช่วงค่าที่ยอมรับ (1.3s)
+  ✓  38 [chromium] › specs\sla.spec.js:29:1 › TC-SLA-01 กำหนดเสร็จตามตารางวันที่ (3.7s)
+  ✓  39 [chromium] › specs\sla.spec.js:51:1 › TC-SLA-02 หยุดนับ SLA ระหว่างรอแก้ไข (2.8s)
+  ✓  40 [chromium] › specs\sla.spec.js:137:1 › TC-SLA-03 ระดับเตือน ปกติ/ใกล้/เกิน (2.4s)
+  ✘  41 [chromium] › specs\submit.spec.js:9:1 › TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร (737ms)
+  ✓  42 [chromium] › specs\submit.spec.js:75:1 › TC-SUBMIT-02 เอกสารบังคับครบก่อนชำระ (1.6s)
+  ✓  43 [chromium] › specs\submit.spec.js:134:1 › TC-SUBMIT-03 ร่าง การลบร่าง และการยกเลิก (2.8s)
+  ✓  44 [chromium] › specs\upload.spec.js:22:1 › TC-UPLOAD-01 ขนาดและจำนวนไฟล์ (11.8s)
+  ✓  45 [chromium] › specs\upload.spec.js:73:1 › TC-UPLOAD-02 ชนิดไฟล์จากเนื้อไฟล์ (1.7s)
+  ✓  46 [chromium] › specs\workflow.spec.js:23:1 › TC-WORKFLOW-01 SV-01 อนุมัติ + ออกเอกสาร (767ms)
+  ✓  47 [chromium] › specs\workflow.spec.js:75:1 › TC-WORKFLOW-02 SV-02 ผ่านหัวหน้า (1.8s)
+  ✓  48 [chromium] › specs\workflow.spec.js:145:1 › TC-WORKFLOW-03 SV-03 สามขั้นตอน (1.4s)
+  ✓  49 [chromium] › specs\workflow.spec.js:210:1 › TC-WORKFLOW-04 ตีกลับสูงสุด 2 ครั้ง และผลหลังครบ (2.0s)
+  ✓  50 [chromium] › specs\workflow.spec.js:294:1 › TC-WORKFLOW-05 เหตุผล ≥ 10 ตัวอักษร (ตีกลับ/ไม่อนุมัติ) (2.2s)
+  ✘  51 [chromium] › specs\workflow.spec.js:362:1 › TC-WORKFLOW-06 เวลาแก้ไข 168 ชั่วโมง (707ms)
+
+
+  1) [chromium] › specs\auth.spec.js:9:1 › TC-AUTH-01 เลขบัตร 13 หลัก + checksum ───────────────────
+
+    Error: ไม่มี thaid-error เมื่อกรอก 1101700123456: expected count 0
+
+    expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('thaid-error')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - ไม่มี thaid-error เมื่อกรอก 1101700123456: expected count 0 getByTestId('thaid-error') with timeout 5000ms
+      - waiting for getByTestId('thaid-error')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+       at ..\helpers\check.js:43
+
+      41 | }
+      42 | async function count(loc, n, label) {
+    > 43 |   await expect(loc, `${label}: expected count ${n}`).toHaveCount(n);
+         |                                                      ^
+      44 | }
+      45 | async function hidden(loc, label) {
+      46 |   await expect(loc, `${label}: expected hidden / absent`).toBeHidden();
+        at count (C:\src\compare\judge\suiteA\helpers\check.js:43:54)
+        at C:\src\compare\judge\suiteA\specs\auth.spec.js:46:11
+
+    Error Context: test-results\auth-TC-AUTH-01-เลขบัตร-13-หลัก-checksum-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\auth-TC-AUTH-01-เลขบัตร-13-หลัก-checksum-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\auth-TC-AUTH-01-เลขบัตร-13-หลัก-checksum-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › specs\submit.spec.js:9:1 › TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร ───────────────────
+
+    Error: pay PP-0002 body: expected {"status":"PAID","caseNo":"EG-2569-000031","receiptNo":"RC-2569-000031","duplicate":false} but received {"status":"PAID","caseNo":"EG-2569-000031","receiptNo":"RC-2569-000031","duplicate":false,"amount":40,"paidAt":"2026-12-01T09:00:00+07:00"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 2
+
+      Object {
+    +   "amount": 40,
+        "caseNo": "EG-2569-000031",
+        "duplicate": false,
+    +   "paidAt": "2026-12-01T09:00:00+07:00",
+        "receiptNo": "RC-2569-000031",
+        "status": "PAID",
+      }
+
+       at ..\helpers\check.js:9
+
+       7 | // เทียบค่าลึก: eq(actual, expected, 'ป้าย')
+       8 | function eq(actual, expected, label) {
+    >  9 |   expect(actual, `${label}: expected ${fmt(expected)} but received ${fmt(actual)}`).toEqual(expected);
+         |                                                                                     ^
+      10 | }
+      11 | function ok(cond, label, detail = '') {
+      12 |   expect(!!cond, `${label}${detail ? ' · ' + detail : ''}`).toBe(true);
+        at eq (C:\src\compare\judge\suiteA\helpers\check.js:9:85)
+        at C:\src\compare\judge\suiteA\specs\submit.spec.js:41:3
+
+    Error Context: test-results\submit-TC-SUBMIT-01-ยื่นคำขอ-SV-01-ครบวงจร-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\submit-TC-SUBMIT-01-ยื่นคำขอ-SV-01-ครบวงจร-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\submit-TC-SUBMIT-01-ยื่นคำขอ-SV-01-ครบวงจร-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › specs\workflow.spec.js:362:1 › TC-WORKFLOW-06 เวลาแก้ไข 168 ชั่วโมง ──────────────
+
+    Error: response.json: Protocol error (Network.getResponseBody): No resource with given identifier found
+    Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+
+      383 |   ]);
+      384 |   eq(res.status(), 200, 'รอบ A resubmit HTTP');
+    > 385 |   eq((await res.json()).status, 'IN_REVIEW', 'รอบ A resubmit status');
+          |                 ^
+      386 |   await text(s.page, 'case-status', 'กำลังตรวจสอบ', 'รอบ A case-status');
+      387 |
+      388 |   // รอบ B 168:00
+        at C:\src\compare\judge\suiteA\specs\workflow.spec.js:385:17
+
+    Error Context: test-results\workflow-TC-WORKFLOW-06-เวลาแก้ไข-168-ชั่วโมง-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\workflow-TC-WORKFLOW-06-เวลาแก้ไข-168-ชั่วโมง-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\workflow-TC-WORKFLOW-06-เวลาแก้ไข-168-ชั่วโมง-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [chromium] › specs\auth.spec.js:9:1 › TC-AUTH-01 เลขบัตร 13 หลัก + checksum ────────────────────
+    [chromium] › specs\submit.spec.js:9:1 › TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร ────────────────────
+    [chromium] › specs\workflow.spec.js:362:1 › TC-WORKFLOW-06 เวลาแก้ไข 168 ชั่วโมง ───────────────
+  48 passed (1.9m)

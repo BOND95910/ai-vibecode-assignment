@@ -1,0 +1,18 @@
+services:
+  web:
+    build: .
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      TEST_MODE: "${TEST_MODE:-1}"     # 1 = เปิด /api/test/* · ตั้ง 0 เพื่อปิด
+      BUG_MODE: "${BUG_MODE:-}"        # เช่น B03,B07 · ว่าง = ถูกต้อง 100%
+      BASE_URL: "${BASE_URL:-http://localhost:3000}"
+    volumes:
+      - appdata:/data
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+volumes:
+  appdata:

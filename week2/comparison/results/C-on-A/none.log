@@ -1,0 +1,526 @@
+
+Running 51 tests using 1 worker
+
+  ✓   1 tests\auth.spec.js:3:1 › TC-AUTH-01 เลขบัตร 13 หลัก + checksum (1.3s)
+  ✓   2 tests\auth.spec.js:28:1 › TC-AUTH-02 OTP ผิด 3 ครั้งล็อก 15 นาที (2.1s)
+  ✓   3 tests\auth.spec.js:84:1 › TC-AUTH-03 ลงทะเบียนครั้งแรก (2.1s)
+  ✓   4 tests\auth.spec.js:127:1 › TC-AUTH-04 เจ้าหน้าที่ SSO จำลองและหน้าตั้งต้นตามบทบาท (6.4s)
+  ✘   5 tests\dash-audit.spec.js:16:1 › TC-DASH-01 Dashboard ตัวเลขเริ่มต้น (587ms)
+  ✘   6 tests\dash-audit.spec.js:34:1 › TC-DASH-02 Dashboard ย้อนหลัง พ.ย. ต.ค. รายปี (3.0m)
+  ✘   7 tests\dash-audit.spec.js:51:1 › TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ และไม่มีข้อมูลส่วนบุคคล (3.0m)
+  ✓   8 tests\dash-audit.spec.js:93:1 › TC-DASH-04 ค่าขอบ "ทันกำหนด" 16:29:59 / 16:30:00 / 16:30:01 (2.5s)
+  ✘   9 tests\dash-audit.spec.js:118:1 › TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit (1.7s)
+  ✓  10 tests\dash-audit.spec.js:184:1 › TC-AUDIT-02 Audit แก้/ลบไม่ได้ (405) (1.1s)
+  ✘  11 tests\dash-audit.spec.js:207:1 › TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย (3.0m)
+  ✓  12 tests\nfr.spec.js:12:1 › TC-NFR-01 Responsive 375 / 768 / 1280 (7.7s)
+  ✘  13 tests\nfr.spec.js:50:1 › TC-NFR-02 WCAG: axe + คีย์บอร์ด + label + สถานะไม่ใช้สีอย่างเดียว (8.7s)
+  ✓  14 tests\nfr.spec.js:126:1 › TC-NFR-03 Health เวลาโหลด และผลซ้ำได้ (5.1s)
+  ✓  15 tests\nfr.spec.js:177:1 › TC-NFR-04 เข้ารหัสข้อมูลส่วนบุคคลที่เก็บ (inspection) (627ms)
+  ✘  16 tests\queue-sla-noti.spec.js:6:1 › TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก (6.9s)
+  ✓  17 tests\queue-sla-noti.spec.js:48:1 › TC-QUEUE-02 รับเรื่องซ้อน (พร้อมกันและต่อกัน) (3.2s)
+  ✓  18 tests\queue-sla-noti.spec.js:96:1 › TC-QUEUE-03 งานในมือสูงสุด 10 (5.6s)
+  ✓  19 tests\queue-sla-noti.spec.js:147:1 › TC-SLA-01 กำหนดเสร็จตามตารางวันที่ (11.3s)
+  ✓  20 tests\queue-sla-noti.spec.js:173:1 › TC-SLA-02 หยุดนับ SLA ระหว่างรอแก้ไข (5.6s)
+  ✓  21 tests\queue-sla-noti.spec.js:242:1 › TC-SLA-03 ระดับเตือน ปกติ / ใกล้ครบกำหนด / เกินกำหนด (5.2s)
+  ✘  22 tests\queue-sla-noti.spec.js:308:1 › TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ (966ms)
+  ✘  23 tests\queue-sla-noti.spec.js:310:1 › TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร (898ms)
+  ✓  24 tests\rbac.spec.js:3:1 › TC-RBAC-01 ประชาชนเปิดคำขอคนอื่นไม่ได้ (IDOR) (917ms)
+  ✘  25 tests\rbac.spec.js:27:1 › TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API) (6.4s)
+  ✓  26 tests\rbac.spec.js:58:1 › TC-RBAC-03 ตารางสิทธิ์หน้า/API ตามบทบาท (14.9s)
+  ✘  27 tests\rbac.spec.js:108:1 › TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก (679ms)
+  ✓  28 tests\rbac.spec.js:177:1 › TC-RBAC-05 สิทธิ์เปิด/ดาวน์โหลดไฟล์แนบ (8.9s)
+  ✓  29 tests\rbac.spec.js:218:1 › TC-RBAC-06 ผู้ดูแลระบบ: ช่วงค่าที่ยอมรับ (3.2s)
+  ✓  30 tests\submit.spec.js:7:1 › TC-FEE-01 ค่าธรรมเนียม SV-01 / SV-02 / SV-03 (1.9s)
+  ✓  31 tests\submit.spec.js:49:1 › TC-SUBMIT-01 ยื่นคำขอ SV-01 ครบวงจร (2.1s)
+  ✓  32 tests\submit.spec.js:101:1 › TC-SUBMIT-02 เอกสารบังคับครบก่อนชำระ (2.5s)
+  ✓  33 tests\submit.spec.js:154:1 › TC-SUBMIT-03 ร่าง การลบร่าง และการยกเลิก (5.3s)
+  ✓  34 tests\submit.spec.js:239:1 › TC-UPLOAD-01 ขนาดและจำนวนไฟล์ (7.7s)
+  ✓  35 tests\submit.spec.js:286:1 › TC-UPLOAD-02 ชนิดไฟล์จากเนื้อไฟล์ (3.2s)
+  ✓  36 tests\submit.spec.js:315:1 › TC-PAY-01 อายุ QR 15:00 (2.2s)
+  ✓  37 tests\submit.spec.js:344:1 › TC-PAY-02 ยอดเงินและ callback ซ้ำ (1.0s)
+  ✓  38 tests\submit.spec.js:366:1 › TC-PAY-03 ชำระพร้อมกัน เลขไม่ซ้ำ (2.0s)
+  ✓  39 tests\submit.spec.js:384:1 › TC-PAY-04 เลขคำขอข้ามปี 2569 → 2570 (2.0s)
+  ✓  40 tests\workflow-doc.spec.js:15:1 › TC-WORKFLOW-01 SV-01 อนุมัติ + ออกเอกสาร (1.8s)
+  ✓  41 tests\workflow-doc.spec.js:52:1 › TC-WORKFLOW-02 SV-02 ผ่านหัวหน้า (4.3s)
+  ✓  42 tests\workflow-doc.spec.js:103:1 › TC-WORKFLOW-03 SV-03 สามขั้นตอน (4.1s)
+  ✘  43 tests\workflow-doc.spec.js:149:1 › TC-WORKFLOW-04 ตีกลับสูงสุด 2 ครั้ง และผลหลังครบ (6.7s)
+  ✓  44 tests\workflow-doc.spec.js:215:1 › TC-WORKFLOW-05 เหตุผล ≥ 10 ตัวอักษร (ตีกลับ / ไม่อนุมัติ) (3.8s)
+  ✓  45 tests\workflow-doc.spec.js:264:1 › TC-WORKFLOW-06 เวลาแก้ไข 168 ชั่วโมง (2.3s)
+  ✓  46 tests\workflow-doc.spec.js:299:1 › TC-DOC-01 ออกเอกสารและข้อมูลในเอกสาร (1.4s)
+  ✓  47 tests\workflow-doc.spec.js:331:1 › TC-DOC-02 ตรวจเอกสาร /verify (951ms)
+  ✓  48 tests\workflow-doc.spec.js:359:1 › TC-DOC-03 เอกสารหมดอายุและลายเซ็นไม่ตรง (5.4s)
+  ✓  49 tests\workflow-doc.spec.js:412:1 › TC-PDPA-01 ปิดบังเลขบัตรบนจอ (1.8s)
+  ✓  50 tests\workflow-doc.spec.js:435:1 › TC-PDPA-02 API (JSON) ไม่ส่งเลขบัตรเต็ม (804ms)
+  ✓  51 tests\workflow-doc.spec.js:458:1 › TC-PDPA-03 แสดงเลขเต็มต้องมีเหตุผลและบันทึก Audit (1.9s)
+
+
+  1) tests\dash-audit.spec.js:16:1 › TC-DASH-01 Dashboard ตัวเลขเริ่มต้น ───────────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 5
+    + Received  + 5
+
+      Object {
+    -   "backlog": "21",
+    -   "closed": "0",
+    -   "ontime-pct": "–",
+    -   "overdue": "1",
+    -   "received": "3",
+    +   "backlog": "",
+    +   "closed": "",
+    +   "ontime-pct": "",
+    +   "overdue": "",
+    +   "received": "",
+      }
+
+      20 |   await expect(p.getByTestId('period-select')).toHaveValue('2026-12');
+      21 |   await expect(p.getByTestId('service-select')).toHaveValue('ALL');
+    > 22 |   expect(await kpis(p)).toEqual({ received: '3', closed: '0', 'ontime-pct': '–', backlog: '21', overdue: '1' });
+         |                         ^
+      23 |   const wl = await p.getByTestId('workload-row').evaluateAll(rs => rs.map(r => [r.dataset.username, r.querySelector('[data-testid=workload-value]').textContent.trim()]));
+      24 |   expect(wl).toEqual([['off.reg1', '3'], ['off.reg2', '9'], ['off.works1', '0']]);
+      25 |   const api = await (await p.request.get('/api/dashboard?period=2026-12&service=ALL')).json();
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:22:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dash-audit-TC-DASH-01-Dashboard-ตัวเลขเริ่มต้น\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dash-audit-TC-DASH-01-Dashboard-ตัวเลขเริ่มต้น\error-context.md
+
+  2) tests\dash-audit.spec.js:34:1 › TC-DASH-02 Dashboard ย้อนหลัง พ.ย. ต.ค. รายปี ─────────────────
+
+    Test timeout of 180000ms exceeded.
+
+    Error: page.waitForURL: Target page, context or browser has been closed
+    =========================== logs ===========================
+    waiting for navigation until "load"
+    ============================================================
+
+       9 | async function pick(page, period, service) {
+      10 |   await page.getByTestId('period-select').selectOption(period);
+    > 11 |   await page.waitForURL(u => u.searchParams.get('period') === period);
+         |              ^
+      12 |   await page.getByTestId('service-select').selectOption(service);
+      13 |   await page.waitForURL(u => u.searchParams.get('period') === period && u.searchParams.get('service') === service);
+      14 | }
+        at pick (C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:11:14)
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:42:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dash-audit-TC-DASH-02-Dashboard-ย้อนหลัง-พ-ย-ต-ค-รายปี\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dash-audit-TC-DASH-02-Dashboard-ย้อนหลัง-พ-ย-ต-ค-รายปี\error-context.md
+
+  3) tests\dash-audit.spec.js:51:1 › TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ และไม่มีข้อมูลส่วนบุคคล 
+
+    Test timeout of 180000ms exceeded.
+
+    Error: page.waitForURL: Target page, context or browser has been closed
+    =========================== logs ===========================
+    waiting for navigation until "load"
+    ============================================================
+
+       9 | async function pick(page, period, service) {
+      10 |   await page.getByTestId('period-select').selectOption(period);
+    > 11 |   await page.waitForURL(u => u.searchParams.get('period') === period);
+         |              ^
+      12 |   await page.getByTestId('service-select').selectOption(service);
+      13 |   await page.waitForURL(u => u.searchParams.get('period') === period && u.searchParams.get('service') === service);
+      14 | }
+        at pick (C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:11:14)
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:66:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dash-audit-TC-DASH-03-ส่งอ-8bb2e-าจอ-และไม่มีข้อมูลส่วนบุคคล\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dash-audit-TC-DASH-03-ส่งอ-8bb2e-าจอ-และไม่มีข้อมูลส่วนบุคคล\error-context.md
+
+  4) tests\dash-audit.spec.js:118:1 › TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit ────────────────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 12
+    + Received  +  1
+
+    - Object {
+    -   "ADMIN_CHANGE": 1,
+    -   "APPROVE": 2,
+    -   "CLAIM": 1,
+    -   "EXPORT": 1,
+    -   "FORWARD": 1,
+    -   "ISSUE": 1,
+    -   "REJECT": 1,
+    -   "RETURN": 1,
+    -   "STAFF_LOGIN": 6,
+    -   "UNMASK": 1,
+    - }
+    + Object {}
+
+      141 |   }));
+      142 |   const counts = rows.reduce((m, r) => ({ ...m, [r.event]: (m[r.event] || 0) + 1 }), {});
+    > 143 |   expect.soft(counts).toEqual({ STAFF_LOGIN: 6, CLAIM: 1, RETURN: 1, FORWARD: 1, APPROVE: 2, ISSUE: 1, REJECT: 1, UNMASK: 1, EXPORT: 1, ADMIN_CHANGE: 1 });
+          |                       ^
+      144 |   await expect(p.getByTestId('audit-count')).toHaveText('16');
+      145 |   expect(rows.map(r => r.id)).toEqual([...rows.map(r => r.id)].sort((a, b) => b - a)); // same time → newest id first
+      146 |   for (const r of rows) expect.soft(r.iso, `row ${r.id}`).toBe('2026-12-01T09:00:00+07:00');
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:143:23
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 8
+    + Received  + 1
+
+    - Array [
+    -   "admin1",
+    -   "audit1",
+    -   "exec1",
+    -   "head1",
+    -   "off.reg1",
+    -   "off.reg2",
+    - ]
+    + Array []
+
+      145 |   expect(rows.map(r => r.id)).toEqual([...rows.map(r => r.id)].sort((a, b) => b - a)); // same time → newest id first
+      146 |   for (const r of rows) expect.soft(r.iso, `row ${r.id}`).toBe('2026-12-01T09:00:00+07:00');
+    > 147 |   expect(rows.filter(r => r.event === 'STAFF_LOGIN').map(r => r.actor).sort()).toEqual(['admin1', 'audit1', 'exec1', 'head1', 'off.reg1', 'off.reg2']);
+          |                                                                                ^
+      148 |   const one = ev => rows.filter(r => r.event === ev);
+      149 |   const pickF = r => ({ actor: r.actor, role: r.role, caseNo: r.caseNo, tr: r.tr });
+      150 |   expect.soft(pickF(one('CLAIM')[0])).toEqual({ actor: 'off.reg2', role: 'officer', caseNo: 'EG-2569-000028', tr: 'SUBMITTED → IN_REVIEW' });
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:147:80
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dash-audit-TC-AUDIT-01-เหตุการณ์และฟิลด์ใน-Audit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dash-audit-TC-AUDIT-01-เหตุการณ์และฟิลด์ใน-Audit\error-context.md
+
+  5) tests\dash-audit.spec.js:207:1 › TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย ─────────────────────────
+
+    Test timeout of 180000ms exceeded.
+
+    Error: page.waitForURL: Target page, context or browser has been closed
+    =========================== logs ===========================
+    waiting for navigation until "load"
+    ============================================================
+
+      225 |     await p.getByTestId('audit-filter-actor').fill(actor);
+      226 |     await p.getByTestId('audit-apply-btn').click();
+    > 227 |     await p.waitForURL(/from=/);
+          |             ^
+      228 |     await expect.soft(p.getByTestId('audit-count'), `UI count ${label}`).toHaveText(String(want.split(' ').length));
+      229 |     const got = await p.getByTestId('audit-time').evaluateAll(ts => ts.map(t => t.dataset.iso));
+      230 |     expect.soft(got.map(x => iso[x] || x).sort().join(' '), `UI rows ${label}`).toBe(want);
+        at C:\src\compare\judge\suiteC\tests\dash-audit.spec.js:227:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dash-audit-TC-AUDIT-03-กรองช่วงวันที่ตามเวลาไทย\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dash-audit-TC-AUDIT-03-กรองช่วงวันที่ตามเวลาไทย\error-context.md
+
+  6) tests\nfr.spec.js:50:1 › TC-NFR-02 WCAG: axe + คีย์บอร์ด + label + สถานะไม่ใช้สีอย่างเดียว ────
+
+    Error: keyboard: could not reach qty-input with Tab
+
+       96 |       }
+       97 |     }
+    >  98 |     throw new Error(`keyboard: could not reach ${testid} with Tab`);
+          |           ^
+       99 |   };
+      100 |   await k.goto('/login');
+      101 |   await tabTo('thaid-id-input');
+        at tabTo (C:\src\compare\judge\suiteC\tests\nfr.spec.js:98:11)
+        at C:\src\compare\judge\suiteC\tests\nfr.spec.js:111:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\nfr-TC-NFR-02-WCAG-axe-คีย-608de-bel-สถานะไม่ใช้สีอย่างเดียว\test-failed-8.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\nfr-TC-NFR-02-WCAG-axe-คีย-608de-bel-สถานะไม่ใช้สีอย่างเดียว\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\nfr-TC-NFR-02-WCAG-axe-คีย-608de-bel-สถานะไม่ใช้สีอย่างเดียว\test-failed-7.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\nfr-TC-NFR-02-WCAG-axe-คีย-608de-bel-สถานะไม่ใช้สีอย่างเดียว\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\nfr-TC-NFR-02-WCAG-axe-คีย-608de-bel-สถานะไม่ใช้สีอย่างเดียว\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\nfr-TC-NFR-02-WCAG-axe-คีย-608de-bel-สถานะไม่ใช้สีอย่างเดียว\test-failed-9.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\nfr-TC-NFR-02-WCAG-axe-คีย-608de-bel-สถานะไม่ใช้สีอย่างเดียว\test-failed-5.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\nfr-TC-NFR-02-WCAG-axe-คีย-608de-bel-สถานะไม่ใช้สีอย่างเดียว\test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\nfr-TC-NFR-02-WCAG-axe-คีย-608de-bel-สถานะไม่ใช้สีอย่างเดียว\test-failed-6.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\nfr-TC-NFR-02-WCAG-axe-คีย-608de-bel-สถานะไม่ใช้สีอย่างเดียว\error-context.md
+
+  7) tests\queue-sla-noti.spec.js:6:1 › TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก ──────────────────────────
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('queue-row')
+    Expected: 9
+    Received: 17
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" getByTestId('queue-row') with timeout 5000ms
+      - waiting for getByTestId('queue-row')
+        2 × locator resolved to 0 elements
+          - unexpected value "0"
+        12 × locator resolved to 17 elements
+           - unexpected value "17"
+
+
+      27 |   const reg2 = await h.pageS('off.reg2');
+      28 |   await reg2.goto('/officer/queue?filter=mine');
+    > 29 |   await expect(reg2.getByTestId('queue-row')).toHaveCount(9);
+         |                                               ^
+      30 |   expect(await h.queueNos(reg2)).toEqual(N('000025 000026 000013 000015 000027 000016 000018 000012 000021'));
+      31 |   await expect(reg2.getByTestId('workload-count')).toHaveText('9');
+      32 |
+        at C:\src\compare\judge\suiteC\tests\queue-sla-noti.spec.js:29:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-QUEUE-01-ลำดับคิวและขอบเขตแผนก\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-QUEUE-01-ลำดับคิวและขอบเขตแผนก\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\queue-sla-noti-TC-QUEUE-01-ลำดับคิวและขอบเขตแผนก\error-context.md
+
+  8) tests\queue-sla-noti.spec.js:308:1 › TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ ───────────────────────
+
+    Error: reg1 noti-item
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 5
+    + Received  + 1
+
+    - Array [
+    -   "000020:overdue",
+    -   "000022:near",
+    -   "000024:near",
+    - ]
+    + Array []
+
+      292 |     await p.goto('/notifications');
+      293 |     const got = await p.getByTestId('noti-item').evaluateAll(xs => xs.map(x => `${x.dataset.caseNo.slice(-6)}:${x.dataset.level}`).sort());
+    > 294 |     expect(got, `${k} noti-item`).toEqual(want[k]);
+          |                                   ^
+      295 |     expect(await notiSet(p.request), `${k} API`).toEqual(want[k]);
+      296 |     await expect(p.getByTestId('bell-count'), `${k} bell`).toHaveText(String(want[k].length));
+      297 |   }
+        at noti01 (C:\src\compare\judge\suiteC\tests\queue-sla-noti.spec.js:294:35)
+        at C:\src\compare\judge\suiteC\tests\queue-sla-noti.spec.js:308:63
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ\test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\queue-sla-noti-TC-NOTI-01-ผู้รับแจ้งเตือนตามระดับ\error-context.md
+
+  9) tests\queue-sla-noti.spec.js:310:1 › TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร 
+
+    Error: reg1 noti-item
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 5
+    + Received  + 1
+
+    - Array [
+    -   "000020:overdue",
+    -   "000022:near",
+    -   "000024:near",
+    - ]
+    + Array []
+
+      292 |     await p.goto('/notifications');
+      293 |     const got = await p.getByTestId('noti-item').evaluateAll(xs => xs.map(x => `${x.dataset.caseNo.slice(-6)}:${x.dataset.level}`).sort());
+    > 294 |     expect(got, `${k} noti-item`).toEqual(want[k]);
+          |                                   ^
+      295 |     expect(await notiSet(p.request), `${k} API`).toEqual(want[k]);
+      296 |     await expect(p.getByTestId('bell-count'), `${k} bell`).toHaveText(String(want[k].length));
+      297 |   }
+        at noti01 (C:\src\compare\judge\suiteC\tests\queue-sla-noti.spec.js:294:35)
+        at C:\src\compare\judge\suiteC\tests\queue-sla-noti.spec.js:312:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-NOTI-02--25cd0-ละขั้นรออนุมัติ-รอออกเอกสาร\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-NOTI-02--25cd0-ละขั้นรออนุมัติ-รอออกเอกสาร\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-NOTI-02--25cd0-ละขั้นรออนุมัติ-รอออกเอกสาร\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\queue-sla-noti-TC-NOTI-02--25cd0-ละขั้นรออนุมัติ-รอออกเอกสาร\test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\queue-sla-noti-TC-NOTI-02--25cd0-ละขั้นรออนุมัติ-รอออกเอกสาร\error-context.md
+
+  10) tests\rbac.spec.js:27:1 › TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API) ───────────
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  getByTestId('audit-count')
+    Expected: "1"
+    Received: "5"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" getByTestId('audit-count') with timeout 5000ms
+      - waiting for getByTestId('audit-count')
+        - locator resolved to <strong data-testid="audit-count"></strong>
+        - unexpected value ""
+        13 × locator resolved to <strong data-testid="audit-count">5</strong>
+           - unexpected value "5"
+
+
+      45 |   const au = await h.pageS('audit1');
+      46 |   await au.goto('/audit?event=APPROVE');
+    > 47 |   await expect(au.getByTestId('audit-count')).toHaveText('1');
+         |                                               ^
+      48 |   await expect(au.getByTestId('audit-row')).toHaveAttribute('data-actor', 'head1');
+      49 | });
+      50 |
+        at C:\src\compare\judge\suiteC\tests\rbac.spec.js:47:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\rbac-TC-RBAC-02-เจ้าหน้าที่อนุมัติ-SV-02-ไม่ได้-ตรวจที่-API-\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\rbac-TC-RBAC-02-เจ้าหน้าที่อนุมัติ-SV-02-ไม่ได้-ตรวจที่-API-\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\rbac-TC-RBAC-02-เจ้าหน้าที่อนุมัติ-SV-02-ไม่ได้-ตรวจที่-API-\error-context.md
+
+  11) tests\rbac.spec.js:108:1 › TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก ───────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 6
+    + Received  + 1
+
+    - Array [
+    -   "2026-12-07",
+    -   "2026-12-10",
+    -   "2026-12-31",
+    -   "2027-01-01",
+    - ]
+    + Array []
+
+      110 |   const ad = await h.pageS('admin1');
+      111 |   await ad.goto('/admin/holidays');
+    > 112 |   expect(await ad.getByTestId('holiday-row').evaluateAll(rs => rs.map(r => r.dataset.date))).toEqual(['2026-12-07', '2026-12-10', '2026-12-31', '2027-01-01']);
+          |                                                                                              ^
+      113 |   // 2: before any change
+      114 |   const c31 = await h.newPaid({ at: '2026-12-01T09:00:00+07:00', qty: 1 });
+      115 |   expect({ caseNo: c31.caseNo, dueAt: (await h.caseOf(c31.ctx, c31.caseNo)).dueAt }).toEqual({ caseNo: 'EG-2569-000031', dueAt: '2026-12-04T16:30:00+07:00' });
+        at C:\src\compare\judge\suiteC\tests\rbac.spec.js:112:94
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\rbac-TC-RBAC-04-ผู้ดูแลระบ-6d988-ันหยุด-ผู้ใช้-และยอดที่ล็อก\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\rbac-TC-RBAC-04-ผู้ดูแลระบ-6d988-ันหยุด-ผู้ใช้-และยอดที่ล็อก\error-context.md
+
+  12) tests\workflow-doc.spec.js:149:1 › TC-WORKFLOW-04 ตีกลับสูงสุด 2 ครั้ง และผลหลังครบ ──────────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('[data-testid=audit-row][data-case-no="EG-2569-000013"]').getByTestId('audit-detail')
+    Expected substring: "ส่งต่อให้หัวหน้าพิจารณา"
+    Error: strict mode violation: locator('[data-testid=audit-row][data-case-no="EG-2569-000013"]').getByTestId('audit-detail') resolved to 3 elements:
+        1) <td data-testid="audit-detail">ส่งต่อให้หัวหน้าพิจารณา</td> aka getByRole('cell', { name: 'ส่งต่อให้หัวหน้าพิจารณา' })
+        2) <td data-testid="audit-detail">xxxxxxxxxx</td> aka getByTestId('audit-detail').nth(2)
+        3) <td data-testid="audit-detail">xxxxxxxxxx</td> aka getByTestId('audit-detail').nth(3)
+
+    Call log:
+      - Expect "toContainText" locator('[data-testid=audit-row][data-case-no="EG-2569-000013"]').getByTestId('audit-detail') with timeout 5000ms
+      - waiting for locator('[data-testid=audit-row][data-case-no="EG-2569-000013"]').getByTestId('audit-detail')
+
+
+      206 |   const au = await h.pageS('audit1');
+      207 |   await au.goto('/audit?event=FORWARD');
+    > 208 |   await expect(au.locator('[data-testid=audit-row][data-case-no="EG-2569-000013"]').getByTestId('audit-detail')).toContainText('ส่งต่อให้หัวหน้าพิจารณา');
+          |                                                                                                                  ^
+      209 |   const hd = await h.pageS('head1');
+      210 |   await hd.goto('/officer/cases/EG-2569-000013');
+      211 |   await expect(hd.getByTestId('reject-btn')).toHaveCount(1);
+        at C:\src\compare\judge\suiteC\tests\workflow-doc.spec.js:208:114
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\workflow-doc-TC-WORKFLOW-0-2463e-สูงสุด-2-ครั้ง-และผลหลังครบ\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\workflow-doc-TC-WORKFLOW-0-2463e-สูงสุด-2-ครั้ง-และผลหลังครบ\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\workflow-doc-TC-WORKFLOW-0-2463e-สูงสุด-2-ครั้ง-และผลหลังครบ\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\workflow-doc-TC-WORKFLOW-0-2463e-สูงสุด-2-ครั้ง-และผลหลังครบ\test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\workflow-doc-TC-WORKFLOW-0-2463e-สูงสุด-2-ครั้ง-และผลหลังครบ\error-context.md
+
+  12 failed
+    tests\dash-audit.spec.js:16:1 › TC-DASH-01 Dashboard ตัวเลขเริ่มต้น ────────────────────────────
+    tests\dash-audit.spec.js:34:1 › TC-DASH-02 Dashboard ย้อนหลัง พ.ย. ต.ค. รายปี ──────────────────
+    tests\dash-audit.spec.js:51:1 › TC-DASH-03 ส่งออก Excel/PDF เท่าหน้าจอ และไม่มีข้อมูลส่วนบุคคล ─
+    tests\dash-audit.spec.js:118:1 › TC-AUDIT-01 เหตุการณ์และฟิลด์ใน Audit ─────────────────────────
+    tests\dash-audit.spec.js:207:1 › TC-AUDIT-03 กรองช่วงวันที่ตามเวลาไทย ──────────────────────────
+    tests\nfr.spec.js:50:1 › TC-NFR-02 WCAG: axe + คีย์บอร์ด + label + สถานะไม่ใช้สีอย่างเดียว ─────
+    tests\queue-sla-noti.spec.js:6:1 › TC-QUEUE-01 ลำดับคิวและขอบเขตแผนก ───────────────────────────
+    tests\queue-sla-noti.spec.js:308:1 › TC-NOTI-01 ผู้รับแจ้งเตือนตามระดับ ────────────────────────
+    tests\queue-sla-noti.spec.js:310:1 › TC-NOTI-02 ไม่แจ้งซ้ำ ข้ามระดับ และขั้นรออนุมัติ/รอออกเอกสาร 
+    tests\rbac.spec.js:27:1 › TC-RBAC-02 เจ้าหน้าที่อนุมัติ SV-02 ไม่ได้ (ตรวจที่ API) ─────────────
+    tests\rbac.spec.js:108:1 › TC-RBAC-04 ผู้ดูแลระบบ: บริการ วันหยุด ผู้ใช้ และยอดที่ล็อก ─────────
+    tests\workflow-doc.spec.js:149:1 › TC-WORKFLOW-04 ตีกลับสูงสุด 2 ครั้ง และผลหลังครบ ────────────
+  39 passed (12.3m)

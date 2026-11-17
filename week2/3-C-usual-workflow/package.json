@@ -1,0 +1,20 @@
+{
+  "name": "eservice-municipality-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "e-Service กลาง เทศบาลนครตัวอย่าง (ระบบจำลองสำหรับทดสอบ)",
+  "scripts": {
+    "start": "node app/server.js",
+    "start:test": "node -e \"process.env.TEST_MODE='1';require('./app/server.js')\"",
+    "test": "playwright test",
+    "testfiles": "python tests/make_testfiles.py",
+    "bugs": "node scripts/run-bugs.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.1"
+  }
+}

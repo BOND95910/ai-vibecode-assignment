@@ -1,0 +1,10 @@
+# Playwright runner for the 51 TCs (browsers come with the official image; version must match package-lock)
+FROM mcr.microsoft.com/playwright:v1.65.1-noble
+WORKDIR /work
+COPY package.json package-lock.json ./
+RUN npm ci && npm cache clean --force
+COPY playwright.config.js ./
+COPY tests ./tests
+COPY app ./app
+COPY scripts ./scripts
+CMD ["npx", "playwright", "test"]

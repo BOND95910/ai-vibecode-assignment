@@ -1,0 +1,3 @@
+web-1  | [egov] listening on :3000 · TEST_MODE=1 · BUG_MODE=B06 · DB_PATH=/data/egov.db · clock=2026-12-01T09:00:00+07:00
+web-1  | [egov] modules: modules/testhooks.js modules/auth.js modules/admin-audit.js modules/citizen.js modules/dashboard.js modules/workflow.js views/citizen.js views/staff.js
+

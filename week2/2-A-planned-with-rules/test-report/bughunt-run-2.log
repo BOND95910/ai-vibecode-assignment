@@ -1,0 +1,30 @@
+== BUG_MODE='B01' 14:29:36
+  1 failed   50 passed (2.0m) 
+== BUG_MODE='B02' 14:31:39
+  1 failed   50 passed (2.0m) 
+== BUG_MODE='B03' 14:33:41
+  5 failed   46 passed (1.7m) 
+== BUG_MODE='B04' 14:35:27
+  1 failed   50 passed (1.7m) 
+== BUG_MODE='B05' 14:37:14
+  1 failed   50 passed (1.7m) 
+== BUG_MODE='B06' 14:38:59
+  1 failed   50 passed (1.9m) 
+== BUG_MODE='B07' 14:40:58
+  1 failed   50 passed (1.9m) 
+== BUG_MODE='B08' 14:43:00
+  1 failed   50 passed (2.0m) 
+== BUG_MODE='B09' 14:45:15
+  1 failed   50 passed (1.9m) 
+== BUG_MODE='B10' 14:47:10
+  3 failed   48 passed (2.0m) 
+== BUG_MODE='B11' 14:49:12
+  2 failed   49 passed (2.1m) 
+== BUG_MODE='B12' 14:51:27
+  1 failed   50 passed (2.2m) 
+== BUG_MODE='B03,B07' 14:53:42
+  6 failed   45 passed (1.8m) 
+== BUG_MODE='B01,B05,B09' 14:55:34
+  3 failed   48 passed (1.8m) 
+== BUG_MODE='' 14:57:26
+  51 passed (1.7m) 
